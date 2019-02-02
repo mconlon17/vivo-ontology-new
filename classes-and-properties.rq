@@ -1,0 +1,31 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?t ?s ?l
+WHERE {
+	{	
+		?s a owl:Class .
+		FILTER(regex(str(?s), "^[a-zA-Z]"))
+    	BIND("Class" AS ?t)
+		OPTIONAL { ?s rdfs:label ?l }    
+	}
+    UNION
+    {	
+    	?s a owl:ObjectProperty .
+    	BIND("ObjectProperty" AS ?t)
+		OPTIONAL { ?s rdfs:label ?l }    
+    }
+    UNION
+    {	
+    	?s a owl:DatatypeProperty .
+    	BIND("DatatypeProperty" AS ?t)
+		OPTIONAL { ?s rdfs:label ?l }    
+    }
+    UNION
+    {	
+    	?s a owl:AnnotationProperty .
+    	BIND("AnnotationProperty" AS ?t)
+		OPTIONAL { ?s rdfs:label ?l }    
+    }
+}
+ORDER BY ?t ?s

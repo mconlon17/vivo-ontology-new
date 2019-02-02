@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1549117454842" name="http://purl.obolibrary.org/obo/iao.owl" uri="iao.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549117454842" name="http://vivoweb.org/ontology/core" uri="vivo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549117454842" name="http://www.semanticweb.org/vivo/ontologies/2019/0/nvo/" uri="nvo.owl"/>
+    </group>
+</catalog>
