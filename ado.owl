@@ -1,0 +1,1934 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/"
+     xml:base="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/0.0.0"/>
+        <obo:IAO_0000115>Degrees of the world</obo:IAO_0000115>
+        <obo:IAO_0000232>Just getting started as a proof of concept MC</obo:IAO_0000232>
+        <dc:contributor>Michael Conlon</dc:contributor>
+        <dc:description>A BFO-based, OBO compliant ontology of academic degrees of the world</dc:description>
+        <dc:title>Academic degrees of the world</dc:title>
+        <terms:license>https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
+        <rdfs:label>Academic Degree Ontology</rdfs:label>
+        <owl:priorVersion>http://vivoweb.org/ontology/core#</owl:priorVersion>
+        <foaf:homepage>http://to-be-determined</foaf:homepage>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000605 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000605"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <obo:BFO_0000179>entity</obo:BFO_0000179>
+        <obo:BFO_0000180>Entity</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Verdi’s Requiem</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Second World War</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your body mass index</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">
+BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81
+</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">
+Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf
+</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">
+An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])
+</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:BFO_0000179>continuant</obo:BFO_0000179>
+        <obo:BFO_0000180>Continuant</obo:BFO_0000180>
+        <obo:IAO_0000116 xml:lang="en">
+BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240
+</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">
+Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants
+</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">
+A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])
+</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">
+if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])
+</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">
+if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])
+</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">
+if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])
+</obo:IAO_0000601>
+        <obo:IAO_0000602>
+(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002]
+</obo:IAO_0000602>
+        <obo:IAO_0000602>
+(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001]
+</obo:IAO_0000602>
+        <obo:IAO_0000602>
+(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002]
+</obo:IAO_0000602>
+        <obo:IAO_0000602>
+(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002]
+</obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:BFO_0000179>occurrent</obo:BFO_0000179>
+        <obo:BFO_0000180>Occurrent</obo:BFO_0000180>
+        <obo:IAO_0000116 xml:lang="en">
+BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region
+</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">
+BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players.
+</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">
+Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.
+</obo:IAO_0000116>
+        <obo:IAO_0000116>
+Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by &apos;spn[e]&apos; and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write &apos;spr[e]&apos; and `spl[e]&apos; respectively for the spread and spell of e, omitting mention of the frame.
+</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">
+An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])
+</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">
+Every occurrent occupies_spatiotemporal_region some spatiotemporal region. (axiom label in BFO2 Reference: [108-001])
+</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">
+b is an occurrent entity iff b is an entity that has temporal parts. (axiom label in BFO2 Reference: [079-001])
+</obo:IAO_0000601>
+        <obo:IAO_0000602>
+(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001]
+</obo:IAO_0000602>
+        <obo:IAO_0000602>
+(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001]
+</obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">occurrent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:BFO_0000179>gdc</obo:BFO_0000179>
+        <obo:BFO_0000180>GenericallyDependentContinuant</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">
+The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.
+</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">
+the pdf file on your laptop, the pdf file that is a copy thereof on my laptop
+</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">
+the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.
+</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">
+b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])
+</obo:IAO_0000115>
+        <obo:IAO_0000602>
+(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001]
+</obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">textual entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">AR, (IAO call 2009-09-01): a document as a whole is not typically a textual entity, because it has pictures in it - rather there are parts of it that are textual entities. Examples: The title, paragraph 2 sentence 7, etc.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">text</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00001 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An academic degree is a qualification awarded to students upon successful completion of a course of study in higher education, usually at a collegeor university.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will look up a better definition</obo:IAO_0000116>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Academic Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00002 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00002">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two years of study</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate&apos;s Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00003 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00003">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two years focused on science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate of Science Degree</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree127"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00004 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00004">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two years focused on the arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate of Arts Degree</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree132"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00005 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00005">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four years of study</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor&apos;s Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00006 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00006">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four years focused on the arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Arts Degree</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree4"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00007 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00007">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four years focused on science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science Degree</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree33"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00008 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00008">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced study following a bachelor&apos;s degree</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master&apos;s Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00009 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00009">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00008"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced study in the arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Arts</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree71"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00010 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00010">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00008"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced study in science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree117"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00011 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00011">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highest discipline degree</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctoral Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00012 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00012">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A doctorate in any discipline except medicine, or sometimes theology.</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Philosophy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree98"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00013 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00013">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Degree required to practice medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree77"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00014 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00014">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Degree required to practice law</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juris Doctor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree63"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00015 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00015">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highest degree in theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ThD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree108"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00016 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00016">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aeronautical Engineer</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AeEng</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aeronautical Engineer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree2"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00017 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00017">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agricultural Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agricultural Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree8"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00018 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00018">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architectural Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architectural Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree9"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00019 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00019">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate Degree Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADN</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate Degree Nursing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree118"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00020 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00020">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Aeronautical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Aeronautical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree7"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00021 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00021">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Agriculture</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAg</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Agriculture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree10"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00022 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00022">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Applied Mathematics</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Applied Mathematics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree11"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00023 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00023">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Applied Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Applied Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree124"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00024 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00024">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Architecture</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BArch</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Architecture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree12"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00025 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00025">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Art Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Art Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree6"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00026 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00026">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Arts in Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Arts in Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree5"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00027 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00027">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Business Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BBA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Business Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree13"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00028 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00028">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Canon Law</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCL</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Canon Law</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree16"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00029 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00029">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Chemical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BChE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Chemical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree15"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00030 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00030">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Civil Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Civil Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree14"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00031 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00031">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Divinity</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Divinity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree17"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00032 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00032">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree18"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00033 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00033">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Electrical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BEE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Electrical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree20"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00034 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00034">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree19"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00035 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00035">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Fine Arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Fine Arts</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree22"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00036 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00036">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Forestry</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BF</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Forestry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree21"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00037 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00037">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Journalism</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BJ</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Journalism</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree23"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00038 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00038">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Laws</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LLB</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Laws</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree68"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00039 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00039">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Letters</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LittB</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Letters</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree66"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00040 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00040">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Liberal Studies</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Liberal Studies</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree24"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00041 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00041">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Library Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Library Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree25"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00042 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00042">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Literature</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLit</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Literature</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree26"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00043 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00043">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Marine Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Marine Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree29"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00044 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00044">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree27"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00045 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00045">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Music</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Music</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree28"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00046 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00046">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BN</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Nursing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree30"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00047 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00047">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Pharmacy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BPharm</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Pharmacy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree31"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00048 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00048">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Philosophy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhB</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Philosophy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree97"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00049 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00049">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Religious Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BRE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Religious Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree32"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00050 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00050">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Sacred Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STB</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Sacred Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree104"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00051 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00051">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSEd</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree34"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00052 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00052">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree120"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00053 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00053">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Forensic Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSFS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Forensic Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree136"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00054 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00054">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSN</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Nursing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree130"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00055 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00055">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ThB</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree107"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00056 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00056">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Veterinary Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BVS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Veterinary Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree128"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00057 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00057">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Engineer</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Engineer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree36"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00058 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00058">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civil Engineer</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civil Engineer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree35"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00059 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00059">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Veterinary Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DVM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Veterinary Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree55"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00060 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00060">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diploma of Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DipEd</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diploma of Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree116"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00061 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00061">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Applied Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Applied Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree38"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00062 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00062">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Arts</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree37"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00063 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00063">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Audiology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Audiology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree145"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00064 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00064">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Business Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Business Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree39"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00065 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00065">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Chiropractic</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Chiropractic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree40"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00066 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00066">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree46"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00067 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00067">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree43"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00068 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00068">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Surgery</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Surgery</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree42"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00069 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00069">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Divinity</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Divinity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree41"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00070 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00070">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EdD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree56"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00071 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00071">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Health Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DHEd</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Health Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree146"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00072 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00072">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Humane Letters</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LHD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Humane Letters</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree65"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00073 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00073">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Juridical Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SJD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Juridical Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree101"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00074 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00074">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Juristic Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Juristic Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree64"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00075 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00075">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Laws</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LLD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Laws</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree69"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00076 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00076">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Library Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Library Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree45"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00077 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00077">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Medical Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Medical Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree48"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00078 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00078">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Optometry</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Optometry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree95"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00079 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00079">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Osteopathic Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Osteopathic Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree47"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00080 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00080">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Pharmacy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PharmD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Pharmacy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree96"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00081 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00081">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Podiatric Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Podiatric Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree139"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00082 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00082">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Psychology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PsyD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Psychology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree119"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00083 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00083">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Public Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Public Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree49"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00084 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00084">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Public Health</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPH</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Public Health</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree50"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00085 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00085">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Religious Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Religious Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree51"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00086 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00086">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Sacred Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Sacred Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree105"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00087 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00087">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSc</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree54"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00088 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00088">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SScD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree103"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00089 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00089">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Welfare</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSW</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Welfare</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree52"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00090 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00090">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Work</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSW</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Work</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree53"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00091 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00091">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of the Science of Law</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SJD</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of the Science of Law</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree102"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00092 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00092">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education Specialist</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EdS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education Specialist</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree57"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00093 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00093">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineer</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree58"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00094 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00094">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineer of Metallurgy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMet</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineer of Metallurgy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree60"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00095 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00095">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineer of Mines</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineer of Mines</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree59"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00096 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00096">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industrial Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industrial Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree62"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00097 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00097">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Physician Assistant Studies</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPAS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Physician Assistant Studies</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree147"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00098 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00098">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Aeronautical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAeroE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Aeronautical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree72"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00099 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00099">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Arts in Teaching</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMT</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Arts in Teaching</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree3"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00100 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00100">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Business Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MBA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Business Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree73"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00101 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00101">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Business Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MBE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Business Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree141"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00102 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00102">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Chemical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MChE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Chemical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree140"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00103 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00103">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Christian Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Christian Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree74"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00104 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00104">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Civil Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Civil Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree75"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00105 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00105">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Computer Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Computer Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree76"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00106 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00106">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Divinity</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDiv</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Divinity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree78"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00107 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00107">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MEd</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree80"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00108 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00108">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MEng</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree81"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00109 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00109">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Fine Arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MFA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Fine Arts</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree82"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00110 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00110">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Health Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Health Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree122"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00111 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00111">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Hospital Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Hospital Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree83"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00112 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00112">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of International Affairs</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIA</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of International Affairs</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree137"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00113 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00113">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Laws</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LLM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Laws</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree70"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00114 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00114">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Letters</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LittM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Letters</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree67"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00115 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00115">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Library and Information Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLIS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Library and Information Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree115"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00116 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00116">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Library Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Library Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree84"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00117 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00117">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Management Studies</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMS</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Management Studies</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree126"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00118 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00118">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Mechanical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MME</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Mechanical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree86"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00119 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00119">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Medical Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMSc</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Medical Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree150"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00120 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00120">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMed</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree131"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00121 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00121">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Music</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Music</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree85"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00122 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00122">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Music Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MME</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Music Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree87"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00123 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00123">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MN</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Nursing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree89"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00124 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00124">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Pharmacy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PharmM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Pharmacy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree143"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00125 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00125">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Philosophy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPhil</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Philosophy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree111"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00126 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00126">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Public Health</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPH</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Public Health</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree113"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00127 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00127">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Religious Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Religious Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree90"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00128 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00128">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Sacred Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STM</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Sacred Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree106"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00129 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00129">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science in Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science in Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree134"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00130 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00130">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science in Public Health</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSPH</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science in Public Health</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree114"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00131 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00131">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Social Work</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSW</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Social Work</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree92"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00132 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00132">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTh</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree93"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00133 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00133">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Veterinary Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MVSc</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Veterinary Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree129"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00134 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00134">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear Engineer</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NucE</obo:IAO_0000605>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear Engineer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree94"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

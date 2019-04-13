@@ -1,0 +1,527 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	http://example.com/bfo-spec-label	rdfs:label		
+ERROR	missing_label	BFO:0000134	rdfs:label		
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00359	rdfs:label	Video	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00446	rdfs:label	Video	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00444	rdfs:label	URL	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00671	rdfs:label	URL	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00437	rdfs:label	Telephone	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00667	rdfs:label	Telephone	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00808	rdfs:label	supported by	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00829	rdfs:label	supported by	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00068	rdfs:label	Role	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00431	rdfs:label	Role	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00043	rdfs:label	Other	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00425	rdfs:label	Other	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00042	rdfs:label	Organization	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00421	rdfs:label	Organization	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00451	rdfs:label	Organization	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00192	rdfs:label	Note	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00420	rdfs:label	Note	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00306	rdfs:label	Location	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00410	rdfs:label	Location	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00564	rdfs:label	identifier	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00603	rdfs:label	identifier	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00649	rdfs:label	has language	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00856	rdfs:label	has language	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00641	rdfs:label	has formatted name	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00852	rdfs:label	has formatted name	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00040	rdfs:label	Group	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00401	rdfs:label	Group	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00450	rdfs:label	Group	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00121	rdfs:label	Database	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00260	rdfs:label	Database	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00738	rdfs:label	contributor	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00773	rdfs:label	contributor	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00056	rdfs:label	Contact	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00386	rdfs:label	Contact	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00166	rdfs:label	Code	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00383	rdfs:label	Code	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00375	rdfs:label	Agent	
+ERROR	duplicate_label	https://something/ontology/nvo/VO_00449	rdfs:label	Agent	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 	
+WARN	annotation_whitespace	BFO:0000003	IAO:0000602	(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 	
+WARN	annotation_whitespace	BFO:0000003	IAO:0000602	(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 	
+WARN	annotation_whitespace	BFO:0000004	IAO:0000602	(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 	
+WARN	annotation_whitespace	BFO:0000004	IAO:0000602	(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 	
+WARN	annotation_whitespace	BFO:0000004	IAO:0000602	(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 	
+WARN	annotation_whitespace	BFO:0000006	IAO:0000602	(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] 	
+WARN	annotation_whitespace	BFO:0000006	IAO:0000602	(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] 	
+WARN	annotation_whitespace	BFO:0000008	IAO:0000602	(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] 	
+WARN	annotation_whitespace	BFO:0000008	IAO:0000602	(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] 	
+WARN	annotation_whitespace	BFO:0000008	IAO:0000602	(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] 	
+WARN	annotation_whitespace	BFO:0000009	IAO:0000602	(forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] 	
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] 	
+WARN	annotation_whitespace	BFO:0000015	IAO:0000602	(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 	
+WARN	annotation_whitespace	BFO:0000016	IAO:0000602	(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 	
+WARN	annotation_whitespace	BFO:0000016	IAO:0000602	(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 	
+WARN	annotation_whitespace	BFO:0000017	IAO:0000602	(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 	
+WARN	annotation_whitespace	BFO:0000017	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 	
+WARN	annotation_whitespace	BFO:0000018	IAO:0000602	(forall (x) (if (ZeroDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [037-001] 	
+WARN	annotation_whitespace	BFO:0000019	IAO:0000602	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 	
+WARN	annotation_whitespace	BFO:0000019	IAO:0000602	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 	
+WARN	annotation_whitespace	BFO:0000020	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 	
+WARN	annotation_whitespace	BFO:0000023	IAO:0000602	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 	
+WARN	annotation_whitespace	BFO:0000024	IAO:0000602	(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] 	
+WARN	annotation_whitespace	BFO:0000026	IAO:0000602	(forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001] 	
+WARN	annotation_whitespace	BFO:0000027	IAO:0000116	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 	
+WARN	annotation_whitespace	BFO:0000027	IAO:0000602	(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 	
+WARN	annotation_whitespace	BFO:0000028	IAO:0000602	(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] 	
+WARN	annotation_whitespace	BFO:0000029	IAO:0000602	(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] 	
+WARN	annotation_whitespace	BFO:0000031	IAO:0000602	(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 	
+WARN	annotation_whitespace	BFO:0000034	IAO:0000602	(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 	
+WARN	annotation_whitespace	BFO:0000035	IAO:0000602	(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] 	
+WARN	annotation_whitespace	BFO:0000035	IAO:0000602	(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] 	
+WARN	annotation_whitespace	BFO:0000038	IAO:0000602	(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] 	
+WARN	annotation_whitespace	BFO:0000040	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 	
+WARN	annotation_whitespace	BFO:0000040	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 	
+WARN	annotation_whitespace	BFO:0000040	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 	
+WARN	annotation_whitespace	BFO:0000140	IAO:0000602	(iff (ContinuantFiatBoundary a) (and (ImmaterialEntity a) (exists (b) (and (or (ZeroDimensionalSpatialRegion b) (OneDimensionalSpatialRegion b) (TwoDimensionalSpatialRegion b)) (forall (t) (locatedInAt a b t)))) (not (exists (c t) (and (SpatialRegion c) (continuantPartOfAt c a t)))))) // axiom label in BFO2 CLIF: [029-001] 	
+WARN	annotation_whitespace	BFO:0000142	IAO:0000602	(iff (OneDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (OneDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [032-001] 	
+WARN	annotation_whitespace	BFO:0000144	IAO:0000602	(forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] 	
+WARN	annotation_whitespace	BFO:0000144	IAO:0000602	(iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] 	
+WARN	annotation_whitespace	BFO:0000145	IAO:0000602	(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] 	
+WARN	annotation_whitespace	BFO:0000146	IAO:0000602	(iff (TwoDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (TwoDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [033-001] 	
+WARN	annotation_whitespace	BFO:0000147	IAO:0000602	(iff (ZeroDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (ZeroDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [031-001] 	
+WARN	annotation_whitespace	BFO:0000148	IAO:0000602	(forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] 	
+WARN	missing_definition	http://example.com/bfo-spec-label	IAO:0000115		
+WARN	missing_definition	BFO:0000001	IAO:0000115		
+WARN	missing_definition	BFO:0000002	IAO:0000115		
+WARN	missing_definition	BFO:0000003	IAO:0000115		
+WARN	missing_definition	BFO:0000006	IAO:0000115		
+WARN	missing_definition	BFO:0000008	IAO:0000115		
+WARN	missing_definition	BFO:0000009	IAO:0000115		
+WARN	missing_definition	BFO:0000011	IAO:0000115		
+WARN	missing_definition	BFO:0000016	IAO:0000115		
+WARN	missing_definition	BFO:0000017	IAO:0000115		
+WARN	missing_definition	BFO:0000018	IAO:0000115		
+WARN	missing_definition	BFO:0000019	IAO:0000115		
+WARN	missing_definition	BFO:0000023	IAO:0000115		
+WARN	missing_definition	BFO:0000024	IAO:0000115		
+WARN	missing_definition	BFO:0000026	IAO:0000115		
+WARN	missing_definition	BFO:0000027	IAO:0000115		
+WARN	missing_definition	BFO:0000028	IAO:0000115		
+WARN	missing_definition	BFO:0000029	IAO:0000115		
+WARN	missing_definition	BFO:0000030	IAO:0000115		
+WARN	missing_definition	BFO:0000034	IAO:0000115		
+WARN	missing_definition	BFO:0000038	IAO:0000115		
+WARN	missing_definition	BFO:0000040	IAO:0000115		
+WARN	missing_definition	BFO:0000134	IAO:0000115		
+WARN	missing_definition	BFO:0000141	IAO:0000115		
+WARN	missing_definition	BFO:0000142	IAO:0000115		
+WARN	missing_definition	BFO:0000146	IAO:0000115		
+WARN	missing_definition	BFO:0000147	IAO:0000115		
+WARN	missing_definition	BFO:0000148	IAO:0000115		
+WARN	missing_definition	BFO:0000182	IAO:0000115		
+WARN	missing_definition	IAO:0000111	IAO:0000115		
+WARN	missing_definition	IAO:0000112	IAO:0000115		
+WARN	missing_definition	IAO:0000115	IAO:0000115		
+WARN	missing_definition	IAO:0000116	IAO:0000115		
+WARN	missing_definition	IAO:0000117	IAO:0000115		
+WARN	missing_definition	IAO:0000118	IAO:0000115		
+WARN	missing_definition	IAO:0000119	IAO:0000115		
+WARN	missing_definition	IAO:0000232	IAO:0000115		
+WARN	missing_definition	IAO:0000412	IAO:0000115		
+WARN	missing_definition	IAO:0000600	IAO:0000115		
+WARN	missing_definition	IAO:0000601	IAO:0000115		
+WARN	missing_definition	IAO:0000602	IAO:0000115		
+WARN	missing_definition	IAO:0010000	IAO:0000115		
+INFO	lowercase_definition	BFO:0000004	IAO:0000115	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en	
+INFO	lowercase_definition	BFO:0000015	IAO:0000115	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en	
+INFO	lowercase_definition	BFO:0000020	IAO:0000115	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en	
+INFO	lowercase_definition	BFO:0000031	IAO:0000115	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en	
+INFO	lowercase_definition	BFO:0000035	IAO:0000115	p is a process boundary =Def. p is a temporal part of a process & p has no proper temporal parts. (axiom label in BFO2 Reference: [084-001])@en	
+INFO	lowercase_definition	BFO:0000140	IAO:0000115	b is a continuant fiat boundary = Def. b is an immaterial entity that is of zero, one or two dimensions and does not include a spatial region as part. (axiom label in BFO2 Reference: [029-001])@en	
+INFO	lowercase_definition	BFO:0000144	IAO:0000115	b is a process_profile =Def. there is some process c such that b process_profile_of c (axiom label in BFO2 Reference: [093-002])@en	
+INFO	lowercase_definition	BFO:0000145	IAO:0000115	b is a relational quality = Def. for some independent continuants c, d and for some time t: b quality_of c at t & b quality_of d at t. (axiom label in BFO2 Reference: [057-001])@en	
+INFO	missing_superclass	BFO:0000001	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000005	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000007	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000010	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000012	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000013	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000014	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000021	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000022	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000025	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000032	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000033	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000036	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000037	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000039	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000041	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000042	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000043	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000044	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000045	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000046	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000047	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000048	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000049	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000050	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000051	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000052	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000053	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000054	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000055	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000056	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000057	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000058	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000059	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000060	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000061	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000062	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000063	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000064	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000065	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000066	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000067	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000068	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000069	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000070	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000071	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000072	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000073	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000074	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000075	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000076	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000077	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000078	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000079	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000080	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000081	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000082	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000083	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000084	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000085	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000086	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000087	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000088	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000089	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000090	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000091	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000092	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000093	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000094	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000095	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000096	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000097	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000098	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000099	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000100	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000101	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000102	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000103	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000104	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000105	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000106	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000107	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000108	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000109	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000110	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000111	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000112	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000113	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000114	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000115	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000116	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000117	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000118	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000119	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000120	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000121	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000122	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000123	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000124	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000125	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000126	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000127	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000128	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000129	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000130	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000131	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000132	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000133	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000134	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000135	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000136	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000137	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000138	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000139	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000143	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000149	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000150	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000151	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000152	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000153	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000154	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000155	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000156	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000157	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000158	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000159	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000160	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000161	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000162	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000163	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000164	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000165	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000166	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000167	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000168	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000169	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000170	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000171	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000172	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000173	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000174	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000175	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000176	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000177	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000178	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000179	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000180	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000181	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000183	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000184	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000185	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000186	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000187	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000188	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000189	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000190	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000191	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000192	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000193	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000194	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000195	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000196	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000197	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000198	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000199	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000200	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000201	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000202	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000203	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000204	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000205	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000206	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000207	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000208	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000209	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000210	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000211	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000212	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000213	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000214	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000215	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000216	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000217	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000218	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000219	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000220	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000221	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000222	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000223	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000224	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000225	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000226	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000227	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000228	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000229	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000230	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000231	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000232	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000233	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000234	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000235	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000236	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000237	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000238	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000239	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000240	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000241	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000242	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000243	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000244	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000245	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000246	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000247	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000248	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000249	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000250	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000251	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000252	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000253	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000254	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000255	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000256	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000257	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000258	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000259	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000260	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000261	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000262	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000263	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000264	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000265	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000266	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000267	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000268	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000269	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000270	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000271	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000272	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000273	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000274	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000275	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000276	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000277	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000278	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000279	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000280	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000281	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000282	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000283	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000284	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000285	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000286	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000287	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000288	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000289	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000290	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000291	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000292	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000293	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000294	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000295	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000296	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000297	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000298	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000299	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000300	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000301	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000302	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000303	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000304	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000305	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000306	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000307	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000308	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000309	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000310	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000311	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000312	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000313	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000314	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000315	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000316	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000317	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000318	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000319	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000320	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000321	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000322	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000323	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000324	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000325	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000326	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000327	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000328	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000329	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000330	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000331	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000332	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000333	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000334	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000335	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000336	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000337	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000338	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000339	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000340	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000341	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000342	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000343	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000344	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000345	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000346	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000347	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000348	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000349	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000350	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000351	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000352	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000353	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000354	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000355	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000356	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000357	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000358	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000359	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000360	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000361	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000362	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000363	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000364	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000365	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000366	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000367	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000368	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000369	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000370	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000371	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000372	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000373	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000374	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000375	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000376	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000377	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000378	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000379	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000380	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000381	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000382	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000383	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000384	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000385	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000386	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000387	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000388	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000389	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000390	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000391	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000392	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000393	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000394	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000395	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000396	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000397	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000398	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000399	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000400	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000401	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000402	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000403	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000404	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000405	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000406	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000407	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000408	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000409	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000410	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000411	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000412	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000413	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000414	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000415	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000416	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000417	rdfs:subClassOf		
+INFO	missing_superclass	BFO:0000418	rdfs:subClassOf		
