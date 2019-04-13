@@ -12,4 +12,4 @@ To join the VIVO Project:
  * Website (overview, membership) is here: http://vivoweb.org
  * Slack (discussion, meeting notices) is here: http://bit.ly/vivo-slack
  * Community Wiki (meeting notes, background) is here:  http://bit.ly/vivo-wiki
- * Documentation wiki (software and ontology documentation) is here:  http://bit.ly/vivo-docs
+ * Documentation wiki (software and ontology documentation) is here:  https://wiki.duraspace.org/display/VIVODOC110x/VIVO+1.10.x+Documentation
