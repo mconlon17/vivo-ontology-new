@@ -1,0 +1,30 @@
+robot query --format tsv --input vivo.owl --select classes-and-properties.rq vivo.tmp
+sed -e 's_?type_?type	?prefix_' \
+	-e 's_<http://aims.fao.org/aos/geopolitical.owl#\([^>]*\)>_geo:	\1_' \
+    -e 's_<http://purl.obolibrary.org/obo/\([^>]*\)>_obo:	\1_' \
+    -e 's_<http://purl.org/dc/terms/\([^>]*\)>_dcterms:	\1_' \
+    -e 's_<http://www.w3.org/2008/05/skos#\([^>]*\)>_skos8:	\1_' \
+    -e 's_<http://www.w3.org/2004/02/skos/core#\([^>]*\)>_skos4:	\1_' \
+    -e 's_<http://purl.org/net/OCRe/statistics.owl#\([^>]*\)>_ocres:	\1_' \
+    -e 's_<http://www.w3.org/2000/01/rdf-schema#\([^>]*\)>_rdfs:	\1_' \
+    -e 's_<http://www.w3.org/2002/07/owl#\([^>]*\)>_owl:	\1_' \
+    -e 's_<http://vitro.mannlib.cornell.edu/ns/vitro/0.7#\([^>]*\)>_vitro:	\1_' \
+    -e 's_<http://www.w3.org/2003/06/sw-vocab-status/ns#\([^>]*\)>_vocab:	\1_' \
+    -e 's_<http://purl.org/net/OCRe/study\_protocol.owl#\([^>]*\)>_ocresp:	\1_' \
+    -e 's_<http://vivoweb.org/ontology/core#\([^>]*\)>_vivo:	\1_' \
+    -e 's_<http://purl.org/ontology/bibo/\([^>]*\)>_bibo:	\1_' \
+    -e 's_<http://www.w3.org/2006/vcard/ns#\([^>]*\)>_vcard:	\1_' \
+    -e 's_<http://vivoweb.org/ontology/scientific-research#\([^>]*\)>_vivosr:	\1_' \
+    -e 's_<http://www.ebi.ac.uk/efo/swo/\([^>]*\)>_swo:	\1_' \
+    -e 's_<http://www.obofoundry.org/ro/ro.owl#\([^>]*\)>_ro:	\1_' \
+	-e 's_<http://purl.org/spar/cito/\([^>]*\)>_cito:	\1_' \
+	-e 's_<http://purl.org/spar/c4o/\([^>]*\)>_c4o:	\1_' \
+	-e 's_<http://purl.org/NET/c4dm/event.owl#\([^>]*\)>_event:	\1_' \
+    -e 's_<http://purl.org/net/OCRe/research.owl#\([^>]*\)>_ocrer:	\1_' \
+	-e 's_<http://purl.org/net/OCRe/study\_design.owl#\([^>]*\)>_ocresd:	\1_' \
+	-e 's_<http://purl.org/spar/fabio/\([^>]*\)>_fabio:	\1_' \
+    -e 's_<http://www.geneontology.org/formats/oboInOwl#\([^>]*\)>_go:	\1_' \
+    -e 's_<http://xmlns.com/foaf/0.1/\([^>]*\)>_foaf:	\1_' \
+    -e 's_<http://purl.org/vocab/vann/\([^>]*\)>_vann:	\1_' \
+    -e 's_<http://isf/\([^>]*\)>_isf:	\1_' \
+    -e 's/	a/	A/' <vivo.tmp >vivo.tsv
