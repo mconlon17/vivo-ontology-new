@@ -1,9 +1,9 @@
-?type	?prefix	?uri	?labels	Domain	Dispostion	DispComment	?definitions	?editor_notes	?examples	?statuses	?human_friendly_names	?name_of_editors	?alternative_names	?citations
+Type	Prefix	Name	Label	Domain	Dispostion	DispComment	Definitions	Editor Note	Example	Status	Human Friendly Name	Name of editor	Alternative Name	Citation
 A	dcterms:	description		ALL	Q	Required								
 A	dcterms:	source		ALL	Q	Required								
-A	geo:	sourceCreator		LOC	N	See GAZ								
-A	geo:	sourceIdentifier		LOC	N	See GAZ								
-A	geo:	sourceModified		LOC	N	See GAZ								
+A	geo:	sourceCreator		GAZ	N	See GAZ								
+A	geo:	sourceIdentifier		GAZ	N	See GAZ								
+A	geo:	sourceModified		GAZ	N	See GAZ								
 A	obo:	ARG_0000033		NA	U	Unused								
 A	obo:	BFO_0000179		NA	N	Not needed								
 A	obo:	BFO_0000180		NA	N	Not needed								
@@ -98,28 +98,28 @@ C	foaf:	Agent	Agent	VIVO	N	Not sure this is needed in a BFO world	Agents are thi
 C	foaf:	Group	Group	VIVO	N	Not sure this is needed in a BFO world	"A collection of individual agents.| A collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions). "		"A group can also be an organization but need not be; typically used for looser associations of people or organizations acting together in some fashion, not necessarily through formal agreement or on a long-term basis. Added to the VIVO ontology to be able to support informal and perhaps even private groups of people around an idea, funding opportunity, or event.\n\nsee: http://xmlns.com/foaf/spec/#term_Group"		group	PERSON: Scott Hoffmann		
 C	foaf:	Organization	Organization	VIVO	R	Do we need an OBO/VIVO alternative with reference?	"A kind of Agent corresponding to social instititutions such as companies, societies etc.|A generic class encompassing several types of organizations."		"This class will display all the instances in the subclasses below it, as well as any organizations that were added as part of this generic class because there wasn't a specific class available.|Only use if no specific subclasses of foaf:organization desribe the organization."		organization	PERSON: Scott Hoffmann		
 C	foaf:	Person	Person	VIVO	R	Do we need an OBO/VIVO alternative with reference?	An instance of a human being (Homo sapiens)|The most general classification of a person				person	PERSON: Melissa Haendel		
-C	geo:	Area	Area	LOC	N									
-C	geo:	disputed	Disputed	LOC	N									
-C	geo:	economic_region	Economic Region	LOC	N									
-C	geo:	geographical_region	Transnational Region	LOC	N									
-C	geo:	group	Group	LOC	N	There is a general issue for VIVO regarding representing groups of entities								
-C	geo:	non_self_governing	Non Self Governing	LOC	N									
-C	geo:	organization	Organization	LOC	N									
-C	geo:	other	Other	LOC	N									
-C	geo:	self_governing	Self Governing	LOC	N									
-C	geo:	special_group	Special Group	LOC	N									
-C	geo:	territory	Territory	LOC	N									
+C	geo:	Area	Area	GAZ	N									
+C	geo:	disputed	Disputed	GAZ	N									
+C	geo:	economic_region	Economic Region	GAZ	N									
+C	geo:	geographical_region	Transnational Region	GAZ	N									
+C	geo:	group	Group	GAZ	N	There is a general issue for VIVO regarding representing groups of entities								
+C	geo:	non_self_governing	Non Self Governing	GAZ	N									
+C	geo:	organization	Organization	GAZ	N									
+C	geo:	other	Other	GAZ	N									
+C	geo:	self_governing	Self Governing	GAZ	N									
+C	geo:	special_group	Special Group	GAZ	N									
+C	geo:	territory	Territory	GAZ	N									
 C	go:	DbXref		NA	U	Present but unused in both IAO and VIVO								
 C	go:	Definition		NA	N	Use IAO_0000115								
 C	go:	Synonym		NA	U	Present but unused in both IAO and VIVO								
 C	go:	SynonymType		NA	U	Present but unused in both IAO and VIVO								
-C	obo:	ARG_0000008		NA	R	"Undefined in VIVO, used once as the domain of ARG_0000015"								
+C	obo:	ARG_0000008		NA	N	"Undefined in VIVO, used once as the domain of ARG_0000015"								
 C	obo:	ARG_2000008	Topic Weight Measurement	NA	N	Perhaps there is an idea that can be used here?								
 C	obo:	ARG_2000009	Expertise Measurement	VIVO	M	Perhaps there is an idea that can be used here?								
 C	obo:	ARG_2000010	Topic Weight Measurement Process	VIVO	M	Perhaps there is an idea that can be used here?								
 C	obo:	ARG_2000011	Expertise Measurement Process	VIVO	M	Perhaps there is an idea that can be used here?								
 C	obo:	ARG_2000021	Experience	VIVO	M	Hard to imagine how this might be defined or used								
-C	obo:	ARG_2000022	specialty	VIVO 	M	Perhaps to be used to indicate a medical speciality or other area of special expertise								
+C	obo:	ARG_2000022	specialty	VIVO	M	Perhaps to be used to indicate a medical speciality or other area of special expertise								
 C	obo:	ARG_2000376	Contact Qualifier	VIVO	R	We will need contact qualifiers (eg business address)								
 C	obo:	ARG_2000377	FOAF Profile	VIVO	M	Interesting idea -- support multiple profiles								
 C	obo:	ARG_2000379	Contact	VIVO	M	Like a business card?								
@@ -145,7 +145,7 @@ C	obo:	BFO_0000148	Zero-Dimensional Temporal Region	BFO	Q
 C	obo:	ERO_0000004	Instrument	ERO	K	Likely to stay in version 2	Material entity that is designed to have a function and play a role in scientific investigation.		A flow cytometer.	http://purl.obolibrary.org/obo/IAO_0000120	instrument	PERSON: Melissa Haendel		http://en.wikipedia.org/wiki/Scientific_instrument
 C	obo:	ERO_0000005	Service	VIVO	R	A service description	"An information content entity that describes a service performed by a person or organization with the objective of performing a technique, providing training, providing storage of data or material entities, or providing access to resources for another person or organization"		A DNA sequencing service performed by a core lab.	http://purl.obolibrary.org/obo/IAO_0000120	service	PERSON: Melissa Haendel		PERSON: Melissa Haendel
 C	obo:	ERO_0000006	Reagent	NA	N	Not in domain	"Processed material that is used in a chemical reaction or other experimental process to detect, measure, examine, or produce other  substances."		A plasmid can be used as a reagent.	http://purl.obolibrary.org/obo/IAO_0000120	reagent	PERSON: Melissa Haendel		http://www.yourdictionary.com/reagent
-C	obo:	ERO_0000007	Technique	VIVO 	R	Not in the ERO domain	A technique is a planned process used to accomplish a specific activity or task.		Flow cytometry is a technique.	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Melissa Haendel		http://en.wikipedia.org/wiki/Technique
+C	obo:	ERO_0000007	Technique	VIVO	R	Not in the ERO domain	A technique is a planned process used to accomplish a specific activity or task.		Flow cytometry is a technique.	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Melissa Haendel		http://en.wikipedia.org/wiki/Technique
 C	obo:	ERO_0000012	Service Provider Role	VIVO	R	Not in the ERO domain	A role inhering in a person or organization that is realized when the bearer participates in providing a service to meet the need of another person or thing.|An role of an individual within his or her profession or institution; use outreach provider role for community service or other activities outside the profession.		A technician in a core laboratory.|Member of the International Conference on Complex Systems Organizing Committee	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Nicole Vasilevsky		PERSON: Nicole Vasilevsky
 C	obo:	ERO_0000014	Research Project	OBI	R	In the OBO domain	A funded collection of investigations as described in a research proposal.		A project to study the role of a specific protein in cell signaling.	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Melissa Haendel		PERSON: Melissa Haendel
 C	obo:	ERO_0000015	Human Study	OBI	R	In the OBO domain	Research project that uses or collects measurements or assessments about humans.		A clinical trial.	http://purl.obolibrary.org/obo/IAO_0000120	human study	PERSON: Melissa Haendel		OCRe
@@ -345,7 +345,7 @@ C	vivo:	County	County	GAZ	R		The largest administrative division of most states 
 C	vivo:	Course	Course	VIVO	R		"A course as taught in one time period by one or more instructors, normally but not always for credit. Does not represent either each meeting of the course or the course offering such as Biology 101 taught every semester from 1980 to 2010"		"A course as taught in one time period (such as a semester; although note that a course could consist of only one meeting (teaching session)) by one or more instructors, normally but not always for credit. Does not represent either each meeting of the course or the course offering such as Biology 101 taught every semester from 1980 to 2010"					
 C	vivo:	Credential	Credential	IAO	R	Find in IAO	"An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so."		"An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so."					
 C	vivo:	Database	Database	IAO	R	Find in IAO	A structured file of information or a set of logically related data stored and retrieved using computer-based means		Short Definition is the Medical Subject Heading (MeSH) definition|PubMed					
-C	vivo:	Dataset	Dataset	NA	R	See database	"A named collection of data, usually containing only one type of data"		US Patent Data; US Job Data					
+C	vivo:	Dataset	Dataset	NA	N	See database	"A named collection of data, usually containing only one type of data"		US Patent Data; US Job Data					
 C	vivo:	DateTimeInterval	Date/Time Interval	TIME	R		"a specific period or duration, defined by (optional) start and end date/times."							
 C	vivo:	DateTimeValue	Date/Time Value	TIME	R		A date and/or time							
 C	vivo:	DateTimeValuePrecision	Date/Time Value Precision	TIME	R		Indicates the precision of the value of a DateTimeValue instance.							
@@ -364,9 +364,9 @@ C	vivo:	Exhibit	Exhibit	VIVO	R	More art related classes needed	"The showing of a
 C	vivo:	ExtensionUnit	Extension Unit	ORG	R		"A unit devoted primarily to extension activities, whether for outreach or research.|A unit devoted primarily to extension activities, whether for outreach or research"		Alachua County Extension Office					
 C	vivo:	F1000Link	F1000 Link	VIVO	R				F1000 is a place where faculty go to critique papers published in PubMed. Any given record in F1000 might have anywhere from one to dozens of reviews.					
 C	vivo:	Facility	Facility	VIVO	M	Perhaps ERO	"Something designed, built, installed, etc., to serve a specific function or activity affording a convenience or service."		"Use subclasses of core:Facility subclasses instead of this class if possible|Distinct from the organization that runs it; e.g., a laboratory may be an organization but may be run by another organization and only consist of facilities housing equipment or services. Can be a building or place that provides a particular service or is used for a particular activity. Use the specific Building or Room whenever possible. Short definition from http://dictionary.reference.com/browse/facility."					
-C	vivo:	FacultyAdministrativePosition	Faculty Administrative Position	VIVO 	R		"An academic administrative position (associate dean, etc.) as distinct from a professional administrative position (non-academic)"		That is a position held by an academic faculty member who works for administration.|Associate Dean					
+C	vivo:	FacultyAdministrativePosition	Faculty Administrative Position	VIVO	R		"An academic administrative position (associate dean, etc.) as distinct from a professional administrative position (non-academic)"		That is a position held by an academic faculty member who works for administration.|Associate Dean					
 C	vivo:	FacultyMember	Faculty Member	VIVO	R		A person with at least one academic appointment to a specific faculty of a university or institution of higher learning.							
-C	vivo:	FacultyMentoringRelationship	Faculty Mentoring Relationship	VIVO 	R	See Early Thoughts on Roles and Relationships	An advisory relationship in which one faculty member mentors another faculty member.							
+C	vivo:	FacultyMentoringRelationship	Faculty Mentoring Relationship	VIVO	R	See Early Thoughts on Roles and Relationships	An advisory relationship in which one faculty member mentors another faculty member.							
 C	vivo:	FacultyPosition	Faculty Position	VIVO	R		Academic position in a university or institution		"Professor; Associate Professor; Assistant Professor|Professor, associate professor and assistant professor are common positions for academic faculty."					
 C	vivo:	Foundation	Foundation	ORG	R		"An institution founded with an endowment to support educational, research, artistic or other charitable activities."		The Ford Foundation|Definition take from: http://dictionary.reference.com/browse/foundation.					
 C	vivo:	FundingOrganization	Funding Organization	ORG	R		An organization that provides financial support to individuals or organizations to carry out specified activities.|A defined class of organizations that fund Grants		National Institute of Health (NIH)					
@@ -451,421 +451,421 @@ C	vivosr:	Phase1ClinicalTrial	Phase 1 Clinical Trial	OBI	R		"Phase 1 Clinical Tr
 C	vivosr:	Phase2ClinicalTrial	Phase 2 Clinical Trial	OBI	R		"Phase 2 Clinical Trial|In Phase 2 trials, an experimental study drug or treatment is given to a larger group of people (100-300) to see if it is effective and to further evaluate its safety."							
 C	vivosr:	Phase3ClinicalTrial	Phase 3 Clinical Trial	OBI	R		"Phase 3 Clinical Trial|In Phase 3 trials, an experimental study drug or treatment is given to large groups of people (1,000-3,000) to confirm its effectiveness, monitor side effects, compare it to commonly used treatments, and collect information that will allow the experimental drug or treatment to be used safely.\n"							
 C	vivosr:	Phase4ClinicalTrial	Phase 4 Clinical Trial	OBI	R		"Phase 4 Clinical Trial|In Phase 4 trials, post marketing studies delineate additional information including the drug's or treatment's risks, benefits, and optimal use."							
-D	bibo:	Abstract	abstract						http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
-D	bibo:	Asin	Amazon Standard Identification Number (ASIN)						Amazon standard identification number. Source: http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number.|020530902X					
-D	bibo:	chapter	chapter number											
-D	bibo:	coden	coden						CODEN became particularly common in the scientific community as a citation system for periodicals cited in technical- as well in chemistry-related publications and as a search tool in many bibliographic catalogues.\nDefinition and description came from Wikipedia here: http://en.wikipedia.org/wiki/CODEN 					
-D	bibo:	doi	Digital Object Identifier (DOI)											
-D	bibo:	eanucc13	EAN International-Uniform Code Council (EAN-UCC) 13						Definition source: http://en.wikipedia.org/wiki/European_Article_Numbering-Uniform_Code_Council.\nThe Uniform Code Council (UCC) was the Numbering Organization in the USA to administer and manage the EAN.UCC System. In 2005 the UCC changed its name to GS1 US.					
-D	bibo:	edition	edition											
-D	bibo:	eissn	Electronic International Standard Serial Number (EISSN)						eissn stands for Electronic International Standard Serial Number.  source: http://www.definition-of.com/EISSN					
-D	bibo:	gtin14	Global Trade Item Number (GTIN-14)						http://en.wikipedia.org/wiki/Global_Trade_Item_Number.					
-D	bibo:	identifier	identifier											
-D	bibo:	isbn10	International Standard Book Number (ISBN) 10						http://en.wikipedia.org/wiki/Isbn.					
-D	bibo:	isbn13	International Standard Book Number (ISBN) 13						source: http://en.wikipedia.org/wiki/Isbn.					
-D	bibo:	issn	International Standard Serial Number (ISSN)						source: http://en.wikipedia.org/wiki/Issn					
-D	bibo:	issue	issue						"Bibo has the domain of bibo:issue as the class Issue, but an example on their site uses it with Article, referring to the issue number \4\"""""					
-D	bibo:	lccn	Library of Congress Control Number (LCCN)						Source: http://en.wikipedia.org/wiki/Library_of_Congress_Control_Number.					
-D	bibo:	locator	locator						definition from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
-D	bibo:	number	number						Definition from here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
-D	bibo:	numPages	number of pages											
-D	bibo:	oclcnum	Online Computer Library Center (OCLC) number						http://info-uri.info/registry/OAIHandler?verb=GetRecord&metadataPrefix=reg&identifier=info:oclcnum/. \n\n\nbibo has the domain of this property set to the union of Collection and Document.					
-D	bibo:	pageEnd	end page											
-D	bibo:	pageStart	start page											
-D	bibo:	pmid	PubMed ID						"The PubMed ID (PMID) identifies a citation record (rather than full-text) in the PubMed database. It is not evidence of compliance with the NIH Public Access Policy, because it does not identify a full-text submission of any kind."					
-D	bibo:	prefixName	name prefix						http://dictionary.reference.com/browse/prefix|Mr; Ms; Mrs					
-D	bibo:	section	section						"Di Rado, Alicia. 1995. Trekking through college: Classes explore\nmodern society using the world of Star trek. Los Angeles Times, March\n15, sec. A, p. 3."					
-D	bibo:	shortDescription	short description											
-D	bibo:	sici	Serial Item and Contribution Identifier (SICI)						A sub property of identifier (http://en.wikipedia.org/wiki/SICI).					
-D	bibo:	upc	Universal Product Code (UPC)						source for public description: http://en.wikipedia.org/wiki/Universal_Product_Code.					
-D	bibo:	uri	URI						Definition from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
-D	bibo:	volume	volume											
-D	c4o:	hasGlobalCountDate	has global count date				The date on which the global citation count of the cited entity was recorded from a named bibliographic information source.							
-D	c4o:	hasGlobalCountValue	has global count value				An integer defining the value of the global citation count of a cited entity recorded from a named bibliographic information source on a particular date.							
-D	geo:	AgriculturalArea	agricultural area											
-D	geo:	AgriculturalAreaNotes	agricultural area notes											
-D	geo:	AgriculturalAreaTotal	agriculturalAreaTotal											
-D	geo:	AgriculturalAreaUnit	agricultural area unit											
-D	geo:	AgriculturalAreaYear	agriculturalAreaYear											
-D	geo:	codeAGROVOC	codeAGROVOC											
-D	geo:	codeCurrency	codeCurrency											
-D	geo:	codeDBPediaID	codeDBPediaID											
-D	geo:	codeFAOSTAT	codeFAOSTAT											
-D	geo:	codeFAOTERM	codeFAOTERM											
-D	geo:	codeGAUL	codeGAUL											
-D	geo:	codeISO2	codeISO2											
-D	geo:	codeISO3	codeISO3											
-D	geo:	codeUN	codeUN											
-D	geo:	codeUNDP	codeUNDP											
-D	geo:	countryArea	countryArea											
-D	geo:	countryAreaNotes	country area notes											
-D	geo:	countryAreaTotal	total country area											
-D	geo:	countryAreaUnit	country area unit											
-D	geo:	countryAreaYear	countryAreaYear											
-D	geo:	GDP	GDP											
-D	geo:	GDPNotes	GDP notes											
-D	geo:	GDPTotalInCurrentPrices	GDP total in current prices											
-D	geo:	GDPUnit	GDP unit											
-D	geo:	GDPYear	GDPYear											
-D	geo:	hasCode	has code											
-D	geo:	hasCoordinate	has coordinate											
-D	geo:	hasCurrency	has currency											
-D	geo:	hasListName	has list name											
-D	geo:	hasMaxLatitude	has maximum latitude											
-D	geo:	hasMaxLongitude	has maximum longitude											
-D	geo:	hasMinLatitude	has minimum latitude											
-D	geo:	hasMinLongitude	has minimum longitude											
-D	geo:	hasNationality	has nationality											
-D	geo:	hasOfficialName	has official name											
-D	geo:	hasShortName	has short name											
-D	geo:	hasStatistics	has statistics											
-D	geo:	HDI												
-D	geo:	HDINotes												
-D	geo:	HDITotal												
-D	geo:	HDIUnit												
-D	geo:	HDIYear												
-D	geo:	landArea	land area											
-D	geo:	landAreaNotes	land area notes											
-D	geo:	landAreaTotal	total land area											
-D	geo:	landAreaUnit	land area unit											
-D	geo:	landAreaYear	landAreaYear											
-D	geo:	nameCurrencyAR	nameCurrencyAR											
-D	geo:	nameCurrencyEN	nameCurrencyEN											
-D	geo:	nameCurrencyES	nameCurrencyES											
-D	geo:	nameCurrencyFR	nameCurrencyFR											
-D	geo:	nameCurrencyIT	nameCurrencyIT											
-D	geo:	nameCurrencyRU	nameCurrencyRU											
-D	geo:	nameCurrencyZH	nameCurrencyZH											
-D	geo:	nameListAR	nameListAR											
-D	geo:	nameListEN	nameListEN											
-D	geo:	nameListES	nameListES											
-D	geo:	nameListFR	nameListFR											
-D	geo:	nameListIT	nameListIT											
-D	geo:	nameListRU	nameListRU											
-D	geo:	nameListZH	nameListZH											
-D	geo:	nameOfficialAR	nameOfficialAR											
-D	geo:	nameOfficialEN	nameOfficialEN											
-D	geo:	nameOfficialES	nameOfficialES											
-D	geo:	nameOfficialFR	nameOfficialFR											
-D	geo:	nameOfficialIT	nameOfficialIT											
-D	geo:	nameOfficialRU	nameOfficialRU											
-D	geo:	nameOfficialZH	nameOfficialZH											
-D	geo:	nameShortAR	nameShortAR											
-D	geo:	nameShortEN	nameShortEN											
-D	geo:	nameShortES	nameShortES											
-D	geo:	nameShortFR	nameShortFR											
-D	geo:	nameShortIT	nameShortIT											
-D	geo:	nameShortRU	nameShortRU											
-D	geo:	nameShortZH	nameShortZH											
-D	geo:	nationalityAR	nationalityAR											
-D	geo:	nationalityEN	nationalityEN											
-D	geo:	nationalityES	nationalityES											
-D	geo:	nationalityFR	nationalityFR											
-D	geo:	nationalityIT	nationalityIT											
-D	geo:	nationalityRU	nationalityRU											
-D	geo:	nationalityZH	nationalityZH											
-D	geo:	population	population											
-D	geo:	populationNotes	population notes											
-D	geo:	populationTotal	total population											
-D	geo:	populationUnit	population unit											
-D	geo:	populationYear	populationYear											
-D	geo:	validSince	valid since											
-D	geo:	validUntil	valid until											
-D	obo:	ARG_0000001	is template				The document can be used as a template for the creation of other documents. 							
-D	obo:	ARG_0000015	user-defined tag				A free text field for recording topics which relate to the resource. 							
-D	obo:	ARG_0000172	patient ID											
-D	obo:	ARG_0000197	health care provider ID											
-D	obo:	ARG_2000012	Measurement Label											
-D	obo:	ERO_0000044	inventory number				Inventory identifier for the resource.		An example inventory number can be in the form: 12345	http://purl.obolibrary.org/obo/IAO_0000120	has inventory number	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-D	obo:	ERO_0000045	has restriction				"A restriction on service availability, such as university or consortium affiliation, geographical location, professional certification, or other factors."		Resource is only available to researchers in the department.	http://purl.obolibrary.org/obo/IAO_0000120	has restriction	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-D	obo:	ERO_0000046	has geographic restriction				"Any service limitation tied to geographically-defined areas such as metro areas, counties, states, or regions. "		Resource is only available to researchers in Boston area.	http://purl.obolibrary.org/obo/IAO_0000120	has geographic restriction	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-D	obo:	ERO_0000050	model number				"Instrument model number, which may be a name, number, or both."		ABI 9000	http://purl.obolibrary.org/obo/IAO_0000120	model number	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-D	obo:	ERO_0000054	lab data format				"Current method or software used to inventory a lab's resources. Examples include Excel, index cards, FileMaker, 3-ring binder, etc."		Excel spreadsheet	http://purl.obolibrary.org/obo/IAO_0000120	lab data format	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-D	obo:	ERO_0000072	version				"Software edition, typically a numeral followed by a decimal and another numeral, such as 2.1."		v 1.0	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Melissa Haendel		PERSON: Melissa Haendel
-D	obo:	ERO_0000424	has study population				"Characteristics of the human population being studied.  May include number, demographic or geographic information, inclusion or exclusion criteria, or other descriptive information."		African american study population.	http://purl.obolibrary.org/obo/IAO_0000120	study population	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-D	obo:	ERO_0000774	has eligibility requirement				"Requirements for research opportunity eligibility. Requirements include: coursework, minimum gradepoint average, state residency, under-represented group status, field of study, or matriculation status."		A grade point average above 3.5 is an eligibility requirement.	http://purl.obolibrary.org/obo/IAO_0000120	has eligibility requirement	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-D	vann:	preferredNamespaceUri	preferred namespace URI											
-D	vcard:	AdditionalName	additional name											
-D	vcard:	Anniversary	anniversary											
-D	vcard:	birthdate	birthdate											
-D	vcard:	calendarBusy	calendar busy											
-D	vcard:	calendarLink	calendar link											
-D	vcard:	calendarRequest	calendar request											
-D	vcard:	category	category											
-D	vcard:	country	country											
-D	vcard:	email	email											
-D	vcard:	familyName	has last name											
-D	vcard:	formattedName	has formatted name											
-D	vcard:	gender	gender											
-D	vcard:	geo	geo											
-D	vcard:	givenName	first name											
-D	vcard:	honorificPrefix	honorific prefix											
-D	vcard:	honorificSuffix	honorific suffix											
-D	vcard:	instantMessage	instant message											
-D	vcard:	key	key											
-D	vcard:	language	has language											
-D	vcard:	locality	locality											
-D	vcard:	logo	logo											
-D	vcard:	nickName	nickname											
-D	vcard:	note	note											
-D	vcard:	organizationalUnitName	organizational unit name											
-D	vcard:	organizationName	organization name											
-D	vcard:	photo	photo											
-D	vcard:	postalCode	postal code											
-D	vcard:	productId	product ID											
-D	vcard:	region	region											
-D	vcard:	related	related											
-D	vcard:	revision	revision											
-D	vcard:	role	role											
-D	vcard:	sortAs	sort as											
-D	vcard:	sound	sound											
-D	vcard:	source	source											
-D	vcard:	streetAddress	street address											
-D	vcard:	telephone	Telephone											
-D	vcard:	timeZone	timezone											
-D	vcard:	title	title											
-D	vcard:	uid	uid											
-D	vcard:	url	URL											
-D	vivo:	Abbreviation	abbreviation						B.A.|A short form for an longer title or name.					
-D	vivo:	cclCode	published US Classification Class/subclass (CCL) code											
-D	vivo:	contactInformation	contact information											
-D	vivo:	courseCredits	credits											
-D	vivo:	dateTime	date/time											
-D	vivo:	departmentOrSchool	department or school name within institution											
-D	vivo:	description	description											
-D	vivo:	entryTerm	entry term											
-D	vivo:	eRACommonsId	eRA Commons ID											
-D	vivo:	freetextKeyword	keywords						one keyword or phrase per freetextKeyword assertion|conservation\n\nuse one freetextKeyword assertion for each keyword or phrase.					
-D	vivo:	grantDirectCosts	direct costs											
-D	vivo:	hasMonetaryAmount	has monetary amount											
-D	vivo:	hasValue	has value											
-D	vivo:	hideFromDisplay	hide from display											
-D	vivo:	hrJobTitle	HR job title											
-D	vivo:	iclCode	International Classification (ICL) code						The International classification(s) to which the published application has been assigned.\n					
-D	vivo:	identifier	identifier											
-D	vivo:	isCorrespondingAuthor	Is this person a corresponding author?											
-D	vivo:	licenseNumber	license number											
-D	vivo:	localAwardId	local award ID						"core:localAwardId has a domain of core:Grant, and should be public since that's its public identifier for local use by OSP, accounting, department admins, and the PI "					
-D	vivo:	majorField	major field of degree						Information Science; Computer Science; Anthropology					
-D	vivo:	middleName	middle name or initial											
-D	vivo:	nihmsid	NIH Manuscript Submission System ID											
-D	vivo:	outreachOverview	outreach overview						"Used for a single narrative summary of outreach, typically covering a wide range of activities and time periods; use Outreach Provider Role for information on individual activities|My extension program consists of developing and reporting disease management strategies that are both economically and environmentally sound for fresh market vegetable production. We hope that some of this testing will result in practices adaptable for organic production."					
-D	vivo:	overview	overview				"Short text for presentation describing the agent's purpose, activities, and/or accomplishments."		My research focuses on diseases of pine crops in the southeastern United States.					
-D	vivo:	patentNumber	patent number						source of definition: http://www.uspto.gov/main/glossary/#p . The following site has patent number formats: http://www.uspto.gov/patents/ebc/kindcodesum.jsp .					
-D	vivo:	placeOfPublication	place of publication											
-D	vivo:	pmcid	PubMed Central ID						"   A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available in PubMed Central. The PMCID is issued shortly after the PI or author approves the PubMed Central formatted web version of the submission. "					
-D	vivo:	preferredDisplayOrder	preferred display order											
-D	vivo:	rank	rank						this number indicates a position in a list					
-D	vivo:	reportId	report identifier											
-D	vivo:	researcherId	ISI Researcher ID						RearcherID is a Thomson Reuters project where researchers have a place to manage and share their professional information. It will allow them to solve author identity issues while simultaneously adding dynamic citation metrics and collaboration networks to your personal profile.\nDefinition source: http://isiwebofknowledge.com/researcherid/					
-D	vivo:	researchOverview	research overview						"Used for a single narrative summary of research, typically covering a wide range of activities and time periods; use Researcher Role for information on individual activities"					
-D	vivo:	scopusId	Scopus ID						Home page for Scopus: http://www.scopus.com/home.url					
-D	vivo:	seatingCapacity	seating capacity						definition modified from: source (http://en.wikipedia.org/wiki/Seating_capacity).|55					
-D	vivo:	sponsorAwardId	sponsor award ID						"Has a domain of Grant. There is not a strong reason have this be publically visible, since most users would care more about the name of the sponsoring agency than its identifier, but it does no harm to be public.\n\n\nSee also core:localAwardId.\n"					
-D	vivo:	supplementalInformation	supplemental information											
-D	vivo:	teachingOverview	teaching overview						"Used for a single narrative summary of teaching, typically covering a wide range of courses including for credit and non-credit teaching over multiple semesters; the \teaches\"" property links a person directly with an instance of a Semester Class, typically from an institutional database of record; then use Teacher Role for information about a person's role in non-credit teaching or their specific contribution to individual courses"""					
-D	vivo:	termLabel	term label											
-D	vivo:	termType	term type											
-D	vivo:	totalAwardAmount	total award amount											
-D	vivosr:	irbNumber	Institutional Review Board (IRB) number				"Every clinical trial in the United States must be approved and monitored by an Institutional Review Board (IRB). An IRB is an independent committee of physicians, statisticians, community advocates and others whose objective is to ensure that a clinical trial is ethical and the rights of study participants are protected. "							
-D	vivosr:	nctId	National Clinical Trials (NCT) number				"ClinicalTrials.gov is an ICMJE-acceptable public registry, offering up-to-date information for locating clinical trials for a wide range of diseases and conditions. The U.S. National Institutes of Health (NIH), through its National Library of Medicine (NLM), developed this site in collaboration with the Food and Drug Administration (FDA), as a result of the FDA Modernization Act, which was passed into law in November 1997.   This property should be publically visible since it is one of the principal identifiers in a national registry of clinical trials "							
-D	vivosr:	studyPopulationCount	study population count				number of human participants in the study (trial).							
-O	bibo:	AffirmedBy	affirmed by						The public description was taken from here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
-O	bibo:	Annotates	annotates						The public description source is: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.					
-O	bibo:	citedBy	cited by											
-O	bibo:	cites	cites											
-O	bibo:	court	Court						"Public description take from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.  Bibo considers this property \unstable\""."""					
-O	bibo:	degree	related degree						"The source of the public description and this info is found here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.  Bibo considers this term \unstable\"".  The bibo editorial note is: \""We are not defining, using an enumeration, the range of the bibo:degree to the defined list of bibo:ThesisDegree. We won't do it because we want people to be able to define new degress if needed by some special usecases. Creating such an enumeration would restrict this to happen.\"""""					
-O	bibo:	director	director						Definition take from this site: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .					
-O	bibo:	distributor	distributor											
-O	bibo:	interviewee	interviewee											
-O	bibo:	interviewer	interviewer											
-O	bibo:	issuer	issuer											
-O	bibo:	performer	performer											
-O	bibo:	presentedAt	presented at event											
-O	bibo:	presents	related documents						Public Description from source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  Bibo considers the bibo:presents and the bibo:presentedAt unstable terms.  It also indicates that bibo:presents is a sub-property of event:product.					
-O	bibo:	recipient	recipient											
-O	bibo:	reproducedIn	reproduced in											
-O	bibo:	reversedBy	reversed by						The first sentence of the public description was taken from here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
-O	bibo:	reviewOf	review of						"The bibo:reviewOf public description was found here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  As of 26 May 2010, bibo:reviewOf is used with the class Review, but core:reviewIn doesn't seem to be being used."					
-O	bibo:	status	status						"paraphrased editorial note from the bibo ontology: We are not defining, using an enumeration, the range of the bibo:status to be a defined list of bibo:DocumentStatus. This is because we want people to be able to define new statuses if needed; and creating such an enumeration would prevent this."					
-O	bibo:	subsequentLegalDecision	subsequent legal decision						Public description is from comments of this object property in bibo ontology located here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
-O	bibo:	transcriptOf	transcript of						The bibo:transcriptOf public description was found here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  Bibo considers this term unstable.					
-O	bibo:	translationOf	translation of						Examples shows a book has French language version. Public description source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .					
-O	bibo:	translator	translator											
-O	c4o:	hasGlobalCitationFrequency	has global citation frequency				"A property linking a publication entity to an instance of c40:GlobalCitationCount that specifies how many times a work has been cited by others, according to a particular information source on a particular date."							
-O	c4o:	hasGlobalCountSource	has global count source				A property linking an instance of c40:GlobalCitationCount to the bibliographic information source providing the global citation count information for a particular publication on a particular date.							
-O	cito:	citesAsDataSource	cites as data source											
-O	cito:	isCitedAsDataSourceBy	is cited as data source by											
-O	dcterms:	contributor	contributor											
-O	geo:	hasBorderWith	has border with											
-O	geo:	hasMember	has member country or territory											
-O	geo:	isAdministeredBy	is administered by											
-O	geo:	isInGroup	in geographic grouping											
-O	geo:	isPredecessorOf	is predecessor of											
-O	geo:	isSuccessorOf	is successor of											
-O	isf:	deprecated_op												
-O	obo:	ARG_2000028	has contact info											
-O	obo:	ARG_2000029	contact info for											
-O	obo:	ARG_2000390	context for											
-O	obo:	ARG_2000391	has context											
-O	obo:	ARG_2000399	has contact agent											
-O	obo:	BFO_0000050	part of											
-O	obo:	BFO_0000051	has part											
-O	obo:	BFO_0000054	realized in											
-O	obo:	BFO_0000055	realizes											
-O	obo:	ERO_0000029	provides access to				"Instruments, reagents, organisms, or software for which the service provides access."		An access service that provides access to a flow cytometer.	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000031	uses				Software or protocol used by the laboratory.		Microsoft powerpoint is commonly used in research laboratories to prepare presentations.	http://purl.obolibrary.org/obo/IAO_0000120	uses	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000033	has expertise in technique				Technique in which the person is proficient. 		Brian Druker has expertise in cancer research.	http://purl.obolibrary.org/obo/IAO_0000120	has expertise	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000034	manufacturer				Organization or person that created the resource.		Santa Cruz Biotechnology is the manufacturer of many antibodies.	http://purl.obolibrary.org/obo/IAO_0000120	has manufacturer	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000037	contact or provider for service				Service offered by the organization.		A core lab providing cell sorting to individual labs.	http://purl.obolibrary.org/obo/IAO_0000120	provides services	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000038	specifies the use of				"Instruments, techniques, reagents, organisms, or software that are referenced in a protocol."		A protocol can specify the use of a flow cytometer.	http://purl.obolibrary.org/obo/IAO_0000120	specifies the use of	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000070	used by				Laboratory that uses the protocol or software.		A laboratory uses Microsoft Word.	http://purl.obolibrary.org/obo/IAO_0000120	used by	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000390	service provided by				Organization or laboratory performing the service.		A core laboratory provides a service.	http://purl.obolibrary.org/obo/IAO_0000120	service provided by	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000397	performs technique				Technique carried out by the person or laboratory.		A cancer researcher performs apoptosis assays.	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000398	is performed by				Person or laboratory that performs the service or technique.		Confocal microscopy is performed by a confocal core laboratory.	http://purl.obolibrary.org/obo/IAO_0000120	is performed by	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000460	has documentation				Document that contains relevant resource information.		An antibody has documentation describing attributes of the antibody.	http://purl.obolibrary.org/obo/IAO_0000120	has documentation	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000481	realizes protocol				Protocol used to perform the service.		A sequencing protocol used for next generation sequencing.	http://purl.obolibrary.org/obo/IAO_0000120	realizes protocol	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000482	uses software				Software used to perform the service.		Sequence analysis software.	http://purl.obolibrary.org/obo/IAO_0000120	uses software	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000543	related technique				Method in which the resource can be used.		Flow cytometry is a related technique for a flow cytometer instrument.	http://purl.obolibrary.org/obo/IAO_0000120	related technique	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000572	used to study				Biological process studied in the organism.		A study of hibernation in bears.	http://purl.obolibrary.org/obo/IAO_0000120	used to study	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000775	has residency requirement				US residency status of applicants that may apply for the student research opportunity.		A research opportunity requires applicants to be US citizens.	http://purl.obolibrary.org/obo/IAO_0000120	has residency requirement	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000918	related research project				Research project during which the biological specimen was collected.		A research project studying breast cancer.	http://purl.obolibrary.org/obo/IAO_0000120	related research project	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0000919	related biological specimen				Biological specimen collected as part of the research project.		A breast cancer specimen.	http://purl.obolibrary.org/obo/IAO_0000120	related biological specimen	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0001518	has phase				Phase of a clinical trial to evaluate risk and to clinically evaluate the efficacy of drugs or biologicals.		Phase 1 clinical trial.	http://purl.obolibrary.org/obo/IAO_0000120	has phase	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0001520	performs human study				Human study performed by the organization.		The Jackson Heart Institute performs human studies on heart disease.	http://purl.obolibrary.org/obo/IAO_0000120	performs human study	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	ERO_0001521	performed by organization				Organization that performs the human study.		Jackson State University performs human studies on heart disease.	http://purl.obolibrary.org/obo/IAO_0000120	human study performed by	PERSON: Melissa Haendel		PERSON: Melissa Haendel
-O	obo:	IAO_0000039	has measurement unit label											
-O	obo:	IAO_0000136	is about				is_about is a (currently) primitive relation that relates an information artifact to an entity.	"7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \mentions\"" relation. Weaken the is_about relationship to be primitive. \n\nWe will try to build it back up by elaborating the various subproperties that are more precisely defined.\n\nSome currently missing phenomena that should be considered \""about\"" are predications - \""The only person who knows the answer is sitting beside me\"" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic."""	This document is about information artifacts and their representations	http://purl.obolibrary.org/obo/IAO_0000125		person:Alan Ruttenberg		"Smith, Ceusters, Ruttenberg, 2000 years of philosophy"
-O	obo:	IAO_0000142	mentions											
-O	obo:	IAO_0000221	is quality measurement of				"m is a quality measurement of q at t when\nq is a quality \nthere is a measurement process p that has specified output m, a measurement datum, that is about q"	"This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \measuring\"" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \""Magnitudes\"" a proposal for which we are awaiting details.|From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]\n\nThis one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \""measuring\"" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \""Magnitudes\"" a proposal for which we are awaiting details.\n--\nFrom the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]\n\nunit of measure is a quality, e.g. the length of a ruler.\n\n[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]\n\n[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]\n\na represents b means either a denotes b or a describes\n\ndescribe:\na describes b means a is about b and a allows an inference of at least one quality of b\n\nWe have had a long discussion about denotes versus describes.|From the second meeting on IAO:\n\nAn attempt at defining assay using Barry's \""reliability\"" wording\n\nassay:\nprocess and has_input some material entity\nand has_output some information content entity \nand which is such that instances of this process type reliably generate \noutputs that describes the input.|From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.\n\na is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality.|8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later"""				Alan Ruttenberg		
-O	obo:	IAO_0000417	is quality measured as				inverse of the relation of is quality measurement of	"2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship"		http://purl.obolibrary.org/obo/IAO_0000120		Person:Alan Ruttenberg		
-O	obo:	OBI_0000293	has specified input				A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.	8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works.	see is_input_of example_of_usage		has_specified_input	PERSON: Larry Hunter|PERSON: Bjoern Peters|PERSON: Alan Ruttenberg|PERSON: Melanie Coutot		
-O	obo:	OBI_0000299	has specified output				A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.				has_specified_output	PERSON: Melanie Courtot|PERSON: Bjoern Peters|PERSON: Alan Ruttenberg|PERSON: Larry Hunter		
-O	obo:	OBI_0000304	manufactured by				"c is_manufactured_by o means that there was a process p in which c was built in which a person, or set of people or machines did the work(bore the \Manufacturer Role\"", and those people/and or machines were members or of directed by the organization to do this."""		http://www.affymetrix.com/products/arrays/specific/hgu133.affx is_manufactered_by http://www.affymetrix.com/ (if we decide to use these URIs for the actual entities)		is_manufactured_by	Alan Ruttenberg|Liju Fan	has_manufacturer|has_make	
-O	obo:	OBI_0000312	is specified output of				A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.				is_specified_output_of	PERSON:Bjoern Peters|Alan Ruttenberg		
-O	obo:	OBI_0000417	achieves planned objective				This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.		A cell sorting process achieves the objective specification 'material separation objective'			"BP, AR, PPPB branch"		PPPB branch derived
-O	obo:	OBI_0000643	has grain				"the relation of the cells in the finger of the skin to the finger, in which an indeterminate number of grains are parts of the whole by virtue of being grains in a collective that is part of the whole, and in which removing one granular part does not nec- essarily damage or diminish the whole. Ontological Whether there is a fixed, or nearly fixed number of parts - e.g. fingers of the hand, chambers of the heart, or wheels of a car - such that there can be a notion of a single one being missing, or whether, by contrast, the number of parts is indeterminate - e.g., cells in the skin of the hand, red cells in blood, or rubber molecules in the tread of the tire of the wheel of the car."	"Discussion in Karslruhe with, among others, Alan Rector, Stefan Schulz, Marijke Keet, Melanie Courtot, and Alan Ruttenberg. Definition take from the definition of granular parthood in the cited paper. Needs work to put into standard form"			has grain	PERSON: Alan Ruttenberg		"PAPER: Granularity, scale and collectivity: When size does and does not matter, Alan Rector, Jeremy Rogers, Thomas Bittner, Journal of Biomedical Informatics 39 (2006) 333-349"
-O	obo:	OBI_0000833	objective achieved by				This relation obtains between a a objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.	definition needs clean up to indicate directionality						
-O	obo:	RO_0000052	inheres in					"This relation belongs in BFO/RO, and will be in BFO 2|This clarifies that only specifically dependent continuants inhere in (specifically) one independent continuant over all time. For GDCs, there in implicitly inherence to all the independent continuants in which the concretizations inhere. Should add a 'cardinality 1' restriction to the definition of specifically dependent continuant."						
-O	obo:	RO_0000053	bearer of											
-O	obo:	RO_0000056	participates in											
-O	obo:	RO_0000057	has participant											
-O	obo:	RO_0001000	derives from											
-O	obo:	RO_0001015	location of											
-O	obo:	RO_0001018	contained in											
-O	obo:	RO_0001019	contains											
-O	obo:	RO_0001025	located in											
-O	obo:	RO_0002220	adjacent to											
-O	obo:	RO_0002233	has input											
-O	obo:	RO_0002234	has output											
-O	obo:	RO_0002350	member of											
-O	obo:	RO_0002351	has member											
-O	obo:	RO_0002353	output of											
-O	obo:	RO_0003000	produces				"a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix."					Melissa Haendel		
-O	obo:	RO_0003001	produced by											
-O	owl:	DeprecatedProperty	deprecated property											
-O	owl:	sameAs	same as											
-O	owl:	topObjectProperty												
-O	ro:	has_agent	has agent											
-O	skos4:	broader	broader concept				Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .							
-O	skos4:	narrower	narrower concept				Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .							
-O	skos4:	related	related concept											
-O	swo:	SWO_0000740	implements											
-O	swo:	SWO_0000741	is encoded in											
-O	vcard:	hasAddress	has address											
-O	vcard:	hasCalendarLink	has calendar link											
-O	vcard:	hasCalendarRequest	has calendar request											
-O	vcard:	hasCalenderBusy	has calendar busy											
-O	vcard:	hasCategory	has category											
-O	vcard:	hasEmail	has email											
-O	vcard:	hasFormattedName	has formatted name											
-O	vcard:	hasGeo	has geo											
-O	vcard:	hasInstantMessage	has messaging											
-O	vcard:	hasKey	has key											
-O	vcard:	hasLanguage	has language											
-O	vcard:	hasLogo	has logo											
-O	vcard:	hasMember	member											
-O	vcard:	hasName	has name											
-O	vcard:	hasNickname	has nickname											
-O	vcard:	hasNote	has note											
-O	vcard:	hasOrganizationalUnitName	has organizational unit name											
-O	vcard:	hasOrganizationName	has organization name											
-O	vcard:	hasPhoto	has photo											
-O	vcard:	hasRelated	has related											
-O	vcard:	hasSound	has sound											
-O	vcard:	hasTelephone	has telephone											
-O	vcard:	hasTimeZone	has time zone											
-O	vcard:	hasTitle	has title											
-O	vcard:	hasURL	has URL											
-O	vivo:	AffiliatedOrganization	has affiliated organization											
-O	vivo:	AssignedBy	assigned by				Relates a Relationship (as a predicate or n-ary relation over one or more Thing) to an Agent that defined or instantiated the predicate instance. 							
-O	vivo:	Assignee	assignee											
-O	vivo:	AssigneeFor	assignee for patent											
-O	vivo:	Assigns	assigns											
-O	vivo:	conceptAssociatedWith	concept for											
-O	vivo:	confirmedOrcidId	Orcid ID confirmation											
-O	vivo:	contributingRole	contributor											
-O	vivo:	dateFiled	date filed											
-O	vivo:	dateIssued	date issued											
-O	vivo:	dateTimeInterval	date/time interval											
-O	vivo:	dateTimePrecision	date/time precision											
-O	vivo:	dateTimeValue	date/time value											
-O	vivo:	degreeCandidacy	degree candidacy											
-O	vivo:	distributes	distributes											
-O	vivo:	distributesFundingFrom	distributes funding from											
-O	vivo:	eligibleFor	credential eligibility attained											
-O	vivo:	end	end											
-O	vivo:	equipmentFor	equipment for											
-O	vivo:	expirationDate	expiration date											
-O	vivo:	facilityFor												
-O	vivo:	featuredIn	featured in											
-O	vivo:	features	features						This is done through a restriction on the foaf:Person class.					
-O	vivo:	fundingVehicleFor	provides funding for											
-O	vivo:	geographicFocus	geographic focus											
-O	vivo:	geographicFocusOf	geographic focus of											
-O	vivo:	governingAuthorityFor	governing authority for											
-O	vivo:	grantSubcontractedThrough	subcontracted through											
-O	vivo:	hasAssociatedConcept	associated concept											
-O	vivo:	hasCollaborator	has collaborator											
-O	vivo:	hasEquipment	has equipment											
-O	vivo:	hasFacility	has facility											
-O	vivo:	hasFundingVehicle	funding provided via											
-O	vivo:	hasGoverningAuthority	governing authority											
-O	vivo:	hasPredecessorOrganization	predecessor organization											
-O	vivo:	hasPrerequisite	has prerequisite											
-O	vivo:	hasProceedings	proceedings											
-O	vivo:	hasPublicationVenue	published in											
-O	vivo:	hasResearchArea	research areas											
-O	vivo:	hasSubjectArea	has subject area											
-O	vivo:	hasSuccessorOrganization	successor organization											
-O	vivo:	hasTranslation	has translation						Examples shows a book has French language version. Public description source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .					
-O	vivo:	informationResourceSupportedBy	supported by											
-O	vivo:	offeredBy	offered by											
-O	vivo:	offers	offers											
-O	vivo:	orcidId	ORCID iD						This is now an object property where the object value is a resource of the form <http://orcid.org/NNNN-NNNN-NNNN-NNNN>.  This is to support connecting VIVO and ORCID in the linked data web.   Note: a person can have multiple ORCID iDs.					
-O	vivo:	prerequisiteFor	prerequisite for											
-O	vivo:	proceedingsOf	proceedings of											
-O	vivo:	providesFundingThrough	provides funding through						"For example, National Science Foundation providesFundingThrough Graduate Research Fellowship Program; National Institutes of Health providesFundingThrough National Center for Research Resources. "					
-O	vivo:	publicationVenueFor	publication venue for											
-O	vivo:	publisher	publisher						Public Definition source (http://www.answers.com/topic/publisher).					
-O	vivo:	publisherOf	publisher of						Public Definition source (http://www.answers.com/topic/publisher).					
-O	vivo:	relatedBy	related by				Relates a Thing to a Relationship as a Thing that is somehow related to other Thing in the same Relationship instance. A Relationship instnace is a predicate over Thing and is created by an Agent.							
-O	vivo:	relates	relates				Relates a Relationship instance to the one or more Thing of the Relationship. There is a separate property (assigned by) to relate to the Agent that defines the Relationship.							
-O	vivo:	reproduces	reproduces											
-O	vivo:	researchAreaOf	research area of											
-O	vivo:	reviewedIn	reviewed in											
-O	vivo:	roleContributesTo	contributes to											
-O	vivo:	sponsoredBy	award sponsored by											
-O	vivo:	sponsors	sponsors award or honor											
-O	vivo:	start	start											
-O	vivo:	subcontractsGrant	subcontracts grant											
-O	vivo:	subjectAreaOf	subject area of											
-O	vivo:	supportedBy	supported by											
-O	vivo:	supportedInformationResource	supported publications or other works											
-O	vivo:	supports	supports											
-O	vivo:	translatorOf	translator of											
-O	vivo:	validIn	valid in											
-O	vivosr:	AccessProvidedBy	access provided by											
-O	vivosr:	documentationFor	documentation for project or resource											
-O	vivosr:	protocolRealizedBy	protocol realized by											
+D	bibo:	Abstract	abstract	VIVO	N	Text is an abstract.  Document has part.			http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
+D	bibo:	Asin	Amazon Standard Identification Number (ASIN)	VIVO	C	Becomes a Class			Amazon standard identification number. Source: http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number.|020530902X					
+D	bibo:	chapter	chapter number	VIVO	R									
+D	bibo:	coden	coden	VIVO	C	Becomes a class			CODEN became particularly common in the scientific community as a citation system for periodicals cited in technical- as well in chemistry-related publications and as a search tool in many bibliographic catalogues.\nDefinition and description came from Wikipedia here: http://en.wikipedia.org/wiki/CODEN 					
+D	bibo:	doi	Digital Object Identifier (DOI)	VIVO	C	Becomes a class								
+D	bibo:	eanucc13	EAN International-Uniform Code Council (EAN-UCC) 13	VIVO	C	Becomes a class			Definition source: http://en.wikipedia.org/wiki/European_Article_Numbering-Uniform_Code_Council.\nThe Uniform Code Council (UCC) was the Numbering Organization in the USA to administer and manage the EAN.UCC System. In 2005 the UCC changed its name to GS1 US.					
+D	bibo:	edition	edition	VIVO	R									
+D	bibo:	eissn	Electronic International Standard Serial Number (EISSN)	VIVO	C	Becomes a class			eissn stands for Electronic International Standard Serial Number.  source: http://www.definition-of.com/EISSN					
+D	bibo:	gtin14	Global Trade Item Number (GTIN-14)	VIVO	C	Becomes a class			http://en.wikipedia.org/wiki/Global_Trade_Item_Number.					
+D	bibo:	identifier	identifier	VIVO	N									
+D	bibo:	isbn10	International Standard Book Number (ISBN) 10	VIVO	C	Becomes a class			http://en.wikipedia.org/wiki/Isbn.					
+D	bibo:	isbn13	International Standard Book Number (ISBN) 13	VIVO	C	Becomes a class			source: http://en.wikipedia.org/wiki/Isbn.					
+D	bibo:	issn	International Standard Serial Number (ISSN)	VIVO	C	Becomes a class			source: http://en.wikipedia.org/wiki/Issn					
+D	bibo:	issue	issue	VIVO	C	Becomes a class.			"Bibo has the domain of bibo:issue as the class Issue, but an example on their site uses it with Article, referring to the issue number \4\"""""					
+D	bibo:	lccn	Library of Congress Control Number (LCCN)	VIVO	C	Becomes a class			Source: http://en.wikipedia.org/wiki/Library_of_Congress_Control_Number.					
+D	bibo:	locator	locator	VIVO	C	Becomes a class			definition from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
+D	bibo:	number	number	VIVO	C	Issue number			Definition from here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
+D	bibo:	numPages	number of pages	VIVO	R									
+D	bibo:	oclcnum	Online Computer Library Center (OCLC) number	VIVO	C				http://info-uri.info/registry/OAIHandler?verb=GetRecord&metadataPrefix=reg&identifier=info:oclcnum/. \n\n\nbibo has the domain of this property set to the union of Collection and Document.					
+D	bibo:	pageEnd	end page	VIVO	R									
+D	bibo:	pageStart	start page	VIVO	R									
+D	bibo:	pmid	PubMed ID	VIVO	C	Becomes a class			"The PubMed ID (PMID) identifies a citation record (rather than full-text) in the PubMed database. It is not evidence of compliance with the NIH Public Access Policy, because it does not identify a full-text submission of any kind."					
+D	bibo:	prefixName	name prefix	VIVO	R	Needs analysis  			http://dictionary.reference.com/browse/prefix|Mr; Ms; Mrs					
+D	bibo:	section	section	VIVO	R	As in section of a newspaper			"Di Rado, Alicia. 1995. Trekking through college: Classes explore\nmodern society using the world of Star trek. Los Angeles Times, March\n15, sec. A, p. 3."					
+D	bibo:	shortDescription	short description	VIVO	M	Not sure this is needed								
+D	bibo:	sici	Serial Item and Contribution Identifier (SICI)	VIVO	C	Becomes a class			A sub property of identifier (http://en.wikipedia.org/wiki/SICI).					
+D	bibo:	upc	Universal Product Code (UPC)	VIVO	C	Becomes a class			source for public description: http://en.wikipedia.org/wiki/Universal_Product_Code.					
+D	bibo:	uri	URI	VIVO	R	Needs analysis  			Definition from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
+D	bibo:	volume	volume	VIVO	C	Becomes a class.  A volume is a thing.								
+D	c4o:	hasGlobalCountDate	has global count date	VIVO	R		The date on which the global citation count of the cited entity was recorded from a named bibliographic information source.							
+D	c4o:	hasGlobalCountValue	has global count value	VIVO	R	Needs analysis -- semantics for time instants	An integer defining the value of the global citation count of a cited entity recorded from a named bibliographic information source on a particular date.							
+D	geo:	AgriculturalArea	agricultural area	GAZ	N	Not in domain								
+D	geo:	AgriculturalAreaNotes	agricultural area notes	GAZ	N	Not in domain								
+D	geo:	AgriculturalAreaTotal	agriculturalAreaTotal	GAZ	N	Not in domain								
+D	geo:	AgriculturalAreaUnit	agricultural area unit	GAZ	N	Not in domain								
+D	geo:	AgriculturalAreaYear	agriculturalAreaYear	GAZ	N	Not in domain								
+D	geo:	codeAGROVOC	codeAGROVOC	GAZ	N	Not in domain								
+D	geo:	codeCurrency	codeCurrency	GAZ	N	Not in domain								
+D	geo:	codeDBPediaID	codeDBPediaID	GAZ	N	Not in domain								
+D	geo:	codeFAOSTAT	codeFAOSTAT	GAZ	N	Not in domain								
+D	geo:	codeFAOTERM	codeFAOTERM	GAZ	N	Not in domain								
+D	geo:	codeGAUL	codeGAUL	GAZ	N	Not in domain								
+D	geo:	codeISO2	codeISO2	GAZ	N	Not in domain								
+D	geo:	codeISO3	codeISO3	GAZ	N	Not in domain								
+D	geo:	codeUN	codeUN	GAZ	N	Not in domain								
+D	geo:	codeUNDP	codeUNDP	GAZ	N	Not in domain								
+D	geo:	countryArea	countryArea	GAZ	N	Not in domain								
+D	geo:	countryAreaNotes	country area notes	GAZ	N	Not in domain								
+D	geo:	countryAreaTotal	total country area	GAZ	N	Not in domain								
+D	geo:	countryAreaUnit	country area unit	GAZ	N	Not in domain								
+D	geo:	countryAreaYear	countryAreaYear	GAZ	N	Not in domain								
+D	geo:	GDP	GDP	GAZ	N	Not in domain								
+D	geo:	GDPNotes	GDP notes	GAZ	N	Not in domain								
+D	geo:	GDPTotalInCurrentPrices	GDP total in current prices	GAZ	N	Not in domain								
+D	geo:	GDPUnit	GDP unit	GAZ	N	Not in domain								
+D	geo:	GDPYear	GDPYear	GAZ	N	Not in domain								
+D	geo:	hasCode	has code	GAZ	N	Not in domain								
+D	geo:	hasCoordinate	has coordinate	GAZ	N	Not in domain								
+D	geo:	hasCurrency	has currency	GAZ	N	Not in domain								
+D	geo:	hasListName	has list name	GAZ	N	Not in domain								
+D	geo:	hasMaxLatitude	has maximum latitude	GAZ	N	Not in domain								
+D	geo:	hasMaxLongitude	has maximum longitude	GAZ	N	Not in domain								
+D	geo:	hasMinLatitude	has minimum latitude	GAZ	N	Not in domain								
+D	geo:	hasMinLongitude	has minimum longitude	GAZ	N	Not in domain								
+D	geo:	hasNationality	has nationality	GAZ	N	Not in domain								
+D	geo:	hasOfficialName	has official name	GAZ	R									
+D	geo:	hasShortName	has short name	GAZ	R									
+D	geo:	hasStatistics	has statistics	GAZ	N	Not in domain								
+D	geo:	HDI		GAZ	N	Not in domain								
+D	geo:	HDINotes		GAZ	N	Not in domain								
+D	geo:	HDITotal		GAZ	N	Not in domain								
+D	geo:	HDIUnit		GAZ	N	Not in domain								
+D	geo:	HDIYear		GAZ	N	Not in domain								
+D	geo:	landArea	land area	GAZ	N	Not in domain								
+D	geo:	landAreaNotes	land area notes	GAZ	N	Not in domain								
+D	geo:	landAreaTotal	total land area	GAZ	N	Not in domain								
+D	geo:	landAreaUnit	land area unit	GAZ	N	Not in domain								
+D	geo:	landAreaYear	landAreaYear	GAZ	N	Not in domain								
+D	geo:	nameCurrencyAR	nameCurrencyAR	GAZ	N	Not in domain								
+D	geo:	nameCurrencyEN	nameCurrencyEN	GAZ	N	Not in domain								
+D	geo:	nameCurrencyES	nameCurrencyES	GAZ	N	Not in domain								
+D	geo:	nameCurrencyFR	nameCurrencyFR	GAZ	N	Not in domain								
+D	geo:	nameCurrencyIT	nameCurrencyIT	GAZ	N	Not in domain								
+D	geo:	nameCurrencyRU	nameCurrencyRU	GAZ	N	Not in domain								
+D	geo:	nameCurrencyZH	nameCurrencyZH	GAZ	N	Not in domain								
+D	geo:	nameListAR	nameListAR	GAZ	N	Not in domain								
+D	geo:	nameListEN	nameListEN	GAZ	N	Not in domain								
+D	geo:	nameListES	nameListES	GAZ	N	Not in domain								
+D	geo:	nameListFR	nameListFR	GAZ	N	Not in domain								
+D	geo:	nameListIT	nameListIT	GAZ	N	Not in domain								
+D	geo:	nameListRU	nameListRU	GAZ	N	Not in domain								
+D	geo:	nameListZH	nameListZH	GAZ	N	Not in domain								
+D	geo:	nameOfficialAR	nameOfficialAR	GAZ	N	Not in domain								
+D	geo:	nameOfficialEN	nameOfficialEN	GAZ	N	Not in domain								
+D	geo:	nameOfficialES	nameOfficialES	GAZ	N	Not in domain								
+D	geo:	nameOfficialFR	nameOfficialFR	GAZ	N	Not in domain								
+D	geo:	nameOfficialIT	nameOfficialIT	GAZ	N	Not in domain								
+D	geo:	nameOfficialRU	nameOfficialRU	GAZ	N	Not in domain								
+D	geo:	nameOfficialZH	nameOfficialZH	GAZ	N	Not in domain								
+D	geo:	nameShortAR	nameShortAR	GAZ	N	Not in domain								
+D	geo:	nameShortEN	nameShortEN	GAZ	N	Not in domain								
+D	geo:	nameShortES	nameShortES	GAZ	N	Not in domain								
+D	geo:	nameShortFR	nameShortFR	GAZ	N	Not in domain								
+D	geo:	nameShortIT	nameShortIT	GAZ	N	Not in domain								
+D	geo:	nameShortRU	nameShortRU	GAZ	N	Not in domain								
+D	geo:	nameShortZH	nameShortZH	GAZ	N	Not in domain								
+D	geo:	nationalityAR	nationalityAR	GAZ	N	Not in domain								
+D	geo:	nationalityEN	nationalityEN	GAZ	N	Not in domain								
+D	geo:	nationalityES	nationalityES	GAZ	N	Not in domain								
+D	geo:	nationalityFR	nationalityFR	GAZ	N	Not in domain								
+D	geo:	nationalityIT	nationalityIT	GAZ	N	Not in domain								
+D	geo:	nationalityRU	nationalityRU	GAZ	N	Not in domain								
+D	geo:	nationalityZH	nationalityZH	GAZ	N	Not in domain								
+D	geo:	population	population	GAZ	N	Not in domain								
+D	geo:	populationNotes	population notes	GAZ	N	Not in domain								
+D	geo:	populationTotal	total population	GAZ	N	Not in domain								
+D	geo:	populationUnit	population unit	GAZ	N	Not in domain								
+D	geo:	populationYear	populationYear	GAZ	N	Not in domain								
+D	geo:	validSince	valid since	GAZ	N	Not in domain								
+D	geo:	validUntil	valid until	GAZ	N	Not in domain								
+D	obo:	ARG_0000001	is template	NA	N	Not in domain	The document can be used as a template for the creation of other documents. 							
+D	obo:	ARG_0000015	user-defined tag	VIVO	M	Possible	A free text field for recording topics which relate to the resource. 							
+D	obo:	ARG_0000172	patient ID	NA	N	Not in domain								
+D	obo:	ARG_0000197	health care provider ID	VIVO	C	Becomes a class.								
+D	obo:	ARG_2000012	Measurement Label	NA	N	Not in domain								
+D	obo:	ERO_0000044	inventory number	NA	N	Not in domain	Inventory identifier for the resource.		An example inventory number can be in the form: 12345	http://purl.obolibrary.org/obo/IAO_0000120	has inventory number	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+D	obo:	ERO_0000045	has restriction	NA	N	Not in domain	"A restriction on service availability, such as university or consortium affiliation, geographical location, professional certification, or other factors."		Resource is only available to researchers in the department.	http://purl.obolibrary.org/obo/IAO_0000120	has restriction	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+D	obo:	ERO_0000046	has geographic restriction	NA	N	Not in domain	"Any service limitation tied to geographically-defined areas such as metro areas, counties, states, or regions. "		Resource is only available to researchers in Boston area.	http://purl.obolibrary.org/obo/IAO_0000120	has geographic restriction	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+D	obo:	ERO_0000050	model number	NA	N	Not in domain	"Instrument model number, which may be a name, number, or both."		ABI 9000	http://purl.obolibrary.org/obo/IAO_0000120	model number	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+D	obo:	ERO_0000054	lab data format	NA	N	Not in domain	"Current method or software used to inventory a lab's resources. Examples include Excel, index cards, FileMaker, 3-ring binder, etc."		Excel spreadsheet	http://purl.obolibrary.org/obo/IAO_0000120	lab data format	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+D	obo:	ERO_0000072	version	SWO	R	See SWO	"Software edition, typically a numeral followed by a decimal and another numeral, such as 2.1."		v 1.0	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Melissa Haendel		PERSON: Melissa Haendel
+D	obo:	ERO_0000424	has study population	OBI	R	See OBI	"Characteristics of the human population being studied.  May include number, demographic or geographic information, inclusion or exclusion criteria, or other descriptive information."		African american study population.	http://purl.obolibrary.org/obo/IAO_0000120	study population	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+D	obo:	ERO_0000774	has eligibility requirement	OBI	R	See OBI	"Requirements for research opportunity eligibility. Requirements include: coursework, minimum gradepoint average, state residency, under-represented group status, field of study, or matriculation status."		A grade point average above 3.5 is an eligibility requirement.	http://purl.obolibrary.org/obo/IAO_0000120	has eligibility requirement	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+D	vann:	preferredNamespaceUri	preferred namespace URI	NA	N	Not in domain								
+D	vcard:	AdditionalName	additional name	VIVO	R	Often confused with middle name								
+D	vcard:	Anniversary	anniversary	NA	N	Not in domain								
+D	vcard:	birthdate	birthdate	NA	N	Not in domain								
+D	vcard:	calendarBusy	calendar busy	NA	N	Not in domain								
+D	vcard:	calendarLink	calendar link	NA	N	Not in domain								
+D	vcard:	calendarRequest	calendar request	NA	N	Not in domain								
+D	vcard:	category	category	NA	N	Not in domain								
+D	vcard:	country	country	NA	N	Not in domain								
+D	vcard:	email	email	IAO	N	Redundant								
+D	vcard:	familyName	has last name	VIVO	R	VIVO will have name parts								
+D	vcard:	formattedName	has formatted name	VIVO	R	VIVO will have name parts								
+D	vcard:	gender	gender	NA	N	Not in domain								
+D	vcard:	geo	geo	NA	N	Not in domain								
+D	vcard:	givenName	first name	VIVO	R	VIVO will have name parts								
+D	vcard:	honorificPrefix	honorific prefix	VIVO	R	VIVO will have name parts								
+D	vcard:	honorificSuffix	honorific suffix	VIVO	R	VIVO will have name parts								
+D	vcard:	instantMessage	instant message	NA	D	Not in domain								
+D	vcard:	key	key	NA	D	Not in domain								
+D	vcard:	language	has language	VIVO	D									
+D	vcard:	locality	locality	VIVO	D									
+D	vcard:	logo	logo	VIVO	D									
+D	vcard:	nickName	nickname	VIVO	D									
+D	vcard:	note	note	NA	D	Not in domain								
+D	vcard:	organizationalUnitName	organizational unit name	ORG	D									
+D	vcard:	organizationName	organization name	ORG	D									
+D	vcard:	photo	photo	VIVO	D									
+D	vcard:	postalCode	postal code	VIVO	D									
+D	vcard:	productId	product ID	NA	D	Not in domain								
+D	vcard:	region	region	GAZ	D									
+D	vcard:	related	related	NA	D	Not in domain								
+D	vcard:	revision	revision	NA	D	Not in domain								
+D	vcard:	role	role	NA	D	Not in domain								
+D	vcard:	sortAs	sort as	NA	D	Not in domain								
+D	vcard:	sound	sound	NA	D	Not in domain								
+D	vcard:	source	source	NA	D	Not in domain								
+D	vcard:	streetAddress	street address	GAZ	D									
+D	vcard:	telephone	Telephone	VIVO	D	VIVO will have a way to represent phone numbers								
+D	vcard:	timeZone	timezone	TIME	D	VIVO will have a way to represent time								
+D	vcard:	title	title	VIVO	D									
+D	vcard:	uid	uid	VIVO	C									
+D	vcard:	url	URL	VIVO	D									
+D	vivo:	Abbreviation	abbreviation	ADO	R				B.A.|A short form for an longer title or name.					
+D	vivo:	cclCode	published US Classification Class/subclass (CCL) code	VIVO	C									
+D	vivo:	contactInformation	contact information	VIVO	U	Redundant								
+D	vivo:	courseCredits	credits	VIVO	R	Is this in the domain?								
+D	vivo:	dateTime	date/time	VIVO	R	Needs analysis -- semantics for time instants								
+D	vivo:	departmentOrSchool	department or school name within institution	VIVO	U	name of school.  Use rdfs:label								
+D	vivo:	description	description	VIVO	U	Not defined								
+D	vivo:	entryTerm	entry term	VIVO	U	Not defined								
+D	vivo:	eRACommonsId	eRA Commons ID	VIVO	C									
+D	vivo:	freetextKeyword	keywords	VIVO	U	See ARG_0000015			one keyword or phrase per freetextKeyword assertion|conservation\n\nuse one freetextKeyword assertion for each keyword or phrase.					
+D	vivo:	grantDirectCosts	direct costs	RAO	R									
+D	vivo:	hasMonetaryAmount	has monetary amount	IAO	R	How is this done in IAO								
+D	vivo:	hasValue	has value	IAO	R	How is this done in IAO								
+D	vivo:	hideFromDisplay	hide from display	NA	N	Not in domain								
+D	vivo:	hrJobTitle	HR job title	VIVO	R									
+D	vivo:	iclCode	International Classification (ICL) code	VIVO	C				The International classification(s) to which the published application has been assigned.\n					
+D	vivo:	identifier	identifier	VIVO	C	Becomes a class								
+D	vivo:	isCorrespondingAuthor	Is this person a corresponding author?	VIVO	R	Is this a quality?								
+D	vivo:	licenseNumber	license number	VIVO	C									
+D	vivo:	localAwardId	local award ID	RAO	R				"core:localAwardId has a domain of core:Grant, and should be public since that's its public identifier for local use by OSP, accounting, department admins, and the PI "					
+D	vivo:	majorField	major field of degree	ADO	R	See Early Thoughts on Academic Degrees			Information Science; Computer Science; Anthropology					
+D	vivo:	middleName	middle name or initial	VIVO	R									
+D	vivo:	nihmsid	NIH Manuscript Submission System ID	VIVO	C									
+D	vivo:	outreachOverview	outreach overview	VIVO	U				"Used for a single narrative summary of outreach, typically covering a wide range of activities and time periods; use Outreach Provider Role for information on individual activities|My extension program consists of developing and reporting disease management strategies that are both economically and environmentally sound for fresh market vegetable production. We hope that some of this testing will result in practices adaptable for organic production."					
+D	vivo:	overview	overview	VIVO	M	Can description suffice	"Short text for presentation describing the agent's purpose, activities, and/or accomplishments."		My research focuses on diseases of pine crops in the southeastern United States.					
+D	vivo:	patentNumber	patent number	VIVO	C				source of definition: http://www.uspto.gov/main/glossary/#p . The following site has patent number formats: http://www.uspto.gov/patents/ebc/kindcodesum.jsp .					
+D	vivo:	placeOfPublication	place of publication	VIVO	R									
+D	vivo:	pmcid	PubMed Central ID	VIVO	C				"   A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available in PubMed Central. The PMCID is issued shortly after the PI or author approves the PubMed Central formatted web version of the submission. "					
+D	vivo:	preferredDisplayOrder	preferred display order	NA	N	Not in domain								
+D	vivo:	rank	rank	VIVO	R	Needs analysis.  Is there a standard way to do this?			this number indicates a position in a list					
+D	vivo:	reportId	report identifier	VIVO	U									
+D	vivo:	researcherId	ISI Researcher ID	VIVO	C				RearcherID is a Thomson Reuters project where researchers have a place to manage and share their professional information. It will allow them to solve author identity issues while simultaneously adding dynamic citation metrics and collaboration networks to your personal profile.\nDefinition source: http://isiwebofknowledge.com/researcherid/					
+D	vivo:	researchOverview	research overview	VIVO	U				"Used for a single narrative summary of research, typically covering a wide range of activities and time periods; use Researcher Role for information on individual activities"					
+D	vivo:	scopusId	Scopus ID	VIVO	C				Home page for Scopus: http://www.scopus.com/home.url					
+D	vivo:	seatingCapacity	seating capacity	VIVO	M	In domain?			definition modified from: source (http://en.wikipedia.org/wiki/Seating_capacity).|55					
+D	vivo:	sponsorAwardId	sponsor award ID	VIVO	C				"Has a domain of Grant. There is not a strong reason have this be publically visible, since most users would care more about the name of the sponsoring agency than its identifier, but it does no harm to be public.\n\n\nSee also core:localAwardId.\n"					
+D	vivo:	supplementalInformation	supplemental information	VIVO	U									
+D	vivo:	teachingOverview	teaching overview	VIVO	U				"Used for a single narrative summary of teaching, typically covering a wide range of courses including for credit and non-credit teaching over multiple semesters; the \teaches\"" property links a person directly with an instance of a Semester Class, typically from an institutional database of record; then use Teacher Role for information about a person's role in non-credit teaching or their specific contribution to individual courses"""					
+D	vivo:	termLabel	term label	VIVO	U									
+D	vivo:	termType	term type	VIVO	U									
+D	vivo:	totalAwardAmount	total award amount	RAO	R									
+D	vivosr:	irbNumber	Institutional Review Board (IRB) number	NA	N	Not in domain	"Every clinical trial in the United States must be approved and monitored by an Institutional Review Board (IRB). An IRB is an independent committee of physicians, statisticians, community advocates and others whose objective is to ensure that a clinical trial is ethical and the rights of study participants are protected. "							
+D	vivosr:	nctId	National Clinical Trials (NCT) number	VIVO	C	Becomes a class	"ClinicalTrials.gov is an ICMJE-acceptable public registry, offering up-to-date information for locating clinical trials for a wide range of diseases and conditions. The U.S. National Institutes of Health (NIH), through its National Library of Medicine (NLM), developed this site in collaboration with the Food and Drug Administration (FDA), as a result of the FDA Modernization Act, which was passed into law in November 1997.   This property should be publically visible since it is one of the principal identifiers in a national registry of clinical trials "							
+D	vivosr:	studyPopulationCount	study population count	NA	N	Not in domain	number of human participants in the study (trial).							
+O	bibo:	AffirmedBy	affirmed by	VIVO	R				The public description was taken from here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
+O	bibo:	Annotates	annotates	VIVO	R				The public description source is: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.					
+O	bibo:	citedBy	cited by	VIVO	R	inferred								
+O	bibo:	cites	cites	VIVO	R									
+O	bibo:	court	Court	VIVO	R				"Public description take from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.  Bibo considers this property \unstable\""."""					
+O	bibo:	degree	related degree	ADO	R				"The source of the public description and this info is found here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.  Bibo considers this term \unstable\"".  The bibo editorial note is: \""We are not defining, using an enumeration, the range of the bibo:degree to the defined list of bibo:ThesisDegree. We won't do it because we want people to be able to define new degress if needed by some special usecases. Creating such an enumeration would restrict this to happen.\"""""					
+O	bibo:	director	director	VIVO	C	Director is a role			Definition take from this site: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .					
+O	bibo:	distributor	distributor	VIVO	C	Distributor is a role								
+O	bibo:	interviewee	interviewee	VIVO	C	Interviewee is a role								
+O	bibo:	interviewer	interviewer	VIVO	C	Interviewee is a role								
+O	bibo:	issuer	issuer	VIVO	C	Issuer is a role								
+O	bibo:	performer	performer	VIVO	C	Performer is a role								
+O	bibo:	presentedAt	presented at event	VIVO	R	Needs analysis of events								
+O	bibo:	presents	related documents	VIVO	R	inverse (and error in label?)			Public Description from source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  Bibo considers the bibo:presents and the bibo:presentedAt unstable terms.  It also indicates that bibo:presents is a sub-property of event:product.					
+O	bibo:	recipient	recipient	VIVO	C	Recipient is a role								
+O	bibo:	reproducedIn	reproduced in	VIVO	R									
+O	bibo:	reversedBy	reversed by	VIVO	R				The first sentence of the public description was taken from here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
+O	bibo:	reviewOf	review of	VIVO	R				"The bibo:reviewOf public description was found here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  As of 26 May 2010, bibo:reviewOf is used with the class Review, but core:reviewIn doesn't seem to be being used."					
+O	bibo:	status	status	VIVO	R	Replace with qualities?			"paraphrased editorial note from the bibo ontology: We are not defining, using an enumeration, the range of the bibo:status to be a defined list of bibo:DocumentStatus. This is because we want people to be able to define new statuses if needed; and creating such an enumeration would prevent this."					
+O	bibo:	subsequentLegalDecision	subsequent legal decision	VIVO	R	Is this needed in our domain?			Public description is from comments of this object property in bibo ontology located here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html					
+O	bibo:	transcriptOf	transcript of	VIVO	R				The bibo:transcriptOf public description was found here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  Bibo considers this term unstable.					
+O	bibo:	translationOf	translation of	VIVO	D				Examples shows a book has French language version. Public description source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .					
+O	bibo:	translator	translator	VIVO	D									
+O	c4o:	hasGlobalCitationFrequency	has global citation frequency	VIVO	R		"A property linking a publication entity to an instance of c40:GlobalCitationCount that specifies how many times a work has been cited by others, according to a particular information source on a particular date."							
+O	c4o:	hasGlobalCountSource	has global count source	VIVO	R		A property linking an instance of c40:GlobalCitationCount to the bibliographic information source providing the global citation count information for a particular publication on a particular date.							
+O	cito:	citesAsDataSource	cites as data source	VIVO	R									
+O	cito:	isCitedAsDataSourceBy	is cited as data source by	VIVO	R									
+O	dcterms:	contributor	contributor	META	Q	Facts about the ontology								
+O	geo:	hasBorderWith	has border with	GAZ	N	Not in domain								
+O	geo:	hasMember	has member country or territory	GAZ	N	Not in domain								
+O	geo:	isAdministeredBy	is administered by	GAZ	N	Not in domain								
+O	geo:	isInGroup	in geographic grouping	GAZ	N	Not in domain								
+O	geo:	isPredecessorOf	is predecessor of	GAZ	N	Not in domain								
+O	geo:	isSuccessorOf	is successor of	GAZ	N	Not in domain								
+O	isf:	deprecated_op	(is deprecated)	OWL	D									
+O	obo:	ARG_2000028	has contact info	VIVO	D									
+O	obo:	ARG_2000029	contact info for	VIVO	D									
+O	obo:	ARG_2000390	context for	NA	N	not defined								
+O	obo:	ARG_2000391	has context	NA	N	not defined								
+O	obo:	ARG_2000399	has contact agent	NA	N	Not in domain								
+O	obo:	BFO_0000050	part of	BFO	Q									
+O	obo:	BFO_0000051	has part	BFO	Q									
+O	obo:	BFO_0000054	realized in	BFO	Q									
+O	obo:	BFO_0000055	realizes	BFO	Q									
+O	obo:	ERO_0000029	provides access to	NA	N	Not in domain	"Instruments, reagents, organisms, or software for which the service provides access."		An access service that provides access to a flow cytometer.	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000031	uses	ERO	R		Software or protocol used by the laboratory.		Microsoft powerpoint is commonly used in research laboratories to prepare presentations.	http://purl.obolibrary.org/obo/IAO_0000120	uses	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000033	has expertise in technique	VIVO	M		Technique in which the person is proficient. 		Brian Druker has expertise in cancer research.	http://purl.obolibrary.org/obo/IAO_0000120	has expertise	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000034	manufacturer	ORG	D		Organization or person that created the resource.		Santa Cruz Biotechnology is the manufacturer of many antibodies.	http://purl.obolibrary.org/obo/IAO_0000120	has manufacturer	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000037	contact or provider for service	NA	N	Not in domain	Service offered by the organization.		A core lab providing cell sorting to individual labs.	http://purl.obolibrary.org/obo/IAO_0000120	provides services	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000038	specifies the use of	NA	N	Not in domain	"Instruments, techniques, reagents, organisms, or software that are referenced in a protocol."		A protocol can specify the use of a flow cytometer.	http://purl.obolibrary.org/obo/IAO_0000120	specifies the use of	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000070	used by	ERO	R		Laboratory that uses the protocol or software.		A laboratory uses Microsoft Word.	http://purl.obolibrary.org/obo/IAO_0000120	used by	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000390	service provided by	NA	N	Not in domain	Organization or laboratory performing the service.		A core laboratory provides a service.	http://purl.obolibrary.org/obo/IAO_0000120	service provided by	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000397	performs technique	VIVO	R		Technique carried out by the person or laboratory.		A cancer researcher performs apoptosis assays.	http://purl.obolibrary.org/obo/IAO_0000120		PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000398	is performed by	VIVO	R	inferred	Person or laboratory that performs the service or technique.		Confocal microscopy is performed by a confocal core laboratory.	http://purl.obolibrary.org/obo/IAO_0000120	is performed by	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000460	has documentation	VIVO	R		Document that contains relevant resource information.		An antibody has documentation describing attributes of the antibody.	http://purl.obolibrary.org/obo/IAO_0000120	has documentation	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000481	realizes protocol	OBI	R	Find in OBI	Protocol used to perform the service.		A sequencing protocol used for next generation sequencing.	http://purl.obolibrary.org/obo/IAO_0000120	realizes protocol	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000482	uses software	SWO	R		Software used to perform the service.		Sequence analysis software.	http://purl.obolibrary.org/obo/IAO_0000120	uses software	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000543	related technique	NA	N	Not in domain	Method in which the resource can be used.		Flow cytometry is a related technique for a flow cytometer instrument.	http://purl.obolibrary.org/obo/IAO_0000120	related technique	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000572	used to study	VIVO	M		Biological process studied in the organism.		A study of hibernation in bears.	http://purl.obolibrary.org/obo/IAO_0000120	used to study	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000775	has residency requirement	NA	N		US residency status of applicants that may apply for the student research opportunity.		A research opportunity requires applicants to be US citizens.	http://purl.obolibrary.org/obo/IAO_0000120	has residency requirement	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000918	related research project	RAO	R		Research project during which the biological specimen was collected.		A research project studying breast cancer.	http://purl.obolibrary.org/obo/IAO_0000120	related research project	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0000919	related biological specimen	NA	N		Biological specimen collected as part of the research project.		A breast cancer specimen.	http://purl.obolibrary.org/obo/IAO_0000120	related biological specimen	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0001518	has phase	OBI	R		Phase of a clinical trial to evaluate risk and to clinically evaluate the efficacy of drugs or biologicals.		Phase 1 clinical trial.	http://purl.obolibrary.org/obo/IAO_0000120	has phase	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0001520	performs human study	OBI	R		Human study performed by the organization.		The Jackson Heart Institute performs human studies on heart disease.	http://purl.obolibrary.org/obo/IAO_0000120	performs human study	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	ERO_0001521	performed by organization	ORG	M	Perhaps	Organization that performs the human study.		Jackson State University performs human studies on heart disease.	http://purl.obolibrary.org/obo/IAO_0000120	human study performed by	PERSON: Melissa Haendel		PERSON: Melissa Haendel
+O	obo:	IAO_0000039	has measurement unit label	NA	N	Not in domain								
+O	obo:	IAO_0000136	is about	IAO	K		is_about is a (currently) primitive relation that relates an information artifact to an entity.	"7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \mentions\"" relation. Weaken the is_about relationship to be primitive. \n\nWe will try to build it back up by elaborating the various subproperties that are more precisely defined.\n\nSome currently missing phenomena that should be considered \""about\"" are predications - \""The only person who knows the answer is sitting beside me\"" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic."""	This document is about information artifacts and their representations	http://purl.obolibrary.org/obo/IAO_0000125		person:Alan Ruttenberg		"Smith, Ceusters, Ruttenberg, 2000 years of philosophy"
+O	obo:	IAO_0000142	mentions	IAO	K									
+O	obo:	IAO_0000221	is quality measurement of	IAO	K		"m is a quality measurement of q at t when\nq is a quality \nthere is a measurement process p that has specified output m, a measurement datum, that is about q"	"This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \measuring\"" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \""Magnitudes\"" a proposal for which we are awaiting details.|From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]\n\nThis one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \""measuring\"" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \""Magnitudes\"" a proposal for which we are awaiting details.\n--\nFrom the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]\n\nunit of measure is a quality, e.g. the length of a ruler.\n\n[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]\n\n[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]\n\na represents b means either a denotes b or a describes\n\ndescribe:\na describes b means a is about b and a allows an inference of at least one quality of b\n\nWe have had a long discussion about denotes versus describes.|From the second meeting on IAO:\n\nAn attempt at defining assay using Barry's \""reliability\"" wording\n\nassay:\nprocess and has_input some material entity\nand has_output some information content entity \nand which is such that instances of this process type reliably generate \noutputs that describes the input.|From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.\n\na is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality.|8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later"""				Alan Ruttenberg		
+O	obo:	IAO_0000417	is quality measured as	IAO	K		inverse of the relation of is quality measurement of	"2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship"		http://purl.obolibrary.org/obo/IAO_0000120		Person:Alan Ruttenberg		
+O	obo:	OBI_0000293	has specified input	OBI	Q		A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.	8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works.	see is_input_of example_of_usage		has_specified_input	PERSON: Larry Hunter|PERSON: Bjoern Peters|PERSON: Alan Ruttenberg|PERSON: Melanie Coutot		
+O	obo:	OBI_0000299	has specified output	OBI	Q		A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.				has_specified_output	PERSON: Melanie Courtot|PERSON: Bjoern Peters|PERSON: Alan Ruttenberg|PERSON: Larry Hunter		
+O	obo:	OBI_0000304	manufactured by	OBI	M	Is this needed in our domain?	"c is_manufactured_by o means that there was a process p in which c was built in which a person, or set of people or machines did the work(bore the \Manufacturer Role\"", and those people/and or machines were members or of directed by the organization to do this."""		http://www.affymetrix.com/products/arrays/specific/hgu133.affx is_manufactered_by http://www.affymetrix.com/ (if we decide to use these URIs for the actual entities)		is_manufactured_by	Alan Ruttenberg|Liju Fan	has_manufacturer|has_make	
+O	obo:	OBI_0000312	is specified output of	OBI	Q		A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.				is_specified_output_of	PERSON:Bjoern Peters|Alan Ruttenberg		
+O	obo:	OBI_0000417	achieves planned objective	NA	N	Not in domain	This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.		A cell sorting process achieves the objective specification 'material separation objective'			"BP, AR, PPPB branch"		PPPB branch derived
+O	obo:	OBI_0000643	has grain	NA	N	Not in domain	"the relation of the cells in the finger of the skin to the finger, in which an indeterminate number of grains are parts of the whole by virtue of being grains in a collective that is part of the whole, and in which removing one granular part does not nec- essarily damage or diminish the whole. Ontological Whether there is a fixed, or nearly fixed number of parts - e.g. fingers of the hand, chambers of the heart, or wheels of a car - such that there can be a notion of a single one being missing, or whether, by contrast, the number of parts is indeterminate - e.g., cells in the skin of the hand, red cells in blood, or rubber molecules in the tread of the tire of the wheel of the car."	"Discussion in Karslruhe with, among others, Alan Rector, Stefan Schulz, Marijke Keet, Melanie Courtot, and Alan Ruttenberg. Definition take from the definition of granular parthood in the cited paper. Needs work to put into standard form"			has grain	PERSON: Alan Ruttenberg		"PAPER: Granularity, scale and collectivity: When size does and does not matter, Alan Rector, Jeremy Rogers, Thomas Bittner, Journal of Biomedical Informatics 39 (2006) 333-349"
+O	obo:	OBI_0000833	objective achieved by	NA	N	Not in domian	This relation obtains between a a objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.	definition needs clean up to indicate directionality						
+O	obo:	RO_0000052	inheres in	OBO	Q			"This relation belongs in BFO/RO, and will be in BFO 2|This clarifies that only specifically dependent continuants inhere in (specifically) one independent continuant over all time. For GDCs, there in implicitly inherence to all the independent continuants in which the concretizations inhere. Should add a 'cardinality 1' restriction to the definition of specifically dependent continuant."						
+O	obo:	RO_0000053	bearer of	OBO	Q									
+O	obo:	RO_0000056	participates in	OBO	Q									
+O	obo:	RO_0000057	has participant	OBO	Q									
+O	obo:	RO_0001000	derives from	OBO	Q									
+O	obo:	RO_0001015	location of	OBO	Q									
+O	obo:	RO_0001018	contained in	OBO	Q									
+O	obo:	RO_0001019	contains	OBO	Q									
+O	obo:	RO_0001025	located in	OBO	Q									
+O	obo:	RO_0002220	adjacent to	OBO	M	Is this needed in our domain?								
+O	obo:	RO_0002233	has input	OBO	Q									
+O	obo:	RO_0002234	has output	OBO	Q									
+O	obo:	RO_0002350	member of	OBO	Q									
+O	obo:	RO_0002351	has member	OBO	Q									
+O	obo:	RO_0002353	output of	OBO	Q									
+O	obo:	RO_0003000	produces	OBO	Q		"a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix."					Melissa Haendel		
+O	obo:	RO_0003001	produced by	OBO	Q									
+O	owl:	DeprecatedProperty	deprecated property	OWL	Q									
+O	owl:	sameAs	same as	OWL	Q									
+O	owl:	topObjectProperty	(top object property)	OWL	Q									
+O	ro:	has_agent	has agent	RO	U									
+O	skos4:	broader	broader concept	SKOS	R		Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .							
+O	skos4:	narrower	narrower concept	SKOS	R		Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .							
+O	skos4:	related	related concept	SKOS	R									
+O	swo:	SWO_0000740	implements	SWO	R									
+O	swo:	SWO_0000741	is encoded in	SWO	R									
+O	vcard:	hasAddress	has address	VIVO	D									
+O	vcard:	hasCalendarLink	has calendar link	NA	N									
+O	vcard:	hasCalendarRequest	has calendar request	NA	N									
+O	vcard:	hasCalenderBusy	has calendar busy	NA	N									
+O	vcard:	hasCategory	has category	NA	N									
+O	vcard:	hasEmail	has email	IAO	R									
+O	vcard:	hasFormattedName	has formatted name	VIVO	R									
+O	vcard:	hasGeo	has geo	GAZ	D									
+O	vcard:	hasInstantMessage	has messaging	NA	N									
+O	vcard:	hasKey	has key	NA	N									
+O	vcard:	hasLanguage	has language	VIVO	D									
+O	vcard:	hasLogo	has logo	VIVO	D									
+O	vcard:	hasMember	member	VIVO	D									
+O	vcard:	hasName	has name	VIVO	D									
+O	vcard:	hasNickname	has nickname	VIVO	D									
+O	vcard:	hasNote	has note	NA	N									
+O	vcard:	hasOrganizationalUnitName	has organizational unit name	ORG	D									
+O	vcard:	hasOrganizationName	has organization name	ORG	D									
+O	vcard:	hasPhoto	has photo	VIVO	D									
+O	vcard:	hasRelated	has related	NA	N									
+O	vcard:	hasSound	has sound	NA	N									
+O	vcard:	hasTelephone	has telephone	VIVO	D									
+O	vcard:	hasTimeZone	has time zone	TIME	D									
+O	vcard:	hasTitle	has title	VIVO	D									
+O	vcard:	hasURL	has URL	VIVO	D									
+O	vivo:	AffiliatedOrganization	has affiliated organization	ORG	M									
+O	vivo:	AssignedBy	assigned by	VIVO	U	See Early Thoughts on Roles and Relationships	Relates a Relationship (as a predicate or n-ary relation over one or more Thing) to an Agent that defined or instantiated the predicate instance. 							
+O	vivo:	Assignee	assignee	VIVO	U	See Early Thoughts on Roles and Relationships								
+O	vivo:	AssigneeFor	assignee for patent	VIVO	U	See Early Thoughts on Roles and Relationships								
+O	vivo:	Assigns	assigns	VIVO	U	See Early Thoughts on Roles and Relationships								
+O	vivo:	conceptAssociatedWith	concept for	VIVO	U									
+O	vivo:	confirmedOrcidId	Orcid ID confirmation	VIVO	C	Becomes a quality								
+O	vivo:	contributingRole	contributor	VIVO	U	See Early Thoughts on Roles and Relationships								
+O	vivo:	dateFiled	date filed	VIVO	R	Needs analysis -- semantics for time instants								
+O	vivo:	dateIssued	date issued	VIVO	R	Needs analysis -- semantics for time instants								
+O	vivo:	dateTimeInterval	date/time interval	VIVO	U	Needs analysis -- semantics for time instants								
+O	vivo:	dateTimePrecision	date/time precision	TIME	R									
+O	vivo:	dateTimeValue	date/time value	TIME	R									
+O	vivo:	degreeCandidacy	degree candidacy	VIVO	C	Candidacy is a role								
+O	vivo:	distributes	distributes	VIVO	U									
+O	vivo:	distributesFundingFrom	distributes funding from	RAO	R									
+O	vivo:	eligibleFor	credential eligibility attained	VIVO	U	Not needed?								
+O	vivo:	end	end	TIME	R	Needs analysis -- semantics for time instants								
+O	vivo:	equipmentFor	equipment for	ERO	R	Find in ERO								
+O	vivo:	expirationDate	expiration date	TIME	R	Needs analysis -- semantics for time instants								
+O	vivo:	facilityFor		VIVO	R									
+O	vivo:	featuredIn	featured in	VIVO	U	Use is about to refer an article to a person								
+O	vivo:	features	features	VIVO	U	See above			This is done through a restriction on the foaf:Person class.					
+O	vivo:	fundingVehicleFor	provides funding for	RAO	D									
+O	vivo:	geographicFocus	geographic focus	VIVO	R	has Geogrtahics Focus								
+O	vivo:	geographicFocusOf	geographic focus of	VIVO	R	can be inferred								
+O	vivo:	governingAuthorityFor	governing authority for	VIVO	U	no definition								
+O	vivo:	grantSubcontractedThrough	subcontracted through	RAO	R	Is this in the VIVO domain?								
+O	vivo:	hasAssociatedConcept	associated concept	VIVO	D									
+O	vivo:	hasCollaborator	has collaborator	VIVO	R									
+O	vivo:	hasEquipment	has equipment	ERO	R	Find in ERO								
+O	vivo:	hasFacility	has facility	ERO	R	Find in ERO								
+O	vivo:	hasFundingVehicle	funding provided via	RAO	R									
+O	vivo:	hasGoverningAuthority	governing authority	VIVO	U	no definition								
+O	vivo:	hasPredecessorOrganization	predecessor organization	ORG	R									
+O	vivo:	hasPrerequisite	has prerequisite	VIVO	M	Is this needed?								
+O	vivo:	hasProceedings	proceedings	VIVO	M	Is this needed?								
+O	vivo:	hasPublicationVenue	published in	VIVO	M	"Perhaps ""appears in"" meets several cases?"								
+O	vivo:	hasResearchArea	research areas	VIVO	M	Need to review association of concepts to entities								
+O	vivo:	hasSubjectArea	has subject area	IAO	D	Use is about to relate an article to a concept								
+O	vivo:	hasSuccessorOrganization	successor organization	ORG	R									
+O	vivo:	hasTranslation	has translation	VIVO	M	Perhaps			Examples shows a book has French language version. Public description source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .					
+O	vivo:	informationResourceSupportedBy	supported by	VIVO	U	Not in domain								
+O	vivo:	offeredBy	offered by	VIVO	U									
+O	vivo:	offers	offers	VIVO	U	Offers is a role								
+O	vivo:	orcidId	ORCID iD	VIVO	C				This is now an object property where the object value is a resource of the form <http://orcid.org/NNNN-NNNN-NNNN-NNNN>.  This is to support connecting VIVO and ORCID in the linked data web.   Note: a person can have multiple ORCID iDs.					
+O	vivo:	prerequisiteFor	prerequisite for	VIVO	M	Is this needed?								
+O	vivo:	proceedingsOf	proceedings of	VIVO	M	Perhaps								
+O	vivo:	providesFundingThrough	provides funding through	RAO	M	Perhaps 			"For example, National Science Foundation providesFundingThrough Graduate Research Fellowship Program; National Institutes of Health providesFundingThrough National Center for Research Resources. "					
+O	vivo:	publicationVenueFor	publication venue for	VIVO	D	appears in								
+O	vivo:	publisher	publisher	VIVO	R	hasPublisher			Public Definition source (http://www.answers.com/topic/publisher).					
+O	vivo:	publisherOf	publisher of	VIVO	R	infer			Public Definition source (http://www.answers.com/topic/publisher).					
+O	vivo:	relatedBy	related by	VIVO	N	See Early Thoughts on Roles and Relationships	Relates a Thing to a Relationship as a Thing that is somehow related to other Thing in the same Relationship instance. A Relationship instnace is a predicate over Thing and is created by an Agent.							
+O	vivo:	relates	relates	VIVO	N	See Early Thoughts on Roles and Relationships	Relates a Relationship instance to the one or more Thing of the Relationship. There is a separate property (assigned by) to relate to the Agent that defines the Relationship.							
+O	vivo:	reproduces	reproduces	VIVO	M	Is this needed?								
+O	vivo:	researchAreaOf	research area of	VIVO	R									
+O	vivo:	reviewedIn	reviewed in	VIVO	R	Needs analysis								
+O	vivo:	roleContributesTo	contributes to	VIVO	U	See Early Thoughts on Roles and Relationships								
+O	vivo:	sponsoredBy	award sponsored by	VIVO	U									
+O	vivo:	sponsors	sponsors award or honor	VIVO	C	Sponsor is a role								
+O	vivo:	start	start	VIVO	R	Needs analysis -- semantics for time instants								
+O	vivo:	subcontractsGrant	subcontracts grant	RAO	R	Is this in the VIVO domain?								
+O	vivo:	subjectAreaOf	subject area of	VIVO	D	Needs analysis								
+O	vivo:	supportedBy	supported by	RAO	D	Use output of								
+O	vivo:	supportedInformationResource	supported publications or other works	RAO	D	Use output of								
+O	vivo:	supports	supports	RAO	R	funding support								
+O	vivo:	translatorOf	translator of	VIVO	R	See Early Thoughts regarding Languages								
+O	vivo:	validIn	valid in	VIVO	U	No definition								
+O	vivosr:	AccessProvidedBy	access provided by	OBI	D									
+O	vivosr:	documentationFor	documentation for project or resource	OBI	D									
+O	vivosr:	protocolRealizedBy	protocol realized by	OBI	D									
