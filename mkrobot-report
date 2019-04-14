@@ -1,1 +1,0 @@
-robot report --input nvo.owl   --fail-on WARN   --output report.tsv
