@@ -1,5 +1,5 @@
 robot template \
-  --template nvo.csv \
+  --template nvo.tsv \
   --ontology-iri "https://something/ontology/nvo/" \
   --prefix "VO: https://something/ontology/nvo/VO_" \
   --version-iri "https://something/ontology/nvo/0.0.0/" \
@@ -8,4 +8,4 @@ robot template \
 grep -v ^# temp.ttl >nvo.ttl
 rm temp.ttl
 robot merge --input nvo-header.owl --input nvo.ttl --output nvo.owl
-robot report --input nvo.owl --output report.tsv
+robot report --input nvo.owl --output nvo-report.tsv
