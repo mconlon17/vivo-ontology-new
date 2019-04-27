@@ -1,5 +1,17 @@
 #
 #	Makefile for nvo
+
+
+# merge headers, edits, and template outputs and extract outputs into nvo.owl	
+	
+nvo.owl: nvo-header.owl nvo-edit.owl $(TEMPLATE_OWL_FILES) $(EXTRACT_OWL_FILES)
+	robot merge \
+	  --input nvo-header.owl \
+	  --input nvo-edit.owl \
+	  --inputs "*-template.owl" \
+	  --inputs "*-extract.owl" \
+	  --output nvo.owl
+	robot report --input nvo.owl --output nvo-report.tsv
 #
 
 # Template targets
@@ -10,36 +22,25 @@ TEMPLATES = nvo
 TEMPLATE_FILES = $(foreach n,$(TEMPLATES), $(n).tsv)
 TEMPLATE_OWL_FILES = $(foreach n,$(TEMPLATES), $(n)-template.owl)
 
-nvo.owl: nvo-template.owl
-	robot merge --input nvo-header.owl --input nvo-template.owl --output nvo.owl
-	robot report --input nvo.owl --output nvo-report.tsv
 
 $(TEMPLATE_OWL_FILES): $(TEMPLATE_FILES)
 	robot template \
 	  --template $^ \
-	  convert \
-	  --output $^.tmp.ttl
-	grep -v ^# $^.tmp.ttl >$^.ttl
-	rm $^.tmp.ttl
-	robot merge --input nvo-header.owl --input $^.ttl --output $@
+	  --output $@
 	
 # Extract targets
 # 
 # For each extract file, create a corresponding owl file
 
 EXTRACTS = iao bfo ro
-EXTRACT_FILES = $(foreach n,$(EXTRACTS), $(n).txt)
+EXTRACT_TERM_FILES = $(foreach n,$(EXTRACTS), $(n).txt)
+EXTRACT_INPUT_FILES = $(foreach n,$(EXTRACTS), $(n).owl)
 EXTRACT_OWL_FILES = $(foreach n,$(EXTRACTS), $(n)-extract.owl)
 
-nvo.owl: nvo-extract.owl
-	robot merge --input nvo-header.owl --input nvo-extract.owl --output nvo.owl
-	robot report --input nvo.owl --output nvo-report.tsv
-
-$(EXTRACT_OWL_FILES): $(EXTRACT_FILES)
+$(EXTRACT_OWL_FILES): $(EXTRACT_TERM_FILES) $(EXTRACT_INPUT_FILES)
 	robot extract \
-	  --extract $^ \
-	  convert \
-	  --output $^.tmp.ttl
-	grep -v ^# $^.tmp.ttl >$^.ttl
-	rm $^.tmp.ttl
-	robot merge --input nvo-header.owl --input $^.ttl --output $@
+	  --method BOT \
+	  --input $(subst -extract.owl,.owl,$@) \
+	  --term-file $(subst -extract.owl,.txt,$@) \
+	  --output $@
+
