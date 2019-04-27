@@ -1,0 +1,39 @@
+Missing argument for option: i
+Use the -vvv option to show the stack trace.
+Use the --help option to see usage information.
+usage: robot [command] [options] <arguments>
+    --catalog <arg>         use catalog from provided file
+ -h,--help                  print usage information
+ -noprefixes                do not use default prefixes
+ -p,--prefix <arg>          add a prefix 'foo: http://bar'
+ -P,--prefixes <arg>        use prefixes from JSON-LD file
+ -V,--version               print version information
+ -v,--verbose               increased logging
+ -vv,--very-verbose         high logging
+ -vvv,--very-very-verbose   maximum logging, including stack traces
+ -x,--xml-entities          use entity substitution with ontology XML
+                            output
+commands:
+ help             print help for command
+ annotate         annotate ontology
+ convert          convert ontology
+ diff             find the differences between two ontologies
+ explain          explain derivation of an inferred axiom
+ export-prefixes  export prefixes to a file
+ extract          extract terms from an ontology
+ filter           filter ontology axioms
+ materialize      materialize ontology
+ merge            merge ontologies
+ mirror           mirror ontology imports closure
+ query            query an ontology
+ reason           reason ontology
+ reduce           reduce ontology
+ relax            relax ontology
+ remove           remove axioms from an ontology
+ rename           rename entities based on given mappings
+ repair           repair terms from an ontology
+ report           report terms from an ontology
+ template         build an ontology from a template
+ unmerge          unmerge ontologies
+ validate-profile validate ontology against an OWL profile
+ verify           verify an ontology does not violate rules (as queries)
