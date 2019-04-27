@@ -10,6 +10,7 @@ nvo.owl: nvo-header.owl nvo-edit.owl $(TEMPLATE_OWL_FILES) $(EXTRACT_OWL_FILES)
 	  --input nvo-edit.owl \
 	  --inputs "*-template.owl" \
 	  --inputs "*-extract.owl" \
+	  --include-annotations true \
 	  --output nvo.owl
 	robot report --input nvo.owl --output nvo-report.tsv
 #
