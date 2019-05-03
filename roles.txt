@@ -1,0 +1,380 @@
+Role	Source	Include	Comment
+Abridger	MARC	Y	
+Actor	MARC	Y	
+Adapter	MARC	Y	
+Addressee	MARC	N	Not needed
+Administrator	VIVO	Y	Renamed
+Advisee	VIVO	Y	Renamed
+Advisor	VIVO	Y	Renamed
+Analyst	MARC	Y	
+Animator	MARC	Y	
+Annotator	MARC	Y	
+Appellant	MARC	L	
+Appellee	MARC	L	
+Applicant	MARC	Y	
+Architect	MARC	Y	
+Archivist	Duke	Y	
+Arranger	MARC	Y	Not sure what this means
+Art copyist	MARC	Y	
+Art director	MARC	Y	
+Artist	MARC	Y	
+Artistic director	MARC	Y	
+Assignee	MARC	Y	
+Associated name	MARC	N	Not a role
+Attendee	VIVO	Y	Renamed
+Attributed name	MARC	N	Not a role
+Auctioneer	MARC	Y	Not outside domain for agriculturalists
+Author	MARC	Y	
+Author in quotations or text abstracts	MARC	N	Not a role
+"Author of afterword, colophon, etc."	MARC	N	Author of etc
+Author of dialog	MARC	N	Author of etc
+"Author of introduction, etc."	MARC	N	Author of etc
+Autographer	MARC	M	"What is this, one who autographs?"
+Background and literature search 	CRO	M	Two different things here.
+Bibliographic antecedent	MARC	Y	
+Binder	MARC	Y	
+Binding designer	MARC	Y	
+Blurb writer	MARC	N	Author of blurb
+Book designer	MARC	Y	
+Book producer	MARC	Y	
+Bookjacket designer	MARC	Y	
+Bookplate designer	MARC	Y	
+Bookseller	MARC	M	Why?
+Braille embosser	MARC	Y	
+Broadcaster	MARC	Y	
+Calligrapher	MARC	Y	
+Cartographer	MARC	Y	
+Caster	MARC	Y	
+Censor	MARC	Y	
+Choreographer	MARC	Y	
+Cinematographer	MARC	Y	
+Client	MARC	M	Why?
+Clinical Role	VIVO	N	Should be more specific
+Code review 	CRO	M	
+Collection registrar	MARC	Y	
+Collector	MARC	Y	
+Collotyper	MARC	Y	
+Colorist	MARC	Y	
+Commentator	MARC	Y	
+Commentator for written text	MARC	N	Commentor of text
+Communication 	CRO	M	Not clear
+Community engagement 	CRO	M	Not clear
+Compiler	MARC	Y	
+Complainant	MARC	L	
+Complainant-appellant	MARC	L	
+Complainant-appellee	MARC	L	
+Composer	MARC	Y	
+Compositor	MARC	Y	
+Conceptor	MARC	Y	
+Conceptualization 	CRO	Y	
+Conductor	MARC	Y	
+Conservator	MARC	Y	
+Consultant	MARC	Y	
+Consultant to a project	MARC	N	Consultant of project
+Contact	Proposed	Y	A person has a role as a contact for a process or other occurrent
+Contestant	MARC	L	
+Contestant-appellant	MARC	L	
+Contestant-appellee	MARC	L	
+Contestee	MARC	L	
+Contestee-appellant	MARC	L	
+Contestee-appellee	MARC	L	
+Contractor	MARC	Y	
+Contributor	MARC	Y	
+Coordinator	Proposed	Y	
+Copyright claimant	MARC	Y	
+Copyright holder	MARC	Y	
+Corrector	MARC	Y	
+Correspondent	MARC	Y	
+Costume designer	MARC	Y	
+Court governed	MARC	N	Not a role
+Court reporter	MARC	Y	
+Cover designer	MARC	Y	
+Creator	MARC	Y	
+Curator	MARC	Y	
+Dancer	MARC	Y	
+Data	CRO	N	Unclear
+data aggregation 	CRO	Y	
+data collection 	CRO	Y	
+Data contributor	MARC	Y	
+data curation 	CRO	Y	
+data entry 	CRO	Y	
+data integration 	CRO	Y	
+Data manager	MARC	Y	
+data modeling 	CRO	Y	
+data quality assurance 	CRO	Y	
+data standards developer 	CRO	Y	
+data transformation 	CRO	Y	
+data validation 	CRO	Y	
+database administrator 	CRO	Y	
+Dedicatee	MARC	Y	
+Dedicator	MARC	Y	
+Defendant	MARC	L	
+Defendant-appellant	MARC	L	
+Defendant-appellee	MARC	L	
+Degree granting institution	MARC	N	A disposition of an organization
+Degree supervisor	MARC	Y	
+Delineator	MARC	Y	
+Depicted	MARC	M	"Interesting, similar to ""is about"""
+Depositor	MARC	Y	
+Designer	MARC	Y	
+Developer	Proposed	Y	How is this different from Creator?
+Device development 	CRO	N	Deisgner of device; Builder of device
+Digital preservation 	CRO	N	Preservationist?  Archivist?
+Director	MARC	Y	
+Dissertant	MARC	Y	
+Distribution place	MARC	N	Not a role
+Distributor	MARC	Y	
+Documentation 	CRO	M	Documentor.  Why isn't this Writer or Author of Documentation
+Donor	MARC	Y	
+Draftsman	MARC	Y	
+Dramaturg	Duke	Y	
+Dubious author	MARC	M	
+Editor	VIVO	Y	Renamed
+Editor of compilation	MARC	N	Editor of compilation
+Editor of moving image work	MARC	N	Editor of video
+educational 	CRO	N	Unclear
+educational instruction 	CRO	N	Instructor
+educational material development 	CRO	N	Developer of educationall material
+educational program development 	CRO	N	Developer of educational program
+educational training 	CRO	N	Use instructor or trainer
+Educator	ERO	M	How/when is this ysed.  Why not Teacher?
+Electrician	MARC	Y	
+Electrotyper	MARC	Y	
+Employee	ERO	Y	Renamed and in VIVO ontology
+Enacting jurisdiction	MARC	N	Not a role
+Engineer	MARC	Y	
+Engraver	MARC	Y	
+equipment technician 	CRO	M	Repair?
+Etcher	MARC	Y	
+Evaluator	Proposed	Y	
+Event place	MARC	N	Not a role
+Expert	MARC	N	The LOC defintion has to do with appraisal.  Legal Expert is a possible role
+Facsimilist	MARC	Y	
+Field director	MARC	Y	
+figure development 	CRO	M	Is this different from illustrator?
+Film director	MARC	M	"Director as a role is not descriptive.  Too many different uses, not enough commonality."
+Film distributor	MARC	N	Distributor of film
+Film editor	MARC	M	"Editor of Film is possible.  But combining ""editing"" across domains may not be useful."
+Film producer	MARC	Y	
+Filmmaker	MARC	M	
+First party	MARC	Y	We seem to be collecting legal terminology.  How much do we need?
+Forger	MARC	M	Seems unlikely in scholarship
+Formal analysis 	CRO	M	Why not Analyst?
+Former owner	MARC	M	Owner of what?
+Funder	ERO	Y	Renamed and in VIVO ontology
+Funding acquisition 	CRO	M	"Unclear -- as in grant writer, development officer?"
+Geographic information specialist	MARC	M	More like a position title than a role
+Graphic design 	CRO	Y	
+Guideline development 	CRO	N	Author of guideline
+Hardware systems 	CRO	N	Unclear
+Honoree	MARC	Y	VIVO has called this Awardee.  They are not different
+Host	MARC	Y	As in talk show host
+Host institution	MARC	N	Not a role
+Illuminator	MARC	Y	
+Illustrator	MARC	Y	
+Information technology systems 	CRO	M	Unclear.  What are they doing?
+infrastructure 	CRO	M	Unclear.  What are they doing?
+Inscriber	MARC	Y	
+Instructor	Proposed	Y	How is this different from Teacher?
+Instrumentalist	MARC	Y	
+Intellectual property advisor 	CRO	N	Advisor of Intellectual property
+Interviewee	MARC	Y	
+Interviewer	MARC	Y	
+Inventor	MARC	Y	
+Investigation 	CRO	M	What is this?
+Issuing body	MARC	M	Possibly Issuer
+IT hardware systems design and implementation 	CRO	M	How is this different from Hardware systems?
+Judge	MARC	L	
+Jurisdiction governed	MARC	N	Not a role
+Laboratory	MARC	N	Not a role
+Laboratory director	MARC	N	Director of Laboratory
+Landscape architect	MARC	Y	
+lay synthesis of research output 	CRO	N	Author of something
+Lead	MARC	Y	
+Leader	VIVO	N	Should be more specific
+Lender	MARC	Y	
+Libelant	MARC	L	
+Libelant-appellant	MARC	L	
+Libelant-appellee	MARC	L	
+Libelee	MARC	L	
+Libelee-appellant	MARC	L	
+Libelee-appellee	MARC	L	
+Librettist	MARC	Y	
+Licensee	MARC	Y	
+Licensor	MARC	Y	
+Lighting designer	MARC	Y	
+Lithographer	MARC	Y	
+Lyricist	MARC	Y	
+Maintainer	Proposed	Y	
+Manager	Proposed	Y	How is this different from other leadership roles?
+Manufacture place	MARC	Y	
+Manufacturer	MARC	Y	
+Marbler	MARC	Y	
+Marketing 	CRO	M	Not in domain
+Markup editor	MARC	Y	
+Medium	MARC	N	Not in domain
+Member	VIVO	Y	Rename
+Metadata application 	CRO	N	Unclear
+Metadata contact	MARC	N	Contact of
+Metal-engraver	MARC	Y	
+Methodology 	CRO	N	Unclear
+Minute taker	MARC	Y	
+Moderator	MARC	Y	
+Monitor	MARC	Y	
+Music copyist	MARC	Y	
+Musical director	MARC	Y	
+Musician	MARC	Y	
+Narrator	MARC	Y	
+Networking facilitation 	CRO	M	Unclear
+Onscreen presenter	MARC	Y	
+Opponent	MARC	N	Opponent of a dissertation?  What is this?
+Organizer	VIVO	Y	Rename
+Original draft preparation 	CRO	M	
+Originator	MARC	Y	
+Other	MARC	N	
+Outreach materials development 	CRO	N	Developer of outreach materials
+Outreach Provider	VIVO	N	Not specific
+Owner	MARC	M	Not in domain?  Use in an ownership with dates of ownership
+Panelist	MARC	Y	
+Papermaker	MARC	Y	
+Participant recruitment 	CRO	M	Or Recruiter in Research Process
+Patent applicant	MARC	M	Simply Applicant?
+Patent holder	MARC	Y	
+Patron	MARC	Y	
+Performer	MARC	Y	Aka performing artist
+Permitter	Proposed	Y	
+Permitting agency	MARC	N	
+Photographer	MARC	Y	
+Plaintiff	MARC	L	
+Plaintiff-appellant	MARC	L	
+Plaintiff-appellee	MARC	L	
+Platemaker	MARC	Y	
+Policy development 	CRO	N	Developer of Policy
+Praeses	MARC	Y	
+Presenter	VIVO	Y	
+Preservation 	CRO	Y	Preservationist 
+Printer	MARC	Y	
+Printer of plates	MARC	N	Printer of plates
+Printmaker	MARC	Y	
+Process contact	MARC	N	Contact of process
+Producer	MARC	Y	
+Production company	MARC	Y	 
+Production designer	MARC	Y	
+Production manager	MARC	Y	
+Production personnel	MARC	M	Is this understood in the domain?
+Production place	MARC	N	Not a role
+Program administration 	CRO	N	Administrator of Program
+program evaluation 	CRO	N	Evaluator of Program
+Programmer	MARC	Y	
+Project administration 	CRO	N	Administrator of Project
+Project director	MARC	N	Director of project
+Project Manager	Proposed	Y	
+Proofreader	MARC	Y	
+Protocol creation 	CRO	N	Developer of protocol
+Provider	MARC	N	Not specific
+Publication place	MARC	N	Not a role
+Publisher	MARC	Y	
+Publishing director	MARC	N	Director of publishing process; possible title
+Puppeteer	MARC	Y	
+Radio director	MARC	N	Director of radio broadcast/show
+Radio producer	MARC	N	Producer of radio broadcast/show
+Recording engineer	MARC	Y	
+Recordist	MARC	Y	
+Redactor	Proposed	Y	One who redacts
+Redaktor	MARC	N	Does not appear to be an english word
+Regulator	ERO	Y	Renamed and in VIVO ontology
+Regulatory administration 	CRO	N	Administrator of regulatory process
+Renderer	MARC	Y	
+Reporter	MARC	Y	
+Repository	MARC	N	Not a role
+Research conceptualization 	CRO	N	See Conceptualization
+research coordination 	CRO	N	Coordination
+research instrumentation 	CRO	N	Developer of Research Instruments
+Research team head	MARC	M	"Might be more international than PI, Director, etc."
+Research team member	MARC	Y	
+research technician 	CRO	N	Maintainer of Research instruments
+Researcher	VIVO	M	In what?  
+Resources 	CRO	M	How is this different from funding acquisition?
+Respondent	MARC	L	
+Respondent-appellant	MARC	L	
+Respondent-appellee	MARC	L	
+Responsible party	MARC	L	
+Restager	MARC	Y	
+Restorationist	MARC	Y	
+Reviewer	VIVO	Y	Rename
+Rubricator	MARC	Y	
+Scenarist	MARC	Y	
+Scientific advisor	MARC	M	"Why not ""advisor""?"
+Screenwriter	MARC	Y	
+Scribe	MARC	Y	
+Sculptor	MARC	Y	
+Second party	MARC	L	
+Secretary	MARC	M	A position in an organization?
+Seller	MARC	M	In domain?
+Service Provider	ERO	Y	Renamed and in VIVO ontology
+Set designer	MARC	Y	
+Setting	MARC	N	Not a role
+Signer	MARC	Y	
+Singer	MARC	Y	
+software 	CRO	N	Unclear
+software architecture 	CRO	Y	
+software design 	CRO	Y	
+software engineering 	CRO	Y	
+software project management 	CRO	Y	
+software systems 	CRO	Y	
+software testing 	CRO	Y	
+Sound designer	MARC	Y	
+Speaker	MARC	Y	
+Sponsor	MARC	M	How is this different from funder?
+Stage director	MARC	Y	
+Stage manager	MARC	Y	
+standard operating procedure development 	CRO	N	Developer of SOP
+Standards body	MARC	N	A disposition for an organization
+standards development 	CRO	N	Developer of standard
+statistical data analysis 	CRO	M	Is this data analysis?
+Stereotyper	MARC	Y	
+Storyteller	MARC	Y	
+Student	ERO	N	
+study design 	CRO	Y	Study Designer
+supervision 	CRO	N	See Supervisor
+supervisory 	CRO	N	Supervisor
+Supporting host	MARC	Y	Sidekick to the host
+survey and questionnaire 	CRO	Y	Survey Designer
+Surveyor	MARC	Y	
+system administrator 	CRO	Y	
+systems administration 	CRO	N	See system administrator
+Teacher	VIVO	Y	Rename
+team management 	CRO	N	Manager of Team
+Technical director	MARC	Y	
+technical writing 	CRO	N	Author of document.  Technicqal wirting may be an expertise.
+technique development 	CRO	N	Developer of technique
+Television director	MARC	Y	
+Television producer	MARC	Y	
+Thesis advisor	MARC	N	Advisor of Thesis
+Trianer	Proposed	Y	How is this different from Instructor or Teacher?
+Transcriber	MARC	Y	
+Translator	MARC	Y	
+Type designer	MARC	Y	
+Typographer	MARC	Y	
+University place	MARC	N	Not a role
+US Resident Role	ERO	N	
+Validation 	CRO	M	Validator of what?
+Videographer	MARC	Y	
+Visual Artist	Duke	Y	
+visualization 	CRO	M	Visualizer?  Developer of visualization?
+Voice actor	MARC	Y	Aka vocalist
+website development 	CRO	N	Developer of website
+website maintenance 	CRO	N	Maintainer of website
+Witness	MARC	N	Not in domain
+Wood engraver	MARC	Y	
+Woodcutter	MARC	Y	
+Writer	Proposed	Y	Simply use writer for a wide variety of writing
+Writer of accompanying material	MARC	N	Writer of
+Writer of added commentary	MARC	N	Writer of
+Writer of added lyrics	MARC	N	Writer of
+Writer of added text	MARC	N	Writer of
+Writer of introduction	MARC	N	Writer of
+Writer of preface	MARC	N	Writer of
+Writer of supplementary textual content	MARC	N	Writer of
+writing original draft 	CRO	M	How is this different from original draft preparation?
+writing review and editing 	CRO	M	How is this different from Proofreader?

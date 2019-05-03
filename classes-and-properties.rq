@@ -15,7 +15,6 @@ SELECT ?type ?uri
 
 WHERE {
 	{	
-<<<<<<< HEAD
 		?uri a owl:Class .
 		FILTER(regex(str(?uri), "^[a-zA-Z]"))
     	BIND("C" AS ?type)
@@ -74,31 +73,3 @@ WHERE {
 }
 GROUP BY ?type ?uri
 ORDER BY ?type ?uri
-=======
-	?s a owl:Class .
-	FILTER(regex(str(?s), "^[a-zA-Z]"))
-    	BIND("Class" AS ?t)
-	OPTIONAL { ?s rdfs:label ?l }    
-	}
-    UNION
-    {	
-    	?s a owl:ObjectProperty .
-    	BIND("ObjectProperty" AS ?t)
-	OPTIONAL { ?s rdfs:label ?l }    
-    }
-    UNION
-    {	
-    	?s a owl:DatatypeProperty .
-    	BIND("DatatypeProperty" AS ?t)
-	OPTIONAL { ?s rdfs:label ?l }    
-    }
-    UNION
-    {	
-    	?s a owl:AnnotationProperty .
-    	BIND("AnnotationProperty" AS ?t)
-	OPTIONAL { ?s rdfs:label ?l }    
-    }
-}
-ORDER BY ?t ?s
-
->>>>>>> 01c35c716769bce903e43021610854234f374f7a
