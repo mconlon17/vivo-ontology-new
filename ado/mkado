@@ -1,5 +1,5 @@
 robot template \
-  --template ado.csv \
+  --template ado.tsv \
   --ontology-iri "https://something/ontology/ado/" \
   --prefix "ADO: https://something/ontology/ado/ADO_" \
   --version-iri "https://something/ontology/ado/0.0.0/" \

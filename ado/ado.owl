@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/"
      xml:base="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/0.0.0"/>
+        <obo:IAO_0000115>Degrees of the world</obo:IAO_0000115>
         <obo:IAO_0000232>Just getting started as a proof of concept MC</obo:IAO_0000232>
-        <rdfs:label>Academic Degree Ontology</rdfs:label>
+        <dc:contributor>Michael Conlon</dc:contributor>
         <dc:description>A BFO-based, OBO compliant ontology of academic degrees of the world</dc:description>
         <dc:title>Academic degrees of the world</dc:title>
         <terms:license>https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
-        <foaf:homepage>http://to-be-determined</foaf:homepage>
-        <dc:contributor>Michael Conlon</dc:contributor>
-        <obo:IAO_0000115>Degrees of the world</obo:IAO_0000115>
+        <rdfs:label>Academic Degree Ontology</rdfs:label>
         <owl:priorVersion>http://vivoweb.org/ontology/core#</owl:priorVersion>
+        <foaf:homepage>http://to-be-determined</foaf:homepage>
     </owl:Ontology>
     
 
@@ -334,9 +334,12 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An academic degree is a qualification awarded to students upon successful completion of a course of study in higher education, usually at a collegeor university.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will look up a better definition</obo:IAO_0000116>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Academic Degree</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A qualification awarded to students upon successful completion of a course of study in�higher education, usually at a�college or�university</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Wikipedia https://en.wikipedia.org/wiki/Academic_degree</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Academic Degree</rdfs:label>
+        <rdfs:label xml:lang="fr">Dipl�me universitaire</rdfs:label>
+        <rdfs:label xml:lang="de">Hochschulabschluss</rdfs:label>
+        <rdfs:label xml:lang="es">Titulo academico</rdfs:label>
     </owl:Class>
     
 
@@ -345,8 +348,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00002">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two years of study</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate&apos;s Degree</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Two years of study</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Associate&apos;s Degree</rdfs:label>
     </owl:Class>
     
 
@@ -355,9 +358,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00003">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two years focused on science</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Two years focused on science</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate of Science Degree</rdfs:label>
+        <rdfs:label xml:lang="en">Associate of Science Degree</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree127"/>
     </owl:Class>
     
@@ -367,9 +370,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00004">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two years focused on the arts</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Two years focused on the arts</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate of Arts Degree</rdfs:label>
+        <rdfs:label xml:lang="en">Associate of Arts Degree</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree132"/>
     </owl:Class>
     
@@ -379,8 +382,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00005">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four years of study</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor&apos;s Degree</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Four years of study</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Bachelor&apos;s Degree</rdfs:label>
     </owl:Class>
     
 
@@ -389,9 +392,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00006">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00005"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four years focused on the arts</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Four years focused on the arts</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Arts Degree</rdfs:label>
+        <rdfs:label xml:lang="en">Bachelor of Arts Degree</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree4"/>
     </owl:Class>
     
@@ -401,9 +404,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00007">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00005"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four years focused on science</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Four years focused on science</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science Degree</rdfs:label>
+        <rdfs:label xml:lang="en">Bachelor of Science Degree</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree33"/>
     </owl:Class>
     
@@ -413,8 +416,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00008">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced study following a bachelor&apos;s degree</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master&apos;s Degree</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Advanced study following a bachelor&apos;s degree</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Master&apos;s Degree</rdfs:label>
     </owl:Class>
     
 
@@ -423,9 +426,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00009">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00008"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced study in the arts</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Arts</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Advanced study in the arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Arts</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree71"/>
     </owl:Class>
     
@@ -435,9 +438,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00010">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00008"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced study in science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Advanced study in science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Science</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree117"/>
     </owl:Class>
     
@@ -447,8 +450,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00011">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highest discipline degree</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctoral Degree</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Highest discipline degree</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Doctoral Degree</rdfs:label>
     </owl:Class>
     
 
@@ -457,9 +460,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00012">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A doctorate in any discipline except medicine, or sometimes theology.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A doctorate in any discipline except medicine, or sometimes theology.</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Philosophy</rdfs:label>
+        <rdfs:label xml:lang="en">Doctor of Philosophy</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree98"/>
     </owl:Class>
     
@@ -469,9 +472,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00013">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Degree required to practice medicine</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Degree required to practice medicine</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Medicine</rdfs:label>
+        <rdfs:label xml:lang="en">Doctor of Medicine</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree77"/>
     </owl:Class>
     
@@ -481,9 +484,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00014">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Degree required to practice law</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Degree required to practice law</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juris Doctor</rdfs:label>
+        <rdfs:label xml:lang="en">Juris Doctor</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree63"/>
     </owl:Class>
     
@@ -493,9 +496,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00015">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highest degree in theology</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Highest degree in theology</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ThD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Theology</rdfs:label>
+        <rdfs:label xml:lang="en">Doctor of Theology</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree108"/>
     </owl:Class>
     
@@ -504,11 +507,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00016 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00016">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aeronautical Engineer</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AeEng</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aeronautical Engineer</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree2"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Advanced Registered Nurse Practitioner</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARNP</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Advanced Registered Nurse Practitioner</rdfs:label>
     </owl:Class>
     
 
@@ -517,10 +519,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00017">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agricultural Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agricultural Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree8"/>
+        <obo:IAO_0000115 xml:lang="en">Aeronautical Engineer</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AeEng</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Aeronautical Engineer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree2"/>
     </owl:Class>
     
 
@@ -529,10 +531,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00018">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architectural Engineering</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Agricultural Engineering</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architectural Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree9"/>
+        <rdfs:label xml:lang="en">Agricultural Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree8"/>
     </owl:Class>
     
 
@@ -540,11 +542,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00019 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00019">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate Degree Nursing</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADN</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associate Degree Nursing</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree118"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Architectural Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Architectural Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree9"/>
     </owl:Class>
     
 
@@ -552,11 +554,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00020 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00020">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Aeronautical Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Aeronautical Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree7"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00003"/>
+        <obo:IAO_0000115 xml:lang="en">Associate Degree Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADN</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Associate Degree Nursing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree118"/>
     </owl:Class>
     
 
@@ -565,10 +567,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00021">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Agriculture</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAg</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Agriculture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree10"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Aeronautical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Aeronautical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree7"/>
     </owl:Class>
     
 
@@ -577,10 +579,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00022">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Applied Mathematics</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Applied Mathematics</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree11"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Agriculture</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAg</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Agriculture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree10"/>
     </owl:Class>
     
 
@@ -589,10 +591,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00023">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Applied Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Applied Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree124"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Applied Mathematics</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Applied Mathematics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree11"/>
     </owl:Class>
     
 
@@ -600,11 +602,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00024 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00024">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Architecture</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BArch</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Architecture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree12"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Applied Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Applied Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree124"/>
     </owl:Class>
     
 
@@ -613,10 +615,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00025">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Art Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Art Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree6"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Architecture</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BArch</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Architecture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree12"/>
     </owl:Class>
     
 
@@ -625,10 +627,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00026">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Arts in Education</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Art Education</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Arts in Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree5"/>
+        <rdfs:label xml:lang="en">Bachelor of Art Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree6"/>
     </owl:Class>
     
 
@@ -637,10 +639,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00027">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Business Administration</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BBA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Business Administration</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree13"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Arts in Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Arts in Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree5"/>
     </owl:Class>
     
 
@@ -649,10 +651,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00028">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Canon Law</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCL</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Canon Law</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree16"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Business Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BBA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Business Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree13"/>
     </owl:Class>
     
 
@@ -660,11 +662,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00029 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00029">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Chemical Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BChE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Chemical Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree15"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Canon Law</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCL</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Canon Law</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree16"/>
     </owl:Class>
     
 
@@ -673,10 +675,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00030">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Civil Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Civil Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree14"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Chemical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BChE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Chemical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree15"/>
     </owl:Class>
     
 
@@ -684,11 +686,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00031 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00031">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Divinity</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Divinity</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree17"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Civil Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Civil Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree14"/>
     </owl:Class>
     
 
@@ -696,11 +698,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00032 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00032">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree18"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Commerce</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCom</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Commerce</rdfs:label>
     </owl:Class>
     
 
@@ -709,10 +710,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00033">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Electrical Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BEE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Electrical Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree20"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Dental Surgery</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BDS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Dental Surgery</rdfs:label>
     </owl:Class>
     
 
@@ -720,11 +720,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00034 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00034">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree19"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Divinity</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Divinity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree17"/>
     </owl:Class>
     
 
@@ -733,10 +733,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00035">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Fine Arts</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Fine Arts</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree22"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree18"/>
     </owl:Class>
     
 
@@ -745,10 +745,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00036">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Forestry</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BF</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Forestry</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree21"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Electrical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BEE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Electrical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree20"/>
     </owl:Class>
     
 
@@ -756,11 +756,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00037 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00037">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Journalism</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BJ</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Journalism</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree23"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree19"/>
     </owl:Class>
     
 
@@ -769,10 +769,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00038">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Laws</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LLB</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Laws</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree68"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Fine Arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Fine Arts</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree22"/>
     </owl:Class>
     
 
@@ -780,11 +780,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00039 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00039">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Letters</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LittB</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Letters</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree66"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Forestry</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BF</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Forestry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree21"/>
     </owl:Class>
     
 
@@ -792,11 +792,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00040 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00040">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Liberal Studies</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Liberal Studies</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree24"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Health Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BHS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Health Science</rdfs:label>
     </owl:Class>
     
 
@@ -804,11 +803,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00041 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00041">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Library Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Library Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree25"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Journalism</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BJ</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Journalism</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree23"/>
     </owl:Class>
     
 
@@ -817,10 +816,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00042">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Literature</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLit</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Literature</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree26"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Laws</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LLB</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Laws</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree68"/>
     </owl:Class>
     
 
@@ -828,11 +827,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00043 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00043">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Marine Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Marine Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree29"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Letters</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LittB</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Letters</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree66"/>
     </owl:Class>
     
 
@@ -840,11 +839,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00044 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00044">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Medicine</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Medicine</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree27"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Liberal Studies</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Liberal Studies</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree24"/>
     </owl:Class>
     
 
@@ -852,11 +851,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00045 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00045">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Music</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Music</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree28"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Library Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Library Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree25"/>
     </owl:Class>
     
 
@@ -864,11 +863,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00046 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00046">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Nursing</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BN</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Nursing</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree30"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Literature</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLit</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Literature</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree26"/>
     </owl:Class>
     
 
@@ -877,10 +876,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00047">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Pharmacy</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BPharm</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Pharmacy</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree31"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Marine Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Marine Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree29"/>
     </owl:Class>
     
 
@@ -888,11 +887,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00048 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00048">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Philosophy</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhB</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Philosophy</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree97"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree27"/>
     </owl:Class>
     
 
@@ -901,10 +900,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00049">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Religious Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BRE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Religious Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree32"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Music</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Music</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree28"/>
     </owl:Class>
     
 
@@ -912,11 +911,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00050 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00050">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Sacred Theology</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STB</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Sacred Theology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree104"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BN</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Nursing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree30"/>
     </owl:Class>
     
 
@@ -925,10 +924,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00051">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSEd</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree34"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Pharmacy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BPharm</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Pharmacy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree31"/>
     </owl:Class>
     
 
@@ -936,11 +935,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00052 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00052">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree120"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Philosophy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhB</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Philosophy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree97"/>
     </owl:Class>
     
 
@@ -948,11 +947,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00053 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00053">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Forensic Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSFS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Forensic Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree136"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Religious Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BRE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Religious Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree32"/>
     </owl:Class>
     
 
@@ -960,11 +959,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00054 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00054">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Nursing</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSN</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Science in Nursing</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree130"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Sacred Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STB</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Sacred Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree104"/>
     </owl:Class>
     
 
@@ -972,11 +971,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00055 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00055">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Theology</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ThB</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Theology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree107"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Science in Accounting</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSAc</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Science in Accounting</rdfs:label>
     </owl:Class>
     
 
@@ -985,10 +983,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00056">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Veterinary Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BVS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor of Veterinary Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree128"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Science in Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSEd</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Science in Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree34"/>
     </owl:Class>
     
 
@@ -997,10 +995,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00057">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Engineer</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Engineer</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree36"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Science in Electrical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSEE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Science in Electrical Engineering</rdfs:label>
     </owl:Class>
     
 
@@ -1009,10 +1006,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00058">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civil Engineer</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civil Engineer</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree35"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Science in Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Science in Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree120"/>
     </owl:Class>
     
 
@@ -1020,11 +1017,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00059 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00059">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Veterinary Medicine</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DVM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Veterinary Medicine</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree55"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Science in Forensic Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSFS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Science in Forensic Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree136"/>
     </owl:Class>
     
 
@@ -1032,11 +1029,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00060 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00060">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diploma of Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DipEd</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diploma of Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree116"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Science in Mechanical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSME</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Science in Mechanical Engineering</rdfs:label>
     </owl:Class>
     
 
@@ -1044,11 +1040,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00061 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00061">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Applied Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Applied Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree38"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Science in Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSN</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Science in Nursing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree130"/>
     </owl:Class>
     
 
@@ -1056,11 +1052,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00062 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00062">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Arts</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Arts</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree37"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Science in Pharmacy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSP</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Science in Pharmacy</rdfs:label>
     </owl:Class>
     
 
@@ -1068,11 +1063,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00063 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00063">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Audiology</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Audiology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree145"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Surgery</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSurg</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Surgery</rdfs:label>
     </owl:Class>
     
 
@@ -1080,11 +1074,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00064 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00064">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Business Administration</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Business Administration</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree39"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Technology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTech</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Technology</rdfs:label>
     </owl:Class>
     
 
@@ -1092,11 +1085,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00065 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00065">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Chiropractic</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Chiropractic</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree40"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ThB</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree107"/>
     </owl:Class>
     
 
@@ -1104,11 +1097,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00066 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00066">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Medicine</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Medicine</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree46"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Veterinary Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BVM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Veterinary Medicine</rdfs:label>
     </owl:Class>
     
 
@@ -1116,11 +1108,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00067 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00067">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree43"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Bachelor of Veterinary Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BVS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Bachelor of Veterinary Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree128"/>
     </owl:Class>
     
 
@@ -1128,11 +1120,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00068 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00068">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Surgery</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Dental Surgery</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree42"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Chemical Engineer</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Chemical Engineer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree36"/>
     </owl:Class>
     
 
@@ -1140,11 +1132,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00069 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00069">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Divinity</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Divinity</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree41"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Civil Engineer</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Civil Engineer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree35"/>
     </owl:Class>
     
 
@@ -1152,11 +1144,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00070 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00070">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EdD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree56"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00002"/>
+        <obo:IAO_0000115 xml:lang="en">Diploma of Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DipEd</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Diploma of Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree116"/>
     </owl:Class>
     
 
@@ -1165,10 +1157,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00071">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Health Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DHEd</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Health Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree146"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Applied Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Applied Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree38"/>
     </owl:Class>
     
 
@@ -1177,10 +1169,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00072">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Humane Letters</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LHD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Humane Letters</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree65"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Arts</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree37"/>
     </owl:Class>
     
 
@@ -1189,10 +1181,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00073">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Juridical Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SJD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Juridical Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree101"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Audiology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Audiology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree145"/>
     </owl:Class>
     
 
@@ -1201,10 +1193,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00074">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Juristic Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Juristic Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree64"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Business Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Business Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree39"/>
     </owl:Class>
     
 
@@ -1213,10 +1205,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00075">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Laws</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LLD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Laws</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree69"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Chiropractic</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Chiropractic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree40"/>
     </owl:Class>
     
 
@@ -1225,10 +1217,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00076">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Library Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Library Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree45"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Dental Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Dental Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree46"/>
     </owl:Class>
     
 
@@ -1237,10 +1229,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00077">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Medical Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Medical Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree48"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Dental Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Dental Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree43"/>
     </owl:Class>
     
 
@@ -1249,10 +1241,11 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00078">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Optometry</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Optometry</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree95"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Dental Surgery</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDS</obo:IAO_0000605>
+        <rdfs:label xml:lang="es">Cirujano Dentista</rdfs:label>
+        <rdfs:label xml:lang="en">Doctor of Dental Surgery</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree42"/>
     </owl:Class>
     
 
@@ -1261,10 +1254,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00079">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Osteopathic Medicine</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Osteopathic Medicine</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree47"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Divinity</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Divinity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree41"/>
     </owl:Class>
     
 
@@ -1273,10 +1266,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00080">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Pharmacy</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PharmD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Pharmacy</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree96"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EdD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree56"/>
     </owl:Class>
     
 
@@ -1285,10 +1278,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00081">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Podiatric Medicine</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Podiatric Medicine</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree139"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Health and Safety</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HSD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Health and Safety</rdfs:label>
     </owl:Class>
     
 
@@ -1297,10 +1289,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00082">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Psychology</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PsyD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Psychology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree119"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Health Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DHEd</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Health Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree146"/>
     </owl:Class>
     
 
@@ -1309,10 +1301,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00083">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Public Administration</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Public Administration</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree49"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Health Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DHSc</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Health Science</rdfs:label>
     </owl:Class>
     
 
@@ -1321,10 +1312,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00084">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Public Health</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPH</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Public Health</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree50"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Humane Letters</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LHD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Humane Letters</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree65"/>
     </owl:Class>
     
 
@@ -1333,10 +1324,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00085">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Religious Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Religious Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree51"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Juridical Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SJD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Juridical Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree101"/>
     </owl:Class>
     
 
@@ -1345,10 +1336,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00086">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Sacred Theology</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Sacred Theology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree105"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Juristic Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Juristic Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree64"/>
     </owl:Class>
     
 
@@ -1357,10 +1348,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00087">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSc</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree54"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Laws</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LLD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Laws</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree69"/>
     </owl:Class>
     
 
@@ -1369,10 +1360,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00088">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SScD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree103"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Library Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Library Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree45"/>
     </owl:Class>
     
 
@@ -1381,10 +1372,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00089">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Welfare</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSW</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Welfare</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree52"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Medical Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Medical Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree48"/>
     </owl:Class>
     
 
@@ -1393,10 +1384,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00090">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Work</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSW</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Social Work</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree53"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Musical Arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Musical Art</rdfs:label>
     </owl:Class>
     
 
@@ -1405,10 +1395,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00091">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of the Science of Law</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SJD</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of the Science of Law</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree102"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Naturopathic Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ND</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Naturopathic Medicine</rdfs:label>
     </owl:Class>
     
 
@@ -1416,11 +1405,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00092 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00092">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education Specialist</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EdS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education Specialist</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree57"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Nursing Practice</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNP</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Nursing Practice</rdfs:label>
     </owl:Class>
     
 
@@ -1428,11 +1416,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00093 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00093">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineer</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineer</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree58"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Optometry</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Optometry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree95"/>
     </owl:Class>
     
 
@@ -1440,11 +1428,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00094 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00094">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineer of Metallurgy</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMet</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineer of Metallurgy</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree60"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Osteopathic Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Osteopathic Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree47"/>
     </owl:Class>
     
 
@@ -1452,11 +1440,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00095 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00095">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineer of Mines</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineer of Mines</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree59"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Pharmacy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PharmD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Pharmacy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree96"/>
     </owl:Class>
     
 
@@ -1464,11 +1452,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00096 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00096">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industrial Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industrial Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree62"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Podiatric Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Podiatric Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree139"/>
     </owl:Class>
     
 
@@ -1476,11 +1464,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00097 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00097">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Physician Assistant Studies</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPAS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Physician Assistant Studies</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree147"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Psychiatry</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PsyD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Psychiatry</rdfs:label>
     </owl:Class>
     
 
@@ -1488,11 +1475,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00098 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00098">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Aeronautical Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAeroE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Aeronautical Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree72"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Psychology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PsyD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Psychology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree119"/>
     </owl:Class>
     
 
@@ -1500,11 +1487,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00099 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00099">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Arts in Teaching</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMT</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Arts in Teaching</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree3"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Public Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Public Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree49"/>
     </owl:Class>
     
 
@@ -1512,11 +1499,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00100 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00100">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Business Administration</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MBA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Business Administration</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree73"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Public Health</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPH</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Public Health</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree50"/>
     </owl:Class>
     
 
@@ -1524,11 +1511,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00101 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00101">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Business Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MBE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Business Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree141"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Religious Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DRE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Religious Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree51"/>
     </owl:Class>
     
 
@@ -1536,11 +1523,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00102 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00102">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Chemical Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MChE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Chemical Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree140"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Sacred Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Sacred Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree105"/>
     </owl:Class>
     
 
@@ -1548,11 +1535,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00103 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00103">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Christian Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Christian Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree74"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSc</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree54"/>
     </owl:Class>
     
 
@@ -1560,11 +1547,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00104 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00104">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Civil Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Civil Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree75"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Science in Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSN</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Science in Nursing</rdfs:label>
     </owl:Class>
     
 
@@ -1572,11 +1558,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00105 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00105">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Computer Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Computer Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree76"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Social Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SScD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Social Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree103"/>
     </owl:Class>
     
 
@@ -1584,11 +1570,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00106 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00106">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Divinity</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDiv</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Divinity</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree78"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Social Welfare</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSW</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Social Welfare</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree52"/>
     </owl:Class>
     
 
@@ -1596,11 +1582,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00107 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00107">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MEd</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree80"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Social Work</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSW</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Social Work</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree53"/>
     </owl:Class>
     
 
@@ -1608,11 +1594,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00108 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00108">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MEng</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree81"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of the Science of Law</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SJD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of the Science of Law</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree102"/>
     </owl:Class>
     
 
@@ -1620,11 +1606,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00109 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00109">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Fine Arts</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MFA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Fine Arts</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree82"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctor of Veterinary Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DVM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctor of Veterinary Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree55"/>
     </owl:Class>
     
 
@@ -1632,11 +1618,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00110 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00110">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Health Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Health Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree122"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00011"/>
+        <obo:IAO_0000115 xml:lang="en">Doctorate in Audiology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AuD</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Doctorate in Audiology</rdfs:label>
     </owl:Class>
     
 
@@ -1644,11 +1629,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00111 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00111">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Hospital Administration</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Hospital Administration</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree83"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00006"/>
+        <obo:IAO_0000115 xml:lang="en">Education Specialist</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EdS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Education Specialist</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree57"/>
     </owl:Class>
     
 
@@ -1656,11 +1641,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00112 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00112">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of International Affairs</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIA</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of International Affairs</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree137"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Electrical Engineer</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Electrical Engineer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree58"/>
     </owl:Class>
     
 
@@ -1668,11 +1653,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00113 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00113">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Laws</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LLM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Laws</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree70"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Engineer of Metallurgy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMet</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Engineer of Metallurgy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree60"/>
     </owl:Class>
     
 
@@ -1680,11 +1665,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00114 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00114">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Letters</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LittM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Letters</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree67"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Engineer of Mines</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Engineer of Mines</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree59"/>
     </owl:Class>
     
 
@@ -1693,10 +1678,11 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00115">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Library and Information Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLIS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Library and Information Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree115"/>
+        <obo:IAO_0000115 xml:lang="en">Habilitation � diriger des recherches</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Needs a new parent</obo:IAO_0000116>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HDR</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Habilitation</rdfs:label>
+        <rdfs:label xml:lang="fr">Habilitation � diriger des recherches</rdfs:label>
     </owl:Class>
     
 
@@ -1704,11 +1690,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00116 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00116">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Library Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Library Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree84"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
+        <obo:IAO_0000115 xml:lang="en">Industrial Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Industrial Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree62"/>
     </owl:Class>
     
 
@@ -1716,11 +1702,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00117 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00117">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Management Studies</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMS</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Management Studies</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree126"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Accounting</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAcc</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Accounting</rdfs:label>
     </owl:Class>
     
 
@@ -1729,10 +1714,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00118">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Mechanical Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MME</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Mechanical Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree86"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Aeronautical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAeroE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Aeronautical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree72"/>
     </owl:Class>
     
 
@@ -1741,10 +1726,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00119">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Medical Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMSc</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Medical Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree150"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Agribusiness</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAB</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Agribusiness</rdfs:label>
     </owl:Class>
     
 
@@ -1753,10 +1737,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00120">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Medicine</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMed</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Medicine</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree131"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Agriculture</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAgr</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Agriculture</rdfs:label>
     </owl:Class>
     
 
@@ -1765,10 +1748,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00121">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Music</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Music</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree85"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Arts in Teaching</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMT</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Arts in Teaching</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree3"/>
     </owl:Class>
     
 
@@ -1777,10 +1760,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00122">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Music Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MME</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Music Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree87"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Business Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MBA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Business Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree73"/>
     </owl:Class>
     
 
@@ -1789,10 +1772,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00123">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Nursing</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MN</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Nursing</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree89"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Business Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MBE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Business Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree141"/>
     </owl:Class>
     
 
@@ -1801,10 +1784,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00124">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Pharmacy</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PharmM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Pharmacy</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree143"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Chemical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MChE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Chemical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree140"/>
     </owl:Class>
     
 
@@ -1813,10 +1796,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00125">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Philosophy</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPhil</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Philosophy</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree111"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Christian Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Christian Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree74"/>
     </owl:Class>
     
 
@@ -1825,10 +1808,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00126">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Public Health</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPH</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Public Health</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree113"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Civil Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Civil Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree75"/>
     </owl:Class>
     
 
@@ -1837,10 +1820,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00127">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Religious Education</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Religious Education</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree90"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Computer Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Computer Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree76"/>
     </owl:Class>
     
 
@@ -1849,10 +1832,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00128">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Sacred Theology</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STM</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Sacred Theology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree106"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Divinity</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDiv</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Divinity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree78"/>
     </owl:Class>
     
 
@@ -1860,11 +1843,11 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00129 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00129">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science in Engineering</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science in Engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree134"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MEd</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree80"/>
     </owl:Class>
     
 
@@ -1873,10 +1856,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00130">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science in Public Health</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSPH</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Science in Public Health</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree114"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MEng</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree81"/>
     </owl:Class>
     
 
@@ -1884,11 +1867,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00131 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00131">
-        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Social Work</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSW</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Social Work</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree92"/>
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Exercise and Sport Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Exercise and Sport Science</rdfs:label>
     </owl:Class>
     
 
@@ -1897,10 +1879,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00132">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Theology</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTh</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Theology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree93"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Fine Arts</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MFA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Fine Arts</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree82"/>
     </owl:Class>
     
 
@@ -1909,10 +1891,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00133">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Veterinary Science</obo:IAO_0000115>
-        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MVSc</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master of Veterinary Science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree129"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Health Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Health Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree122"/>
     </owl:Class>
     
 
@@ -1920,15 +1902,457 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://something/ontology/ado/ADO_00134 -->
 
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00134">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Hospital Administration</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Hospital Administration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree83"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00135 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00135">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of International Affairs</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIA</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of International Affairs</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree137"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00136 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00136">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Laws</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LLM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Laws</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree70"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00137 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00137">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Letters</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LittM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Letters</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree67"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00138 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00138">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Library and Information Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLIS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Library and Information Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree115"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00139 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00139">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Library Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Library Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree84"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00140 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00140">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Management Studies</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Management Studies</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree126"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00141 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00141">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Mechanical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MME</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Mechanical Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree86"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00142 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00142">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Medical Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMSc</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Medical Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree150"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00143 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00143">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMed</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree131"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00144 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00144">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Music</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Music</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree85"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00145 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00145">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Music Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MME</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Music Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree87"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00146 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00146">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MN</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Nursing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree89"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00147 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00147">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Pharmacy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PharmM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Pharmacy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree143"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00148 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00148">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Philosophy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPhil</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Philosophy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree111"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00149 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00149">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Physical Therapy</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPT</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Physical Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00150 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00150">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Physician Assistant Studies</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPAS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Physician Assistant Studies</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree147"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00151 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00151">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Preventive Veterinary Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPVM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Preventive Veterinary Medicine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00152 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00152">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Public Health</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPH</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Public Health</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree113"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00153 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00153">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Religious Education</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Religious Education</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree90"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00154 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00154">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Sacred Music</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Sacred Music</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00155 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00155">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Sacred Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Sacred Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree106"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00156 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00156">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Science in Electrical Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSEE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Science in Electrical Engineering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00157 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00157">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Science in Engineering</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSE</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Science in Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree134"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00158 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00158">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Science in Information Studies</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSIS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Science in Information Studies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00159 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00159">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Science in Nursing</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSN</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Science in Nursing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00160 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00160">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Science in Public Health</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSPH</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Science in Public Health</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree114"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00161 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00161">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Social Work</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSW</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Social Work</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree92"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00162 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00162">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Specialized Veterinary Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSpVM</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Specialized Veterinary Medicine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00163 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00163">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Statistics</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MStat</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Statistics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00164 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00164">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Studies in International Human Rights Law</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MStIHRL</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Studies in International Human Rights Law</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00165 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00165">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Technology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTech</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Technology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00166 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00166">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Theological Studies</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTS</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Theological Studies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00167 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00167">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00009"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Theology</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTh</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Theology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree93"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00168 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00168">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Urban Planning</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MUP</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Urban Planning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00169 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00169">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Master of Veterinary Science</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MVSc</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Master of Veterinary Science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree129"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00170 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00170">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Medical Masters in Family Medicine</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MPrax</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Medical Masters in Family Medicine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00171 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00171">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear Engineer</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Nuclear Engineer</obo:IAO_0000115>
         <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NucE</obo:IAO_0000605>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear Engineer</rdfs:label>
+        <rdfs:label xml:lang="en">Nuclear Engineer</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/degree/academicDegree94"/>
+    </owl:Class>
+    
+
+
+    <!-- https://something/ontology/ado/ADO_00172 -->
+
+    <owl:Class rdf:about="https://something/ontology/ado/ADO_00172">
+        <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00010"/>
+        <obo:IAO_0000115 xml:lang="en">Pediatric Nurse Practioner</obo:IAO_0000115>
+        <obo:IAO_0000605 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNP</obo:IAO_0000605>
+        <rdfs:label xml:lang="en">Pediatric Nurse Practioner</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 
