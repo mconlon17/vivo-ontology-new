@@ -42,7 +42,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :ADO_00002 rdf:type owl:Class ;
            rdfs:subClassOf :ADO_00001 ;
            <http://purl.obolibrary.org/obo/IAO_0000115> "Two years of study"@en ;
-           rdfs:label "Associate's Degree"@en .
+           rdfs:label "Associates Degree"@en .
 
 
 :ADO_00003 rdf:type owl:Class ;
@@ -64,7 +64,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :ADO_00005 rdf:type owl:Class ;
            rdfs:subClassOf :ADO_00001 ;
            <http://purl.obolibrary.org/obo/IAO_0000115> "Four years of study"@en ;
-           rdfs:label "Bachelor's Degree"@en .
+           rdfs:label "Bachelors Degree"@en .
 
 
 :ADO_00006 rdf:type owl:Class ;
@@ -86,7 +86,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :ADO_00008 rdf:type owl:Class ;
            rdfs:subClassOf :ADO_00001 ;
            <http://purl.obolibrary.org/obo/IAO_0000115> "Advanced study following a bachelor's degree"@en ;
-           rdfs:label "Master's Degree"@en .
+           rdfs:label "Masters Degree"@en .
 
 
 :ADO_00009 rdf:type owl:Class ;

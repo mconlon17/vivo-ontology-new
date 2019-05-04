@@ -1,13 +1,13 @@
 RDF Type	Class type	Parent	ID	See Also	Label	Label	Label	Label	Abbreviation	Definition	Editors Note	Citation
 TYPE	CLASS_TYPE	CI	ID	AI rdfs:seeAlso	AL rdfs:label@en	AL rdfs:label@es	AL rdfs:label@fr	AL rdfs:label@de	A IAO:0000605	AL IAO:0000115@en	AL IAO:0000116@en	AL IAO:0000119@en
 owl:Class		IAO:0000300	ADO:00001		Academic Degree	Titulo academico	Diplôme universitaire	Hochschulabschluss		"A qualification awarded to students upon successful completion of a course of study in higher education, usually at a college or university"		Wikipedia https://en.wikipedia.org/wiki/Academic_degree
-owl:Class	subclass	ADO:00001	ADO:00002		Associate's Degree					Two years of study		
+owl:Class	subclass	ADO:00001	ADO:00002		Associates Degree					Two years of study		
 owl:Class	subclass	ADO:00002	ADO:00003	http://vivoweb.org/ontology/degree/academicDegree127	Associate of Science Degree				AS	Two years focused on science		
 owl:Class	subclass	ADO:00002	ADO:00004	http://vivoweb.org/ontology/degree/academicDegree132	Associate of Arts Degree				AA	Two years focused on the arts		
-owl:Class	subclass	ADO:00001	ADO:00005		Bachelor's Degree					Four years of study		
+owl:Class	subclass	ADO:00001	ADO:00005		Bachelors Degree					Four years of study		
 owl:Class	subclass	ADO:00005	ADO:00006	http://vivoweb.org/ontology/degree/academicDegree4	Bachelor of Arts Degree				BA	Four years focused on the arts		
 owl:Class	subclass	ADO:00005	ADO:00007	http://vivoweb.org/ontology/degree/academicDegree33	Bachelor of Science Degree				BS	Four years focused on science		
-owl:Class	subclass	ADO:00001	ADO:00008		Master's Degree					Advanced study following a bachelor's degree		
+owl:Class	subclass	ADO:00001	ADO:00008		Masters Degree					Advanced study following a bachelor's degree		
 owl:Class	subclass	ADO:00008	ADO:00009	http://vivoweb.org/ontology/degree/academicDegree71	Master of Arts				MA	Advanced study in the arts		
 owl:Class	subclass	ADO:00008	ADO:00010	http://vivoweb.org/ontology/degree/academicDegree117	Master of Science				MS	Advanced study in science		
 owl:Class	subclass	ADO:00001	ADO:00011		Doctoral Degree					Highest discipline degree		

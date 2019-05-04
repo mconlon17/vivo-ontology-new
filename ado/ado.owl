@@ -349,7 +349,7 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00002">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
         <obo:IAO_0000115 xml:lang="en">Two years of study</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Associate&apos;s Degree</rdfs:label>
+        <rdfs:label xml:lang="en">Associates Degree</rdfs:label>
     </owl:Class>
     
 
@@ -383,7 +383,7 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00005">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
         <obo:IAO_0000115 xml:lang="en">Four years of study</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Bachelor&apos;s Degree</rdfs:label>
+        <rdfs:label xml:lang="en">Bachelors Degree</rdfs:label>
     </owl:Class>
     
 
@@ -417,7 +417,7 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Class rdf:about="https://something/ontology/ado/ADO_00008">
         <rdfs:subClassOf rdf:resource="https://something/ontology/ado/ADO_00001"/>
         <obo:IAO_0000115 xml:lang="en">Advanced study following a bachelor&apos;s degree</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Master&apos;s Degree</rdfs:label>
+        <rdfs:label xml:lang="en">Masters Degree</rdfs:label>
     </owl:Class>
     
 
