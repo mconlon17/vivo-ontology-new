@@ -20,7 +20,7 @@ Row	Type	Prefix	Name	Label	Domain	Dispostion	Yes/No	DispComment	Definitions	Edit
 19	A	obo:	IAO_0000412		NA	N	no	Not needed.  Ontology IRI must be resolvable.								
 20	A	obo:	IAO_0000600		NA	N	no	Elucidation for upper level items								
 21	A	obo:	IAO_0000601		NA	N	no	Associated axiom in natural language								
-22	A	obo:	IAO_0000602		NA	N	no	Assoiated axiom in formal logic								
+22	A	obo:	IAO_0000602		NA	N	no	Associated axiom in formal logic								
 23	A	ocres:	curator		NA	N	no									
 24	A	ocresp:	develop_comment		NA	N	no									
 25	A	owl:	minCardinality		ALL	I	yes									
