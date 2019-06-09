@@ -33,7 +33,7 @@ $(TEMPLATE_OWL_FILES): $(TEMPLATE_FILES)
 # 
 # For each extract file, create a corresponding owl file
 
-EXTRACTS = iao bfo ro time
+EXTRACTS = iao bfo ro time swo
 EXTRACT_TERM_FILES = $(foreach n,$(EXTRACTS), $(n).txt)
 EXTRACT_INPUT_FILES = $(foreach n,$(EXTRACTS), $(n).owl)
 EXTRACT_OWL_FILES = $(foreach n,$(EXTRACTS), $(n)-extract.owl)
