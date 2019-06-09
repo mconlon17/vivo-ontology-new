@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="http://purl.obolibrary.org/obo/ero.owl" uri="ero.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="duplicate:http://purl.obolibrary.org/obo/iao.owl" uri="iao-extract.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="duplicate:http://purl.obolibrary.org/obo/iao.owl" uri="iao.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="http://vivoweb.org/ontology/core" uri="vivo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="http://www.ebi.ac.uk/swo/swo.owl" uri="swo_inferred.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="duplicate:http://www.semanticweb.org/vivo/ontologies/2019/0/ado/" uri="ado/ado-header.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="duplicate:http://www.semanticweb.org/vivo/ontologies/2019/0/ado/" uri="ado/ado.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="duplicate:http://www.semanticweb.org/vivo/ontologies/2019/0/nvo/" uri="nvo-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="duplicate:http://www.semanticweb.org/vivo/ontologies/2019/0/nvo/" uri="nvo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="duplicate:http://www.semanticweb.org/vivo/ontologies/2019/0/nvo/" uri="nvo-header.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="http://www.w3.org/2002/07/owl" uri="nvo-template.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1559393910393" name="http://www.w3.org/2006/time" uri="time-extract.owl"/>
+    </group>
+</catalog>

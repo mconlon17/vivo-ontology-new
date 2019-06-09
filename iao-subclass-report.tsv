@@ -1,0 +1,213 @@
+?parent_label	?label
+"Obsolete Class"	"obsolete dependent continuant"@en
+"Obsolete Class"	"obsolete2_binary digital entity"@en
+"Obsolete Class"	"obsolete2_binary executable"@en
+"Obsolete Class"	"obsolete2_digital document"@en
+"Obsolete Class"	"obsolete2_digital entity"@en
+"Obsolete Class"	"obsolete2_report figure"@en
+"Obsolete Class"	"obsolete2_text based digital entity"@en
+"Obsolete Class"	"obsolete_artifact"
+"Obsolete Class"	"obsolete_digital quality"
+"Obsolete Class"	"obsolete_establishing a CRID registry"
+"Obsolete Class"	"obsolete_identifier"
+"Obsolete Class"	"obsolete_material_entity"
+"Obsolete Class"	"obsolete_report element"@en
+"Obsolete Class"	"obsolete_report table"@en
+"Obsolete Class"	"obsolete_study interpretation"@en
+"Obsolete Class"	"obsolete_survival curve"@en
+"Obsolete Class"	"obsolete_unit of measure"
+"algorithm"@en	"software interpreter"@en
+"cartesian spatial coordinate datum"@en	"one dimensional cartesian spatial coordinate datum"@en
+"cartesian spatial coordinate datum"@en	"three dimensional cartesian spatial coordinate datum"@en
+"cartesian spatial coordinate datum"@en	"two dimensional cartesian spatial coordinate datum"@en
+"conditional specification"@en	"rule"@en
+"conditional specification"@en	"time trigger"@en
+"continuant"@en	"generically dependent continuant"@en
+"continuant"@en	"independent continuant"@en
+"continuant"@en	"specifically dependent continuant"@en
+"continuant fiat boundary"@en	"one-dimensional continuant fiat boundary"@en
+"continuant fiat boundary"@en	"two-dimensional continuant fiat boundary"@en
+"continuant fiat boundary"@en	"zero-dimensional continuant fiat boundary"@en
+"data about an ontology part"@en	"curation status specification"@en
+"data about an ontology part"@en	"denotator type"
+"data about an ontology part"@en	"obsolescence reason specification"@en
+"data item"@en	"cartesian spatial coordinate datum"@en
+"data item"@en	"data about an ontology part"@en
+"data item"@en	"data set"@en
+"data item"@en	"measurement datum"@en
+"data item"@en	"setting datum"@en
+"data set"@en	"centrally registered identifier registry"@en
+"data set"@en	"time sampled measurement data set"@en
+"datum label"@en	"measurement unit label"@en
+"diagram"@en	"graph"@en
+"directive information entity"@en	"action specification"@en
+"directive information entity"@en	"conditional specification"@en
+"directive information entity"@en	"data format specification"@en
+"directive information entity"@en	"objective specification"@en
+"directive information entity"@en	"plan specification"@en
+"directive information entity"@en	"source code module"@en
+"disposition"@en	"function"@en
+"document"@en	"patent"@en
+"document"@en	"publication"@en
+"document"@en	"report"@en
+"document part"@en	"abbreviations section"@en
+"document part"@en	"abstract"@en
+"document part"@en	"acknowledgements section"@en
+"document part"@en	"author contributions section"@en
+"document part"@en	"author information section"@en
+"document part"@en	"author list"@en
+"document part"@en	"author summary section"@en
+"document part"@en	"availability section"@en
+"document part"@en	"case report section"@en
+"document part"@en	"conclusion section"@en
+"document part"@en	"conflict of interest section"@en
+"document part"@en	"consent section"@en
+"document part"@en	"copyright section"@en
+"document part"@en	"discussion section of a publication about an investigation"@en
+"document part"@en	"ethical approval section"@en
+"document part"@en	"figures section"@en
+"document part"@en	"footnote"@en
+"document part"@en	"funding source declaration section"@en
+"document part"@en	"future directions section"@en
+"document part"@en	"genome announcement section"@en
+"document part"@en	"institution list"@en
+"document part"@en	"introduction to a publication about an investigation"@en
+"document part"@en	"keywords section"@en
+"document part"@en	"materials section"@en
+"document part"@en	"methods section"@en
+"document part"@en	"notes section"@en
+"document part"@en	"patients section"@en
+"document part"@en	"pre-publication history section"@en
+"document part"@en	"references section"@en
+"document part"@en	"related work section"@en
+"document part"@en	"requirements section"@en
+"document part"@en	"results section"@en
+"document part"@en	"statistical analysis section"@en
+"document part"@en	"study limitations section"@en
+"document part"@en	"supplementary material to a document"@en
+"document part"@en	"tables section"@en
+"document title"@en	"running title"@en
+"entity"@en	"continuant"@en
+"entity"@en	"occurrent"@en
+"figure"@en	"diagram"@en
+"figure"@en	"image"@en
+"generically dependent continuant"@en	"information content entity"@en
+"graph"@en	"Venn diagram"@en
+"graph"@en	"contour plot"@en
+"graph"@en	"dendrogram"@en
+"graph"@en	"density plot"@en
+"graph"@en	"dot plot"@en
+"graph"@en	"heatmap"@en
+"graph"@en	"histogram"@en
+"graph"@en	"line graph"@en
+"graph"@en	"scatter plot"@en
+"image"@en	"photograph"@en
+"immaterial entity"@en	"continuant fiat boundary"@en
+"immaterial entity"@en	"site"@en
+"immaterial entity"@en	"spatial region"@en
+"independent continuant"@en	"immaterial entity"@en
+"independent continuant"@en	"material entity"@en
+"information content entity"@en	"centrally registered identifier"@en
+"information content entity"@en	"data item"@en
+"information content entity"@en	"datum label"@en
+"information content entity"@en	"directive information entity"@en
+"information content entity"@en	"document"@en
+"information content entity"@en	"document part"@en
+"information content entity"@en	"email address"@en
+"information content entity"@en	"figure"@en
+"information content entity"@en	"narrative object"@en
+"information content entity"@en	"symbol"@en
+"information content entity"@en	"textual entity"@en
+"material entity"@en	"fiat object part"@en
+"material entity"@en	"material information bearer"@en
+"material entity"@en	"object"@en
+"material entity"@en	"object aggregate"@en
+"material information bearer"@en	"photographic print"@en
+"measurement datum"@en	"scalar measurement datum"@en
+"measurement datum"@en	"time stamped measurement datum"@en
+"measurement unit label"@en	"length unit"
+"measurement unit label"@en	"mass unit"
+"measurement unit label"@en	"time unit"
+"numeral"@en	"integer numeral"@en
+"occurrent"@en	"process"@en
+"occurrent"@en	"process boundary"@en
+"occurrent"@en	"spatiotemporal region"@en
+"occurrent"@en	"temporal region"@en
+"plan specification"@en	"algorithm"@en
+"plan specification"@en	"programming language"@en
+"plan specification"@en	"software"@en
+"plan specification"@en	"study design"@en
+"planned process"@en	"assigning a centrally registered identifier"@en
+"planned process"@en	"associating information with a centrally registered identifier in its registry"@en
+"planned process"@en	"data item extraction from journal article"
+"planned process"@en	"database extract, transform, and load process"@en
+"planned process"@en	"documenting"@en
+"planned process"@en	"investigation"@en
+"planned process"@en	"looking up a centrally registered identifier"@en
+"planned process"@en	"study design execution"
+"process"@en	"history"@en
+"process"@en	"planned process"@en
+"process"@en	"process profile"@en
+"publication"@en	"publication about an investigation"@en
+"quality"@en	"information carrier"@en
+"quality"@en	"length"
+"quality"@en	"mass"
+"quality"@en	"relational quality"@en
+"realizable entity"@en	"disposition"@en
+"realizable entity"@en	"role"@en
+"report"@en	"journal article"@en
+"role"@en	"author role"@en
+"scalar measurement datum"@en	"length measurement datum"@en
+"scalar measurement datum"@en	"mass measurement datum"@en
+"scalar measurement datum"@en	"time measurement datum"@en
+"site"@en	"geographic location"
+"software"@en	"software application"@en
+"software"@en	"software library"@en
+"software"@en	"software method"@en
+"software"@en	"software module"@en
+"software"@en	"software script"@en
+"spatial region"@en	"one-dimensional spatial region"@en
+"spatial region"@en	"three-dimensional spatial region"@en
+"spatial region"@en	"two-dimensional spatial region"@en
+"spatial region"@en	"zero-dimensional spatial region"@en
+"specifically dependent continuant"@en	"quality"@en
+"specifically dependent continuant"@en	"realizable entity"@en
+"symbol"@en	"centrally registered identifier symbol"@en
+"symbol"@en	"lot number"@en
+"symbol"@en	"model number"@en
+"symbol"@en	"numeral"@en
+"symbol"@en	"serial number"@en
+"symbol"@en	"version number"@en
+"table"@en	"table of abbreviations"@en
+"table"@en	"table of contents"@en
+"table"@en	"table of figures"@en
+"temporal region"@en	"one-dimensional temporal region"@en
+"temporal region"@en	"zero-dimensional temporal region"@en
+"textual entity"@en	"abbreviation textual entity"@en
+"textual entity"@en	"author information textual entity"@en
+"textual entity"@en	"author summary textual entity"@en
+"textual entity"@en	"availability textual entity"@en
+"textual entity"@en	"caption"@en
+"textual entity"@en	"case report textual entity"@en
+"textual entity"@en	"citation"@en
+"textual entity"@en	"conclusion textual entity"@en
+"textual entity"@en	"conflict of interest textual entity"@en
+"textual entity"@en	"consent textual entity"@en
+"textual entity"@en	"document title"@en
+"textual entity"@en	"ethical approval textual entity"@en
+"textual entity"@en	"funding source declaration textual entity"@en
+"textual entity"@en	"future directions textual entity"@en
+"textual entity"@en	"genome announcement textual entity"@en
+"textual entity"@en	"hypothesis textual entity"@en
+"textual entity"@en	"institutional identification"@en
+"textual entity"@en	"keyword textual entity"@en
+"textual entity"@en	"patients textual entity"@en
+"textual entity"@en	"postal address"@en
+"textual entity"@en	"pre-publication history textual entity"@en
+"textual entity"@en	"related work textual entity"@en
+"textual entity"@en	"requirements textual entity"@en
+"textual entity"@en	"statistical analysis textual entity"@en
+"textual entity"@en	"study limitations textual entity"@en
+"textual entity"@en	"table"@en
+"textual entity"@en	"written name"@en
+"written name"@en	"author identification"@en
