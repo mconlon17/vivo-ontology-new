@@ -10,7 +10,6 @@ and the degree I got are individuals of the same class.
 
 ## Files
 
-* `academicDegree.xml` an abox file from VIVO listing degrees known in current VIVO
 * `ado-header.owl` a header file for ADO
 * `ado.csv` a `robot` template file listing degrees to be included as classes in ADO
 * `mkado` a script for making ADO from the header and template using robot.  A compliance report is produced.
