@@ -13,7 +13,7 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/vivo/ontologies/2019/0/ado/0.0.0"/>
         <rdfs:label>Academic Degree Ontology</rdfs:label>
-        <obo:IAO_0000115>Degrees of the world</obo:IAO_0000115>
+        <obo:IAO_0000115>Academic degrees of the world</obo:IAO_0000115>
         <foaf:homepage>http://to-be-determined</foaf:homepage>
         <dc:contributor>Michael Conlon</dc:contributor>
         <dc:title>Academic degrees of the world</dc:title>
