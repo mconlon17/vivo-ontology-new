@@ -11,7 +11,7 @@ and the degree I got are individuals of the same class.
 ## Files
 
 * `ado-header.owl` a header file for ADO
-* `ado.csv` a `robot` template file listing degrees to be included as classes in ADO
+* `ado.tsv` a `robot` template file listing degrees to be included as classes in ADO
 * `mkado` a script for making ADO from the header and template using robot.  A compliance report is produced.
 * `ado-report.tsv` the compliance report produced by `robot report`
 * `ado.owl` the current draft ontology for inspection in protege, VOCAL, VOWL and other tools
