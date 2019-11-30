@@ -1,0 +1,16 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?parent_label ?label
+
+WHERE {	
+    ?uri a owl:Class .
+    ?uri rdfs:subClassOf ?parent .
+    ?uri rdfs:label ?label .
+    ?parent rdfs:label ?parent_label .
+    FILTER NOT EXISTS {
+        FILTER (regex(str(?uri), "vcard", "i")) 
+        }
+}
+ORDER BY ?parent_label ?label

@@ -1,0 +1,35 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?type ?uri
+    (GROUP_CONCAT(DISTINCT ?label; SEPARATOR="|") AS ?labels)
+
+WHERE {
+	{	
+		?uri a owl:Class .
+		FILTER(regex(str(?uri), "^[a-zA-Z]"))
+    	BIND("C" AS ?type)
+		OPTIONAL { ?uri rdfs:label ?label }
+	}
+    UNION
+    {	
+    	?uri a owl:ObjectProperty .
+    	BIND("O" AS ?type)
+		OPTIONAL { ?uri rdfs:label ?label }
+    }
+    UNION
+    {	
+    	?uri a owl:DatatypeProperty .
+    	BIND("D" AS ?type)
+		OPTIONAL { ?uri rdfs:label ?label }
+    }
+    UNION
+    {	
+    	?uri a owl:AnnotationProperty .
+    	BIND("A" AS ?type)
+		OPTIONAL { ?uri rdfs:label ?label }
+    }
+}
+GROUP BY ?type ?uri
+ORDER BY ?type ?uri
