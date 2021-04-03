@@ -1,0 +1,36 @@
+?label	?p
+"has geographic restriction"@en	<http://purl.obolibrary.org/obo/ERO_0000045>
+"Amazon Standard Identification Number (ASIN)"@en	<http://purl.org/ontology/bibo/identifier>
+"Digital Object Identifier (DOI)"@en	<http://purl.org/ontology/bibo/identifier>
+"EAN International-Uniform Code Council (EAN-UCC) 13"@en	<http://purl.org/ontology/bibo/identifier>
+"Electronic International Standard Serial Number (EISSN)"@en	<http://purl.org/ontology/bibo/identifier>
+"Global Trade Item Number (GTIN-14)"@en	<http://purl.org/ontology/bibo/identifier>
+"International Standard Book Number (ISBN) 10"@en	<http://purl.org/ontology/bibo/identifier>
+"International Standard Book Number (ISBN) 13"@en	<http://purl.org/ontology/bibo/identifier>
+"International Standard Serial Number (ISSN)"@en	<http://purl.org/ontology/bibo/identifier>
+"Library of Congress Control Number (LCCN)"@en	<http://purl.org/ontology/bibo/identifier>
+"NIH Manuscript Submission System ID"@en	<http://purl.org/ontology/bibo/identifier>
+"Online Computer Library Center (OCLC) number"@en	<http://purl.org/ontology/bibo/identifier>
+"PubMed Central ID"@en	<http://purl.org/ontology/bibo/identifier>
+"PubMed ID"@en	<http://purl.org/ontology/bibo/identifier>
+"Serial Item and Contribution Identifier (SICI)"@en	<http://purl.org/ontology/bibo/identifier>
+"URI"@en	<http://purl.org/ontology/bibo/identifier>
+"Universal Product Code (UPC)"@en	<http://purl.org/ontology/bibo/identifier>
+"coden"@en	<http://purl.org/ontology/bibo/identifier>
+"patent number"@en	<http://purl.org/ontology/bibo/identifier>
+"report identifier"@en	<http://purl.org/ontology/bibo/identifier>
+"chapter number"@en	<http://purl.org/ontology/bibo/locator>
+"end page"@en	<http://purl.org/ontology/bibo/locator>
+"issue"@en	<http://purl.org/ontology/bibo/locator>
+"number of pages"@en	<http://purl.org/ontology/bibo/locator>
+"section"@en	<http://purl.org/ontology/bibo/locator>
+"start page"@en	<http://purl.org/ontology/bibo/locator>
+"volume"@en	<http://purl.org/ontology/bibo/locator>
+"ISI Researcher ID"@en	<http://vivoweb.org/ontology/core#identifier>
+"Scopus ID"@en	<http://vivoweb.org/ontology/core#identifier>
+"eRA Commons ID"@en	<http://vivoweb.org/ontology/core#identifier>
+"health care provider ID"@en	<http://vivoweb.org/ontology/core#identifier>
+"identifier"@en	<http://vivoweb.org/ontology/core#identifier>
+"local award ID"@en	<http://vivoweb.org/ontology/core#identifier>
+"patient ID"@en	<http://vivoweb.org/ontology/core#identifier>
+"sponsor award ID"@en	<http://vivoweb.org/ontology/core#identifier>
